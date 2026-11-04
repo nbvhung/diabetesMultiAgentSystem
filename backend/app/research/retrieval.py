@@ -34,10 +34,16 @@ TOPICS={
  'causes':('diabetes causes insulin pancreas immune system',['nguyen nhan','causes','cause','pancreas','tuyen tuy']),
 }
 
+# Reviewed Vietnamese paraphrases; routing only, never new medical facts.
+VI_PARAPHRASES={'symptoms':['bieu hien','nhan biet benh'],'risk':['de mac','kha nang mac'],
+                'prevention':['tri hoan','lam cham khoi phat'],'management':['abcs'],
+                'activity':['hoat dong the luc']}
+
 
 def query_topics(question):
     value=norm(question)
-    topics=[key for key,(_,aliases) in TOPICS.items() if any(re.search(r'(?<!\w)'+re.escape(alias)+r'(?!\w)',value) for alias in aliases)]
+    diabetes_named=bool(re.search(r'\b(diabetes|tieu duong|dai thao duong)\b',value))
+    topics=[key for key,(_,aliases) in TOPICS.items() if any(re.search(r'(?<!\w)'+re.escape(alias)+r'(?!\w)',value) for alias in aliases+(VI_PARAPHRASES.get(key,[]) if diabetes_named else []))]
     if set(topics)-{'type1','type2','types'}:topics=[t for t in topics if t not in ('type1','type2','types')]
     # Specific diabetes type questions retain that context, not just generic symptoms.
     if not topics and re.search(r'(what is|define|explain|about|la gi|tim hieu|giai thich).{0,25}(diabetes|tieu duong|dai thao duong)|(diabetes|tieu duong|dai thao duong).{0,15}la gi',value):topics=['diabetes']

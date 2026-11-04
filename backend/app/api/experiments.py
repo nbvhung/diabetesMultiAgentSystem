@@ -8,7 +8,7 @@ from fastapi.responses import FileResponse
 ROOT = Path(__file__).resolve().parents[3]
 RESULTS = ROOT / 'experiments/results'
 FIGURES = ROOT / 'experiments/figures'
-NAMES = {'prediction', 'rag', 'mas', 'rl', 'safety', 'e2e', 'diabetes_rag', 'diabetes_mas', 'diabetes_llm', 'diabetes_safety'}
+NAMES = {'prediction', 'rag', 'mas', 'rl', 'safety', 'e2e', 'diabetes_rag', 'diabetes_mas', 'diabetes_llm', 'diabetes_safety', 'final_mas', 'final_workflows'}
 router = APIRouter(prefix='/api/v1/experiments', tags=['experiments'])
 
 

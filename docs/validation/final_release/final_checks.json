@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-11-04T17:14:47.544403+00:00",
+  "status": "REQUESTED_CHECKS_PASSED_NOT_FULL_ACCEPTANCE",
+  "checks": {
+    "migration": {
+      "exit_code": 0,
+      "seconds": 1.4549521000008099
+    },
+    "initialize": {
+      "exit_code": 0,
+      "seconds": 52.30800360000012
+    },
+    "backend": {
+      "exit_code": 0,
+      "seconds": 73.87354559999949,
+      "passed": 257,
+      "skipped": false
+    },
+    "frontend_unit": {
+      "exit_code": 0,
+      "seconds": 5.400584600000002
+    },
+    "frontend_build": {
+      "exit_code": 0,
+      "seconds": 4.1115686000002825
+    },
+    "browser": {
+      "exit_code": 0,
+      "seconds": 50.38122850000036,
+      "stats": {
+        "startTime": "2026-11-04T17:17:33.888Z",
+        "duration": 49292.548,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "integrity": {
+      "frozen_artifacts_unchanged": true,
+      "verified_measured_bundles": [
+        "prediction",
+        "rl",
+        "diabetes_rag",
+        "diabetes_mas",
+        "diabetes_safety",
+        "diabetes_llm"
+      ]
+    }
+  },
+  "remote_llm_calls": 0,
+  "training_rerun": false
+}

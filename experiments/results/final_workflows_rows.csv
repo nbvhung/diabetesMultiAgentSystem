@@ -1,0 +1,7 @@
+question_id,question,language,run_id,generation_mode,status,relevant_evidence,llm_accepted,evidence_count,retrieval_rounds,latency_ms,warnings
+definition:confirmatory:0,"Trong định nghĩa bệnh tiểu đường, đường glucose có vai trò gì?",vi,74c213cb-2bb3-4f55-8e9b-b1abe9acd8af,llm,COMPLETED,1,1,1,2,5606.850900000154,[]
+definition:confirmatory:1,What role does glucose have in the definition of diabetes?,en,770b310a-49aa-4365-95f7-ce168375242c,llm,COMPLETED,1,1,1,1,4455.449200000203,[]
+symptoms:confirmatory:0,Hãy liệt kê những biểu hiện thường được nhắc đến của đái tháo đường.,vi,2307dd32-5ed7-45ab-961f-db05a5bc83c6,llm,DEGRADED,1,1,1,1,4807.302600000185,"[""GROQ_SCHEMA_RETRY_RECOVERED""]"
+symptoms:confirmatory:1,List the commonly described signs and symptoms of diabetes.,en,db259e91-31d6-4339-9d96-914e5ef9e657,llm,COMPLETED,1,1,1,1,3398.2983999999306,[]
+risk:confirmatory:0,Những đặc điểm nào khiến một người có nguy cơ mắc tiểu đường týp 2 cao hơn?,vi,aa6e723e-b7e6-416e-8633-518ea0a05ba2,extractive,DEGRADED,1,0,2,1,2692.114799999672,"[""GROQ_SCHEMA_RETRY_EXHAUSTED""]"
+risk:confirmatory:1,Which characteristics are linked to a greater risk of type 2 diabetes?,en,3567816d-76ec-404b-b58b-7f38e411eeae,extractive,DEGRADED,1,0,2,1,1576.7313999999715,"[""GROQ_RATE_LIMITED""]"

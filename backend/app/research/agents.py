@@ -10,7 +10,7 @@ from backend.app.rl.mdp import ACTIONS
 from backend.app.knowledge.store import KnowledgeUnavailable
 from .schemas import *
 from .llm import GroqService,LLMUnavailable
-from .grounding import compose,verify_candidate
+from .grounding import compose_with_schema_retry,verify_candidate
 from . import safety
 
 
@@ -74,7 +74,7 @@ class EducationAgent(Agent):
         self.llm=llm
     async def execute(self,message):
         self.check(message);task=message.payload
-        return self.completed(await compose(task.question,task.language,task.evidence,task.decision,self.llm,task.feedback))
+        return self.completed(await compose_with_schema_retry(task.question,task.language,task.evidence,task.decision,self.llm,task.feedback))
 
 
 class VerifierAgent(Agent):

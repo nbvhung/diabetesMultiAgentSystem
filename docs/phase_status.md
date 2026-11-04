@@ -1,3 +1,15 @@
+# Current final native release — verified 2026-11-04T17:12:50.328761+00:00
+
+**FINAL_NATIVE_RELEASE_VERIFIED**: native demo and report-writing handoff complete. 257 backend, 22 frontend and 6 actual browser/API tests PASS; three scenarios through built-frontend gateway verified with persisted readback. New Vietnamese routing and bounded JSON-format recovery; frozen DL/RL unchanged. Native URL http://127.0.0.1:8082, username demo, password in .env.demo.
+
+Matched-budget offline MAS/direct both completion 0.863636, conditional relevance 0.65 and safety invariants 1.0 over 44 runs/method. No decomposition superiority claim. Six known bilingual engineering workflows: 6/6 relevant evidence, 4/6 accepted LLM outputs, remaining schema/rate fallbacks. Not clinical accuracy or blind validation.
+
+[Final handoff](final_handoff.md), [new measured results and test evidence](validation/final_release/release_summary.md), [reference-report review](reference_final_review.md), [report addendum](report/09_final_release_addendum.md). Native startup: python scripts/start_final_demo.py start. Source/artifact packaging: python scripts/package_final_release.py. Docker runtime remains NOT_VERIFIED (no engine), cloud hosting NOT_COMPLETED; strict Phase08 Docker gate below remains BLOCKED. This native-release status does not waive that gate.
+
+---
+
+## Historical Phase08 and earlier snapshots
+
 # Final Phase 00–08 status — Phase 08 delivery
 
 **BLOCKED** (2026-11-03T10:19:48.209291+00:00): native and authenticated temporary HTTPS demo verified; 48-page PDF + editable DOCX, technical documentation and defense materials delivered. Docker Compose configuration parses, but actual startup fails because this host has no Docker engine/WSL. **Cloud deployment: NOT_COMPLETED.** No claim of 100% completion or READY_FOR_DEFENSE.

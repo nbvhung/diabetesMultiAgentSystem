@@ -27,6 +27,8 @@ def execute(name,command,env,cwd=ROOT):
 def browser(env):
     children=[];handles=[]
     qa=dict(env,DIABETES_LLM_ENABLED='false',PHASE07_EXTERNAL_SERVERS='1',UI_QA_API_URL='http://127.0.0.1:18000',UI_QA_FAULT_URL='http://127.0.0.1:18001',UI_QA_BASE_URL='http://127.0.0.1:15173',UI_QA_REPORT_FILE='../docs/validation/phase08/browser-results.json',UI_QA_CAPTURE_DIR='../docs/validation/phase08')
+    relative=Path(os.path.relpath(LOG,ROOT/'frontend')).as_posix()
+    qa.update(UI_QA_REPORT_FILE=relative+'/browser-results.json',UI_QA_CAPTURE_DIR=relative)
     commands=[('api',[sys.executable,'-m','uvicorn','backend.app.main:app','--host','127.0.0.1','--port','18000'],ROOT,18000,'/health'),('fault_api',[sys.executable,'-m','uvicorn','scripts.phase07_fault_app:knowledge_down','--factory','--host','127.0.0.1','--port','18001'],ROOT,18001,'/health'),('vite',['node','node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','15173','--strictPort'],ROOT/'frontend',15173,'/')]
     try:
         for name,command,cwd,port,route in commands:
@@ -54,7 +56,9 @@ def browser(env):
         for handle in handles:handle.close()
 
 def main():
+    global LOG
     parser=argparse.ArgumentParser();parser.add_argument('--test-env',type=Path);parser.add_argument('--stages',nargs='+',choices=['backend','frontend','browser','integrity','compose'],default=['backend','frontend','browser','integrity','compose']);parser.add_argument('--compose-cli');args=parser.parse_args()
+    LOG=Path(os.getenv('DIABETES_CHECK_OUTPUT',str(LOG)))
     LOG.mkdir(parents=True,exist_ok=True)
     env={**os.environ,**{k:v for k,v in (dotenv_values(args.test_env) if args.test_env else {}).items() if v is not None},'PYTHONUTF8':'1','GROQ_API_KEY':'','DIABETES_LLM_ENABLED':'true'}
     result={'timestamp':datetime.now(timezone.utc).isoformat(),'status':'RUNNING','checks':{},'remote_llm_calls':0,'training_rerun':False}

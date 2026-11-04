@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-11-04T17:25:08.980232+00:00",
+  "status": "FINAL_NATIVE_RELEASE_VERIFIED",
+  "scope": "Ready for native demo and report writing; strict Phase08 Docker gate remains unverified",
+  "docker_runtime": "NOT_VERIFIED_NO_ENGINE",
+  "cloud_hosting": "NOT_COMPLETED",
+  "source_version": "source-sha256:2effe4bb40587d639874524a524940586f7742b57f404ede070ddf467d6a5745",
+  "backend_passed": 257,
+  "frontend_unit_passed": 22,
+  "browser_passed": 6,
+  "native_scenarios": 3,
+  "native_url": "http://127.0.0.1:8082",
+  "models_retrained": false,
+  "frozen_artifacts_unchanged": true,
+  "matched_budget_mas": [
+    {
+      "method": "single_workflow",
+      "runs": "44",
+      "task_completion": "0.8636363636363636",
+      "evidence_relevance": "0.65",
+      "citation_provenance": "1",
+      "safety_invariants": "1",
+      "latency_ms": "1303.836418181783",
+      "llm_generated_runs": "0"
+    },
+    {
+      "method": "multi_agent",
+      "runs": "44",
+      "task_completion": "0.8636363636363636",
+      "evidence_relevance": "0.65",
+      "citation_provenance": "1",
+      "safety_invariants": "1",
+      "latency_ms": "1768.2252886363483",
+      "llm_generated_runs": "0"
+    }
+  ],
+  "six_question_engineering_workflow": [
+    {
+      "language": "vi",
+      "questions": "3",
+      "relevant_evidence_rate": "1",
+      "accepted_llm_coverage": "0.6666666666666666",
+      "latency_ms": "4368.756100000003"
+    },
+    {
+      "language": "en",
+      "questions": "3",
+      "relevant_evidence_rate": "1",
+      "accepted_llm_coverage": "0.6666666666666666",
+      "latency_ms": "3143.493000000035"
+    }
+  ],
+  "limits": [
+    "Previously inspected six-question engineering sample, not clinical validation",
+    "Automated same-provider verification is fallible",
+    "Offline MAS control does not evaluate generated LLM quality",
+    "Latency measured on this host alongside other verification work; not causal performance evidence",
+    "No independent expert medical review; frozen Pima and simulator RL limits unchanged"
+  ]
+}

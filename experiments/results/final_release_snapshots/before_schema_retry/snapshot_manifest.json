@@ -1,0 +1,9 @@
+{
+  "scope": "Historical engineering snapshot, verify files by local basename; original manifest paths described its old root location",
+  "sha256": {
+    "final_workflows.csv": "757b98042dc598930befc382d2de2a2da6338ee00221935731b07991a4ec0de9",
+    "final_workflows.json": "3a8cbb7f8ff58aeaf66dae9288b16c455d7fe5b647ae82ca151cc4d3ed1eef25",
+    "final_workflows.manifest.json": "9be47b2d498a5715967010501c69e5aaf5c69684f1953a68d5e0a7a1bbb9149f",
+    "final_workflows_rows.csv": "ea0b9abccf315a8c1b0594561130518c5fbf35d1d100710599b42f9b5205236a"
+  }
+}

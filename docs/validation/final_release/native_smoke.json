@@ -1,0 +1,1971 @@
+{
+  "timestamp": "2026-11-04T17:11:14.865758+00:00",
+  "url": "http://127.0.0.1:8082",
+  "frontend_http_status": 200,
+  "runs": [
+    {
+      "scenario": "SYNTHETIC_assessment",
+      "run": {
+        "schema_version": "3.0",
+        "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+        "status": "DEGRADED",
+        "response": "Các yếu tố nguy cơ của bệnh tiểu đường týp 2 bao gồm yếu tố di truyền, tuổi, chủng tộc hoặc dân tộc, cân nặng và mức độ hoạt động thể chất. [c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3]",
+        "evidence": [
+          {
+            "schema_version": "3.0",
+            "evidence_id": "c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3",
+            "source_id": "risk",
+            "source_title": "Risk Factors for Type 2 Diabetes",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+            "publisher": "NIDDK",
+            "section": "Risk Factors for Type 2 Diabetes",
+            "section_context": "Risk Factors for Type 2 Diabetes",
+            "excerpt": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1",
+            "retrieved_at": "2026-11-02T16:05:48.116337Z",
+            "source_version": "5032dd98da6293b99b43035840a28acf9a73213d45fe9ddf8dcca7bf2033c114",
+            "topics": [
+              "diabetes",
+              "risk"
+            ],
+            "retrieval_score": 0.9991626739501953,
+            "last_reviewed": "Last Reviewed July 2022"
+          }
+        ],
+        "agent_results": {
+          "prediction": {
+            "schema_version": "3.0",
+            "agent_id": "prediction",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "1.1",
+              "model_id": "pima-mlp",
+              "model_version": "pima-mlp-0.2.0",
+              "predicted_class": 0,
+              "score": 0.015537431463599205,
+              "limitations": [
+                "Uncalibrated model score, not clinical disease probability.",
+                "Research on a restricted historical female Pima cohort; not a diagnosis.",
+                "Threshold 0.5; missing-zero transformation matches training."
+              ],
+              "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+              "inference_latency_ms": 12.399399999594607,
+              "warnings": [],
+              "persisted_record_id": "f496072a-f952-4105-842e-788a808acca9"
+            },
+            "errors": []
+          },
+          "knowledge": {
+            "schema_version": "3.0",
+            "agent_id": "knowledge",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "evidence": [
+                {
+                  "schema_version": "3.0",
+                  "evidence_id": "c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3",
+                  "source_id": "risk",
+                  "source_title": "Risk Factors for Type 2 Diabetes",
+                  "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+                  "publisher": "NIDDK",
+                  "section": "Risk Factors for Type 2 Diabetes",
+                  "section_context": "Risk Factors for Type 2 Diabetes",
+                  "excerpt": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active. 1",
+                  "retrieved_at": "2026-11-02T16:05:48.116337Z",
+                  "source_version": "5032dd98da6293b99b43035840a28acf9a73213d45fe9ddf8dcca7bf2033c114",
+                  "topics": [
+                    "diabetes",
+                    "risk"
+                  ],
+                  "retrieval_score": 0.9991626739501953,
+                  "last_reviewed": "Last Reviewed July 2022"
+                },
+                {
+                  "schema_version": "3.0",
+                  "evidence_id": "04a05d8e2a2314f0f1ddee03e975cc17efb5cafc62283d75eb61b29cedffe701",
+                  "source_id": "risk",
+                  "source_title": "Risk Factors for Type 2 Diabetes",
+                  "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/risk-factors-type-2-diabetes",
+                  "publisher": "NIDDK",
+                  "section": "What are the risk factors for type 2 diabetes?",
+                  "section_context": "What are the risk factors for type 2 diabetes?",
+                  "excerpt": "Children and teens are also at higher risk of developing type 2 diabetes if, in addition to the previous risk factors, they were born with a low birth weight or if their parent had gestational diabetes while pregnant with the child. 1",
+                  "retrieved_at": "2026-11-02T16:05:48.116337Z",
+                  "source_version": "5032dd98da6293b99b43035840a28acf9a73213d45fe9ddf8dcca7bf2033c114",
+                  "topics": [
+                    "diabetes",
+                    "risk"
+                  ],
+                  "retrieval_score": 0.9989365935325623,
+                  "last_reviewed": "Last Reviewed July 2022"
+                }
+              ],
+              "query_topics": [
+                "risk"
+              ],
+              "coverage": 1.0,
+              "adequate": true,
+              "semantic_available": true,
+              "retrieval_method": "hybrid_cross_encoder",
+              "attempt": 1,
+              "reranker_available": true
+            },
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "3.0",
+            "agent_id": "rl",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "1.0",
+              "state": {
+                "prediction_band": "lower-score",
+                "simulated_knowledge_level": "medium",
+                "simulated_engagement_level": "medium",
+                "evidence_availability": "sufficient",
+                "safety_status": "normal",
+                "encoder_state": [
+                  1,
+                  1,
+                  1,
+                  2,
+                  0,
+                  6,
+                  6
+                ],
+                "user_context_source": "SIMULATED_DEFAULTS_NOT_MEASURED",
+                "decision_reason": "TRAINED_Q_TABLE"
+              },
+              "action": "SHOW_EVIDENCE",
+              "policy_version": "education-q-1.1",
+              "decision_source": "policy"
+            },
+            "errors": []
+          },
+          "education": {
+            "schema_version": "3.0",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "text": "Các yếu tố nguy cơ của bệnh tiểu đường týp 2 bao gồm yếu tố di truyền, tuổi, chủng tộc hoặc dân tộc, cân nặng và mức độ hoạt động thể chất. [c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3]",
+              "evidence_ids": [
+                "c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3"
+              ],
+              "claims": [
+                {
+                  "claim_id": "c1",
+                  "text": "Các yếu tố nguy cơ của bệnh tiểu đường týp 2 bao gồm yếu tố di truyền, tuổi, chủng tộc hoặc dân tộc, cân nặng và mức độ hoạt động thể chất.",
+                  "supports": [
+                    {
+                      "evidence_id": "c49138727825e9ef012507e9f38d4c18f6aec5137046809c9ff9b206286955d3",
+                      "quote": "Your chances of developing type 2 diabetes depend on a combination of risk factors. Although you can’t change risk factors related to family history, age, race, or ethnicity, you may be able to avoid some risk factors by maintaining a healthy weight and being physically active."
+                    }
+                  ]
+                }
+              ],
+              "generation_mode": "llm",
+              "llm_status": "available",
+              "llm_model": "openai/gpt-oss-20b",
+              "provider_error": null,
+              "input_tokens": 830,
+              "output_tokens": 188,
+              "proposed_action": "SHOW_EVIDENCE",
+              "effective_action": "PROVIDE_GENERAL_EDUCATION",
+              "override_reason": "VERIFIED_RESPONSE_MODE_OVERRIDES_POLICY"
+            },
+            "errors": []
+          },
+          "verifier": {
+            "schema_version": "3.0",
+            "agent_id": "verifier",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "verified": true,
+              "mode": "independent_llm",
+              "candidate_sha256": "9ed7cc0fe990b6d49f7fdff049d377d2843a88a3704a04f2dba5a1f0381fc007",
+              "checked_claims": 1,
+              "reason_codes": [
+                "INDEPENDENT_ENTAILMENT_ACCEPTED"
+              ],
+              "input_tokens": 727,
+              "output_tokens": 202
+            },
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "3.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "allowed": true,
+              "decision": "ALLOW_WITH_WARNING",
+              "severity": "warning",
+              "rule_ids": [
+                "W03_RESEARCH_SCORE"
+              ],
+              "reason": "Prediction is uncertain research output, not a diagnosis",
+              "checked_content": "stage=output; question_chars=50; candidate_chars=206; assessment_present=False; evidence_count=1",
+              "stage": "output",
+              "policy_version": "diabetes-safety-2.0"
+            },
+            "errors": []
+          }
+        },
+        "agent_trace": [
+          {
+            "schema_version": "3.0",
+            "sequence": 1,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.613946Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 2,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "f4b4b39b-0b07-4123-ac2e-78edb2aead34",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "input",
+              "question_chars": 50,
+              "candidate_chars": 0
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.614847Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 3,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "f4b4b39b-0b07-4123-ac2e-78edb2aead34",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.801099999989674,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "ALLOW",
+              "rule_ids": [
+                "P00_ALLOW"
+              ],
+              "stage": "input"
+            },
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "safety_decision": "ALLOW",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.614847Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 4,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_INPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "safety_decision": "ALLOW",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.615853Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 5,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "PREDICT_SYNTHETIC_ASSESSMENT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.615853Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 6,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "bcc68e18-66dd-45a7-891d-3c14a56f9cad",
+            "agent_id": "prediction",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "PredictionTask",
+              "assessment_feature_count": 8,
+              "raw_values": "WITHHELD"
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.615853Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 7,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "bcc68e18-66dd-45a7-891d-3c14a56f9cad",
+            "agent_id": "prediction",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 56.89749999964988,
+            "input_summary": {},
+            "output_summary": {
+              "model_version": "pima-mlp-0.2.0",
+              "score": 0.015537431463599205,
+              "predicted_class": 0,
+              "persisted": true
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.672357Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 8,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "7fd1fb09-97dd-4cd5-b30b-93ffe1e0c7f4",
+            "agent_id": "knowledge",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "KnowledgeTask",
+              "question_chars": 50,
+              "query_chars": 50,
+              "attempt": 1
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:09.672357Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 9,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "7fd1fb09-97dd-4cd5-b30b-93ffe1e0c7f4",
+            "agent_id": "knowledge",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 1046.832600000016,
+            "input_summary": {},
+            "output_summary": {
+              "evidence_count": 2,
+              "source_count": 1,
+              "coverage": 1.0,
+              "adequate": true,
+              "semantic_available": true,
+              "retrieval_method": "hybrid_cross_encoder"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:10.719872Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 10,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "EVIDENCE_ADEQUATE",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {
+              "evidence_count": 2,
+              "coverage": 1.0
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:10.719872Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 11,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "8d1ddbf3-2fe7-4039-878e-f1768c317b19",
+            "agent_id": "rl",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "RLTask",
+              "prediction_present": true,
+              "evidence_count": 2,
+              "context": "SIMULATED_DEFAULTS"
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:10.720869Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 12,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "8d1ddbf3-2fe7-4039-878e-f1768c317b19",
+            "agent_id": "rl",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 5.803499999274209,
+            "input_summary": {},
+            "output_summary": {
+              "action": "SHOW_EVIDENCE",
+              "policy_version": "education-q-1.1",
+              "decision_source": "policy"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": "SHOW_EVIDENCE",
+            "policy_version": "education-q-1.1",
+            "decision_source": "policy",
+            "timestamp": "2026-11-04T17:11:10.725868Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 13,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "fad92109-cd85-4705-97f5-913c78978bc3",
+            "agent_id": "education",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "EducationTask",
+              "question_chars": 50,
+              "evidence_count": 2,
+              "language": "vi",
+              "feedback_codes": []
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:10.726871Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 14,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "fad92109-cd85-4705-97f5-913c78978bc3",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 1101.721300000463,
+            "input_summary": {},
+            "output_summary": {
+              "generation_mode": "llm",
+              "llm_status": "available",
+              "llm_model": "openai/gpt-oss-20b",
+              "claim_count": 1,
+              "citation_count": 1,
+              "provider_error": null,
+              "input_tokens": 830,
+              "output_tokens": 188,
+              "proposed_action": "SHOW_EVIDENCE",
+              "effective_action": "PROVIDE_GENERAL_EDUCATION",
+              "override_reason": "VERIFIED_RESPONSE_MODE_OVERRIDES_POLICY"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:11.828766Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 15,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "0175b774-7af2-4963-b851-4230aa93c86c",
+            "agent_id": "verifier",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "VerifierTask",
+              "candidate_chars": 206,
+              "claim_count": 1,
+              "evidence_count": 2
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:11.832316Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 16,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "0175b774-7af2-4963-b851-4230aa93c86c",
+            "agent_id": "verifier",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 2551.643900000272,
+            "input_summary": {},
+            "output_summary": {
+              "verified": true,
+              "mode": "independent_llm",
+              "checked_claims": 1,
+              "reason_codes": [
+                "INDEPENDENT_ENTAILMENT_ACCEPTED"
+              ],
+              "input_tokens": 727,
+              "output_tokens": 202
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.384039Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 17,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "4cd109b3-4548-4f26-9f80-2d8c6e86c1eb",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "output",
+              "question_chars": 50,
+              "candidate_chars": 206
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.384039Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 18,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": "4cd109b3-4548-4f26-9f80-2d8c6e86c1eb",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 2.132800000254065,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "ALLOW_WITH_WARNING",
+              "rule_ids": [
+                "W03_RESEARCH_SCORE"
+              ],
+              "stage": "output"
+            },
+            "rule_ids": [
+              "W03_RESEARCH_SCORE"
+            ],
+            "safety_decision": "ALLOW_WITH_WARNING",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.387020Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 19,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_OUTPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "W03_RESEARCH_SCORE"
+            ],
+            "safety_decision": "ALLOW_WITH_WARNING",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.387020Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 20,
+            "run_id": "c2386390-1fac-4128-99e4-63392296483c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "DEGRADED",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.388028Z"
+          }
+        ],
+        "safety_decisions": [
+          {
+            "schema_version": "3.0",
+            "allowed": true,
+            "decision": "ALLOW",
+            "severity": "info",
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "reason": "No configured safety condition matched",
+            "checked_content": "stage=input; question_chars=50; candidate_chars=0; assessment_present=True; evidence_count=0",
+            "stage": "input",
+            "policy_version": "diabetes-safety-2.0"
+          },
+          {
+            "schema_version": "3.0",
+            "allowed": true,
+            "decision": "ALLOW_WITH_WARNING",
+            "severity": "warning",
+            "rule_ids": [
+              "W03_RESEARCH_SCORE"
+            ],
+            "reason": "Prediction is uncertain research output, not a diagnosis",
+            "checked_content": "stage=output; question_chars=50; candidate_chars=206; assessment_present=False; evidence_count=1",
+            "stage": "output",
+            "policy_version": "diabetes-safety-2.0"
+          }
+        ],
+        "warnings": [
+          "W03_RESEARCH_SCORE"
+        ],
+        "limitations": [
+          "Research/education only; no diagnosis or treatment changes.",
+          "DL score is uncalibrated; RL context/reward is simulator-only.",
+          "LLM semantic review is fallible, not clinical certification.",
+          "Evidence is limited to registered versioned NIDDK diabetes education sources."
+        ],
+        "generation_mode": "llm",
+        "grounding": {
+          "schema_version": "3.0",
+          "verified": true,
+          "mode": "independent_llm",
+          "candidate_sha256": "9ed7cc0fe990b6d49f7fdff049d377d2843a88a3704a04f2dba5a1f0381fc007",
+          "checked_claims": 1,
+          "reason_codes": [
+            "INDEPENDENT_ENTAILMENT_ACCEPTED"
+          ],
+          "input_tokens": 727,
+          "output_tokens": 202
+        },
+        "retrieval_rounds": 1,
+        "corpus_version": "diabetes-corpus-2.0"
+      },
+      "latency_ms": 5242.959600000177
+    },
+    {
+      "scenario": "unsafe_insulin",
+      "run": {
+        "schema_version": "3.0",
+        "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+        "status": "BLOCKED",
+        "response": "Hệ thống không cung cấp chẩn đoán cá nhân, kê đơn hoặc thay đổi liều thuốc. Hãy trao đổi với nhân viên y tế phụ trách về quyết định điều trị.",
+        "evidence": [],
+        "agent_results": {
+          "prediction": {
+            "schema_version": "3.0",
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "knowledge": {
+            "schema_version": "3.0",
+            "agent_id": "knowledge",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "3.0",
+            "agent_id": "rl",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "education": {
+            "schema_version": "3.0",
+            "agent_id": "education",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "verifier": {
+            "schema_version": "3.0",
+            "agent_id": "verifier",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "3.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "allowed": false,
+              "decision": "BLOCK",
+              "severity": "warning",
+              "rule_ids": [
+                "S01_MEDICATION_DOSING",
+                "E03_NO_EVIDENCE"
+              ],
+              "reason": "Do not adjust individual medication doses; Disclose unavailable or empty knowledge",
+              "checked_content": "stage=output; question_chars=40; candidate_chars=141; assessment_present=False; evidence_count=0",
+              "stage": "output",
+              "policy_version": "diabetes-safety-2.0"
+            },
+            "errors": []
+          }
+        },
+        "agent_trace": [
+          {
+            "schema_version": "3.0",
+            "sequence": 1,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.599359Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 2,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": "d55b9b07-de5e-4a45-a177-bb27783d94a2",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "input",
+              "question_chars": 40,
+              "candidate_chars": 0
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.599359Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 3,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": "d55b9b07-de5e-4a45-a177-bb27783d94a2",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 1.2197999994896236,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "BLOCK",
+              "rule_ids": [
+                "S01_MEDICATION_DOSING"
+              ],
+              "stage": "input"
+            },
+            "rule_ids": [
+              "S01_MEDICATION_DOSING"
+            ],
+            "safety_decision": "BLOCK",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.600469Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 4,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_INPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "S01_MEDICATION_DOSING"
+            ],
+            "safety_decision": "BLOCK",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 5,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "reason": "SAFETY_PREFLIGHT_DENIED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 6,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "knowledge",
+            "status": "SKIPPED",
+            "reason": "SAFETY_PREFLIGHT_DENIED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 7,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "rl",
+            "status": "SKIPPED",
+            "reason": "SAFETY_PREFLIGHT_DENIED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 8,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "education",
+            "status": "SKIPPED",
+            "reason": "SAFETY_PREFLIGHT_DENIED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 9,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "verifier",
+            "status": "SKIPPED",
+            "reason": "SAFETY_PREFLIGHT_DENIED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 10,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": "4a10db86-1537-48c1-beb4-c9021168db6a",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "output",
+              "question_chars": 40,
+              "candidate_chars": 141
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.601358Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 11,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": "4a10db86-1537-48c1-beb4-c9021168db6a",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.9755999999470077,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "BLOCK",
+              "rule_ids": [
+                "S01_MEDICATION_DOSING",
+                "E03_NO_EVIDENCE"
+              ],
+              "stage": "output"
+            },
+            "rule_ids": [
+              "S01_MEDICATION_DOSING",
+              "E03_NO_EVIDENCE"
+            ],
+            "safety_decision": "BLOCK",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.602359Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 12,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_OUTPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "S01_MEDICATION_DOSING",
+              "E03_NO_EVIDENCE"
+            ],
+            "safety_decision": "BLOCK",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.602359Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 13,
+            "run_id": "24772793-d4c3-406c-83e5-2aa406ae1511",
+            "message_id": null,
+            "agent_id": null,
+            "status": "BLOCKED",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.602359Z"
+          }
+        ],
+        "safety_decisions": [
+          {
+            "schema_version": "3.0",
+            "allowed": false,
+            "decision": "BLOCK",
+            "severity": "warning",
+            "rule_ids": [
+              "S01_MEDICATION_DOSING"
+            ],
+            "reason": "Do not adjust individual medication doses",
+            "checked_content": "stage=input; question_chars=40; candidate_chars=0; assessment_present=False; evidence_count=0",
+            "stage": "input",
+            "policy_version": "diabetes-safety-2.0"
+          },
+          {
+            "schema_version": "3.0",
+            "allowed": false,
+            "decision": "BLOCK",
+            "severity": "warning",
+            "rule_ids": [
+              "S01_MEDICATION_DOSING",
+              "E03_NO_EVIDENCE"
+            ],
+            "reason": "Do not adjust individual medication doses; Disclose unavailable or empty knowledge",
+            "checked_content": "stage=output; question_chars=40; candidate_chars=141; assessment_present=False; evidence_count=0",
+            "stage": "output",
+            "policy_version": "diabetes-safety-2.0"
+          }
+        ],
+        "warnings": [
+          "S01_MEDICATION_DOSING",
+          "E03_NO_EVIDENCE"
+        ],
+        "limitations": [
+          "Research/education only; no diagnosis or treatment changes.",
+          "DL score is uncalibrated; RL context/reward is simulator-only.",
+          "LLM semantic review is fallible, not clinical certification.",
+          "Evidence is limited to registered versioned NIDDK diabetes education sources."
+        ],
+        "generation_mode": "withheld",
+        "grounding": null,
+        "retrieval_rounds": 0,
+        "corpus_version": "diabetes-corpus-2.0"
+      },
+      "latency_ms": 181.8807999998171
+    },
+    {
+      "scenario": "clarification",
+      "run": {
+        "schema_version": "3.0",
+        "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+        "status": "DEGRADED",
+        "response": "Chưa có bằng chứng phù hợp trong kho tri thức diabetes để trả lời câu hỏi này. Bạn hãy làm rõ chủ đề, ví dụ triệu chứng, yếu tố nguy cơ, xét nghiệm hoặc dinh dưỡng. Hệ thống không suy diễn phần còn thiếu.",
+        "evidence": [],
+        "agent_results": {
+          "prediction": {
+            "schema_version": "3.0",
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "implementation": "integrated",
+            "output": null,
+            "errors": []
+          },
+          "knowledge": {
+            "schema_version": "3.0",
+            "agent_id": "knowledge",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "evidence": [],
+              "query_topics": [],
+              "coverage": 0.0,
+              "adequate": false,
+              "semantic_available": false,
+              "retrieval_method": "domain_clarification",
+              "attempt": 2,
+              "reranker_available": false
+            },
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "3.0",
+            "agent_id": "rl",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "1.0",
+              "state": {
+                "prediction_band": "unavailable",
+                "simulated_knowledge_level": "medium",
+                "simulated_engagement_level": "medium",
+                "evidence_availability": "none",
+                "safety_status": "normal",
+                "encoder_state": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  6,
+                  6
+                ],
+                "user_context_source": "SIMULATED_DEFAULTS_NOT_MEASURED",
+                "decision_reason": "TRAINED_Q_TABLE"
+              },
+              "action": "REQUEST_CLARIFICATION",
+              "policy_version": "education-q-1.1",
+              "decision_source": "policy"
+            },
+            "errors": []
+          },
+          "education": {
+            "schema_version": "3.0",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "text": "Chưa có bằng chứng phù hợp trong kho tri thức diabetes để trả lời câu hỏi này. Bạn hãy làm rõ chủ đề, ví dụ triệu chứng, yếu tố nguy cơ, xét nghiệm hoặc dinh dưỡng. Hệ thống không suy diễn phần còn thiếu.",
+              "evidence_ids": [],
+              "claims": [],
+              "generation_mode": "clarification",
+              "llm_status": "not_called",
+              "llm_model": null,
+              "provider_error": null,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "proposed_action": "REQUEST_CLARIFICATION",
+              "effective_action": "REQUEST_CLARIFICATION",
+              "override_reason": null
+            },
+            "errors": []
+          },
+          "verifier": {
+            "schema_version": "3.0",
+            "agent_id": "verifier",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "verified": true,
+              "mode": "abstention",
+              "candidate_sha256": "65c119aa9fc9460f4d3e4f2a1284a9db1fcd6a3e21877a467d0ea329370dbd15",
+              "checked_claims": 0,
+              "reason_codes": [
+                "CONTROLLED_ABSTENTION"
+              ],
+              "input_tokens": 0,
+              "output_tokens": 0
+            },
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "3.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "integrated",
+            "output": {
+              "schema_version": "3.0",
+              "allowed": true,
+              "decision": "ALLOW_WITH_WARNING",
+              "severity": "warning",
+              "rule_ids": [
+                "E03_NO_EVIDENCE"
+              ],
+              "reason": "Disclose unavailable or empty knowledge",
+              "checked_content": "stage=output; question_chars=19; candidate_chars=204; assessment_present=False; evidence_count=0",
+              "stage": "output",
+              "policy_version": "diabetes-safety-2.0"
+            },
+            "errors": []
+          }
+        },
+        "agent_trace": [
+          {
+            "schema_version": "3.0",
+            "sequence": 1,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.762719Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 2,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "35145bb0-6a75-4cb5-a90c-e575e76385d9",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "input",
+              "question_chars": 19,
+              "candidate_chars": 0
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.762719Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 3,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "35145bb0-6a75-4cb5-a90c-e575e76385d9",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.885299999936251,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "ALLOW",
+              "rule_ids": [
+                "P00_ALLOW"
+              ],
+              "stage": "input"
+            },
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "safety_decision": "ALLOW",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.763603Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 4,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_INPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "safety_decision": "ALLOW",
+            "safety_stage": "input",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.763603Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 5,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "reason": "NO_ASSESSMENT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.763603Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 6,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "b4ce7e9d-9a11-467f-901e-aa2f816dbadb",
+            "agent_id": "knowledge",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "KnowledgeTask",
+              "question_chars": 19,
+              "query_chars": 19,
+              "attempt": 1
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.763603Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 7,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "b4ce7e9d-9a11-467f-901e-aa2f816dbadb",
+            "agent_id": "knowledge",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 1.6973000001598848,
+            "input_summary": {},
+            "output_summary": {
+              "evidence_count": 0,
+              "source_count": 0,
+              "coverage": 0.0,
+              "adequate": false,
+              "semantic_available": false,
+              "retrieval_method": "domain_clarification"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.766615Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 8,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "RETRIEVE_AGAIN_WEAK_EVIDENCE",
+            "attempt": 2,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {
+              "previous_coverage": 0.0
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.766615Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 9,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "76b22210-9bd8-4bff-9f00-0c8337bb48f6",
+            "agent_id": "knowledge",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 2,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "KnowledgeTask",
+              "question_chars": 19,
+              "query_chars": 20,
+              "attempt": 2
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.766615Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 10,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "76b22210-9bd8-4bff-9f00-0c8337bb48f6",
+            "agent_id": "knowledge",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 2,
+            "duration_ms": 1.087599999664235,
+            "input_summary": {},
+            "output_summary": {
+              "evidence_count": 0,
+              "source_count": 0,
+              "coverage": 0.0,
+              "adequate": false,
+              "semantic_available": false,
+              "retrieval_method": "domain_clarification"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.767606Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 11,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "RUNNING",
+            "reason": "REQUEST_CLARIFICATION_NO_EVIDENCE",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.767606Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 12,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "cc465a03-119e-4e0f-8c15-36080b286738",
+            "agent_id": "rl",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "RLTask",
+              "prediction_present": false,
+              "evidence_count": 0,
+              "context": "SIMULATED_DEFAULTS"
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.767606Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 13,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "cc465a03-119e-4e0f-8c15-36080b286738",
+            "agent_id": "rl",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.30530000003636815,
+            "input_summary": {},
+            "output_summary": {
+              "action": "REQUEST_CLARIFICATION",
+              "policy_version": "education-q-1.1",
+              "decision_source": "policy"
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": "REQUEST_CLARIFICATION",
+            "policy_version": "education-q-1.1",
+            "decision_source": "policy",
+            "timestamp": "2026-11-04T17:11:14.767606Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 14,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "bb8ccbc9-61a4-40bf-ab83-36075a433437",
+            "agent_id": "education",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "EducationTask",
+              "question_chars": 19,
+              "evidence_count": 0,
+              "language": "vi",
+              "feedback_codes": []
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.767606Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 15,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "bb8ccbc9-61a4-40bf-ab83-36075a433437",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.19080000038229628,
+            "input_summary": {},
+            "output_summary": {
+              "generation_mode": "clarification",
+              "llm_status": "not_called",
+              "llm_model": null,
+              "claim_count": 0,
+              "citation_count": 0,
+              "provider_error": null,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "proposed_action": "REQUEST_CLARIFICATION",
+              "effective_action": "REQUEST_CLARIFICATION",
+              "override_reason": null
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.768608Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 16,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "1d6df99b-7dda-4117-915f-a02da75eb807",
+            "agent_id": "verifier",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "VerifierTask",
+              "candidate_chars": 204,
+              "claim_count": 0,
+              "evidence_count": 0
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.768608Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 17,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "1d6df99b-7dda-4117-915f-a02da75eb807",
+            "agent_id": "verifier",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.2553999993324396,
+            "input_summary": {},
+            "output_summary": {
+              "verified": true,
+              "mode": "abstention",
+              "checked_claims": 0,
+              "reason_codes": [
+                "CONTROLLED_ABSTENTION"
+              ],
+              "input_tokens": 0,
+              "output_tokens": 0
+            },
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.768608Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 18,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "94e4932d-a76c-44b0-9c9c-d1f517bfd6c6",
+            "agent_id": "safety",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {
+              "contract": "SafetyTask",
+              "stage": "output",
+              "question_chars": 19,
+              "candidate_chars": 204
+            },
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.768608Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 19,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": "94e4932d-a76c-44b0-9c9c-d1f517bfd6c6",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "attempt": 1,
+            "duration_ms": 0.8607999998275773,
+            "input_summary": {},
+            "output_summary": {
+              "decision": "ALLOW_WITH_WARNING",
+              "rule_ids": [
+                "E03_NO_EVIDENCE"
+              ],
+              "stage": "output"
+            },
+            "rule_ids": [
+              "E03_NO_EVIDENCE"
+            ],
+            "safety_decision": "ALLOW_WITH_WARNING",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.769607Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 20,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "reason": "SAFETY_GATE_OUTPUT",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [
+              "E03_NO_EVIDENCE"
+            ],
+            "safety_decision": "ALLOW_WITH_WARNING",
+            "safety_stage": "output",
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.769607Z"
+          },
+          {
+            "schema_version": "3.0",
+            "sequence": 21,
+            "run_id": "337341d0-4bf8-418e-9c85-b9545b01fe0c",
+            "message_id": null,
+            "agent_id": null,
+            "status": "DEGRADED",
+            "reason": "WORKFLOW_TRANSITION",
+            "attempt": 1,
+            "duration_ms": null,
+            "input_summary": {},
+            "output_summary": {},
+            "rule_ids": [],
+            "safety_decision": null,
+            "safety_stage": null,
+            "action": null,
+            "policy_version": null,
+            "decision_source": null,
+            "timestamp": "2026-11-04T17:11:14.770673Z"
+          }
+        ],
+        "safety_decisions": [
+          {
+            "schema_version": "3.0",
+            "allowed": true,
+            "decision": "ALLOW",
+            "severity": "info",
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "reason": "No configured safety condition matched",
+            "checked_content": "stage=input; question_chars=19; candidate_chars=0; assessment_present=False; evidence_count=0",
+            "stage": "input",
+            "policy_version": "diabetes-safety-2.0"
+          },
+          {
+            "schema_version": "3.0",
+            "allowed": true,
+            "decision": "ALLOW_WITH_WARNING",
+            "severity": "warning",
+            "rule_ids": [
+              "E03_NO_EVIDENCE"
+            ],
+            "reason": "Disclose unavailable or empty knowledge",
+            "checked_content": "stage=output; question_chars=19; candidate_chars=204; assessment_present=False; evidence_count=0",
+            "stage": "output",
+            "policy_version": "diabetes-safety-2.0"
+          }
+        ],
+        "warnings": [
+          "INSUFFICIENT_RELEVANT_EVIDENCE",
+          "E03_NO_EVIDENCE"
+        ],
+        "limitations": [
+          "Research/education only; no diagnosis or treatment changes.",
+          "DL score is uncalibrated; RL context/reward is simulator-only.",
+          "LLM semantic review is fallible, not clinical certification.",
+          "Evidence is limited to registered versioned NIDDK diabetes education sources."
+        ],
+        "generation_mode": "clarification",
+        "grounding": {
+          "schema_version": "3.0",
+          "verified": true,
+          "mode": "abstention",
+          "candidate_sha256": "65c119aa9fc9460f4d3e4f2a1284a9db1fcd6a3e21877a467d0ea329370dbd15",
+          "checked_claims": 0,
+          "reason_codes": [
+            "CONTROLLED_ABSTENTION"
+          ],
+          "input_tokens": 0,
+          "output_tokens": 0
+        },
+        "retrieval_rounds": 2,
+        "corpus_version": "diabetes-corpus-2.0"
+      },
+      "latency_ms": 208.91539999956876
+    }
+  ],
+  "readiness": {
+    "phase": "07",
+    "checked_at": "2026-11-04T17:10:46.787085+00:00",
+    "components": {
+      "backend": {
+        "status": "available"
+      },
+      "coordinator": {
+        "status": "available"
+      },
+      "safety": {
+        "status": "available",
+        "version": "diabetes-safety-2.0",
+        "schema_version": "3.0",
+        "scope": "mandatory deterministic input/output gates"
+      },
+      "postgresql": {
+        "status": "available",
+        "storage": "PostgreSQL",
+        "migration": "0002_phase03"
+      },
+      "neo4j": {
+        "status": "available",
+        "nodes": 507,
+        "relationships": 1754,
+        "chunks": 0
+      },
+      "model": {
+        "status": "available",
+        "version": "pima-mlp-0.2.0"
+      },
+      "rl_policy": {
+        "status": "available",
+        "version": "education-q-1.1",
+        "scope": "synthetic simulator"
+      },
+      "diabetes_corpus": {
+        "status": "available",
+        "version": "diabetes-corpus-2.0",
+        "sources": 14,
+        "chunks": 449
+      },
+      "diabetes_graph": {
+        "status": "available",
+        "chunks": 449,
+        "sources": 14,
+        "releases": [
+          "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+        ],
+        "supported_assertions": 11
+      },
+      "semantic_encoder": {
+        "status": "available",
+        "version": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "source_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "device": "cpu",
+        "dimensions": 384
+      },
+      "reranker": {
+        "status": "available",
+        "version": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+        "source_revision": "1427fd652930e4ba29e8149678df786c240d8825",
+        "device": "cpu"
+      },
+      "llm": {
+        "status": "configured_unverified",
+        "provider": "Groq",
+        "model": "openai/gpt-oss-20b",
+        "last_verified_at": null,
+        "code": "LLM_NOT_VERIFIED"
+      },
+      "evidence_verifier": {
+        "status": "available",
+        "scope": "exact source checks; independent semantic review requires LLM"
+      }
+    },
+    "scope": "Diabetes research expansion; no clinical readiness claim",
+    "runtime_version": "3.0"
+  },
+  "transport": "actual loopback HTTP through authenticated built-frontend gateway to owned API 18082"
+}

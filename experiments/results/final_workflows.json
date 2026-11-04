@@ -1,0 +1,111 @@
+{
+  "scope": "Six previously inspected confirmatory phrasings evaluated through the full current Coordinator with bounded retries, SQL persistence and readback. Engineering regression, not a blind clinical test or directly comparable to first-pass LLM-only evaluation.",
+  "summary": [
+    {
+      "language": "vi",
+      "questions": 3,
+      "relevant_evidence_rate": 1,
+      "accepted_llm_coverage": 0.6666666666666666,
+      "latency_ms": 4368.756100000003
+    },
+    {
+      "language": "en",
+      "questions": 3,
+      "relevant_evidence_rate": 1,
+      "accepted_llm_coverage": 0.6666666666666666,
+      "latency_ms": 3143.493000000035
+    }
+  ],
+  "rows": [
+    {
+      "question_id": "definition:confirmatory:0",
+      "question": "Trong \u0111\u1ecbnh ngh\u0129a b\u1ec7nh ti\u1ec3u \u0111\u01b0\u1eddng, \u0111\u01b0\u1eddng glucose c\u00f3 vai tr\u00f2 g\u00ec?",
+      "language": "vi",
+      "run_id": "74c213cb-2bb3-4f55-8e9b-b1abe9acd8af",
+      "generation_mode": "llm",
+      "status": "COMPLETED",
+      "relevant_evidence": 1,
+      "llm_accepted": 1,
+      "evidence_count": 1,
+      "retrieval_rounds": 2,
+      "latency_ms": 5606.850900000154,
+      "warnings": []
+    },
+    {
+      "question_id": "definition:confirmatory:1",
+      "question": "What role does glucose have in the definition of diabetes?",
+      "language": "en",
+      "run_id": "770b310a-49aa-4365-95f7-ce168375242c",
+      "generation_mode": "llm",
+      "status": "COMPLETED",
+      "relevant_evidence": 1,
+      "llm_accepted": 1,
+      "evidence_count": 1,
+      "retrieval_rounds": 1,
+      "latency_ms": 4455.449200000203,
+      "warnings": []
+    },
+    {
+      "question_id": "symptoms:confirmatory:0",
+      "question": "H\u00e3y li\u1ec7t k\u00ea nh\u1eefng bi\u1ec3u hi\u1ec7n th\u01b0\u1eddng \u0111\u01b0\u1ee3c nh\u1eafc \u0111\u1ebfn c\u1ee7a \u0111\u00e1i th\u00e1o \u0111\u01b0\u1eddng.",
+      "language": "vi",
+      "run_id": "2307dd32-5ed7-45ab-961f-db05a5bc83c6",
+      "generation_mode": "llm",
+      "status": "DEGRADED",
+      "relevant_evidence": 1,
+      "llm_accepted": 1,
+      "evidence_count": 1,
+      "retrieval_rounds": 1,
+      "latency_ms": 4807.302600000185,
+      "warnings": [
+        "GROQ_SCHEMA_RETRY_RECOVERED"
+      ]
+    },
+    {
+      "question_id": "symptoms:confirmatory:1",
+      "question": "List the commonly described signs and symptoms of diabetes.",
+      "language": "en",
+      "run_id": "db259e91-31d6-4339-9d96-914e5ef9e657",
+      "generation_mode": "llm",
+      "status": "COMPLETED",
+      "relevant_evidence": 1,
+      "llm_accepted": 1,
+      "evidence_count": 1,
+      "retrieval_rounds": 1,
+      "latency_ms": 3398.2983999999306,
+      "warnings": []
+    },
+    {
+      "question_id": "risk:confirmatory:0",
+      "question": "Nh\u1eefng \u0111\u1eb7c \u0111i\u1ec3m n\u00e0o khi\u1ebfn m\u1ed9t ng\u01b0\u1eddi c\u00f3 nguy c\u01a1 m\u1eafc ti\u1ec3u \u0111\u01b0\u1eddng t\u00fdp 2 cao h\u01a1n?",
+      "language": "vi",
+      "run_id": "aa6e723e-b7e6-416e-8633-518ea0a05ba2",
+      "generation_mode": "extractive",
+      "status": "DEGRADED",
+      "relevant_evidence": 1,
+      "llm_accepted": 0,
+      "evidence_count": 2,
+      "retrieval_rounds": 1,
+      "latency_ms": 2692.114799999672,
+      "warnings": [
+        "GROQ_SCHEMA_RETRY_EXHAUSTED"
+      ]
+    },
+    {
+      "question_id": "risk:confirmatory:1",
+      "question": "Which characteristics are linked to a greater risk of type 2 diabetes?",
+      "language": "en",
+      "run_id": "3567816d-76ec-404b-b58b-7f38e411eeae",
+      "generation_mode": "extractive",
+      "status": "DEGRADED",
+      "relevant_evidence": 1,
+      "llm_accepted": 0,
+      "evidence_count": 2,
+      "retrieval_rounds": 1,
+      "latency_ms": 1576.7313999999715,
+      "warnings": [
+        "GROQ_RATE_LIMITED"
+      ]
+    }
+  ]
+}

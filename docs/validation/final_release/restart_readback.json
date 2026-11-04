@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-11-04T17:24:07.875745+00:00",
+  "persisted_runs_read_back_after_restart": 3,
+  "out_of_domain_paraphrase": "clarification without citations",
+  "url": "http://127.0.0.1:8082"
+}

@@ -1,5 +1,7 @@
 # Diabetes Multi-Agent Intelligent Support System
 
+**Bản chốt native:** xem [hướng dẫn bàn giao và số liệu để viết báo cáo](docs/final_handoff.md), [đánh giá báo cáo tham khảo](docs/reference_final_review.md) và [kết quả kiểm chứng mới](docs/validation/final_release/release_summary.md). Chạy toàn bộ bản demo đã cấu hình bằng `python scripts/start_final_demo.py start`; web ở `http://127.0.0.1:8082`, username `demo`, password trong `.env.demo`. Số liệu Phase 08 và URL tunnel phía dưới là snapshot lịch sử; lấy trạng thái/URL đang chạy bằng `python scripts/start_final_demo.py status`.
+
 Repository lưu source, notebooks, tài liệu Markdown, CSV/JSON và manifest thực nghiệm. Ảnh/biểu đồ, PDF/Word, dataset, checkpoint, retrieval weights, cache và secrets được ignore; các file vẫn còn trên máy. Font WOFF2 nhỏ cần cho UI được giữ cùng license. Để chạy từ clone mới, xem [installation](docs/installation.md) và dùng artifact bundle local hoặc chuẩn bị/train lại. Những link ảnh/PDF sẽ chỉ mở được khi đã cung cấp các artifact tương ứng. `.gitattributes` giữ nguyên bytes để không làm sai SHA256 trong manifest.
 
 **Phase 08:** bản demo HTTPS tạm đã kiểm chứng; đóng gói Docker đã có nhưng chưa chạy được trên máy hiện tại vì thiếu Docker engine/WSL. Không coi đây là cloud hosting hoặc nghiệm thu 100%.

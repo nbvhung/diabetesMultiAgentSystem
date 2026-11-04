@@ -108,3 +108,17 @@ async def compose(question,language,evidence,decision,llm,feedback=None):
         effective='PROVIDE_GENERAL_EDUCATION'
         return EducationOutput(text=render_claims(draft.claims),evidence_ids=ids,claims=draft.claims,generation_mode='llm',llm_status='available',llm_model=completion.model,input_tokens=completion.input_tokens,output_tokens=completion.output_tokens,proposed_action=action,effective_action=effective,override_reason='VERIFIED_RESPONSE_MODE_OVERRIDES_POLICY' if action!=effective else None)
     except LLMUnavailable as error:return extractive(evidence,language,error=error.code,action=action)
+
+
+async def compose_with_schema_retry(question,language,evidence,decision,llm,feedback=None):
+    """One bounded retry for provider JSON rejection; source/verifier gates unchanged.
+
+    The caller supplies RunLLMBudget, so the retry consumes the same four-call cap.
+    No retry for auth, rate limits, missing evidence or medical refusal.
+    """
+    output=await compose(question,language,evidence,decision,llm,feedback)
+    if output.provider_error!='GROQ_STRUCTURED_OUTPUT_REJECTED':return output
+    retry=await compose(question,language,evidence,decision,llm,
+                        ['FORMAT_RETRY: return one short atomic claim and one exact supporting quote; keep the required JSON schema.']+list(feedback or []))
+    code='GROQ_SCHEMA_RETRY_RECOVERED' if retry.generation_mode=='llm' else 'GROQ_SCHEMA_RETRY_EXHAUSTED'
+    return retry.model_copy(update={'provider_error':code})
