@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-11-03T06:36:39.893Z",
+  "typography": {
+    "body": "\"Be Vietnam Pro\", sans-serif",
+    "hero": "\"Be Vietnam Pro\", sans-serif",
+    "loaded": true
+  },
+  "fontErrors": [],
+  "widths": [
+    {
+      "width": 320,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "overview",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "page": "knowledge",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "page": "knowledge",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "page": "knowledge",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "page": "knowledge",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "knowledge",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

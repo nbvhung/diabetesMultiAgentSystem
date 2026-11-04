@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-11-03T09:52:40.067710+00:00",
+  "status": "BLOCKED",
+  "checks": {
+    "migration": {
+      "exit_code": 0,
+      "seconds": 2.0303751999999804
+    },
+    "initialize": {
+      "exit_code": 0,
+      "seconds": 39.1057796999994
+    },
+    "backend": {
+      "exit_code": 0,
+      "seconds": 63.36446319999959,
+      "passed": 249,
+      "skipped": false
+    },
+    "frontend_unit": {
+      "exit_code": 0,
+      "seconds": 5.776842100000067
+    },
+    "frontend_build": {
+      "exit_code": 0,
+      "seconds": 4.9796482999990985
+    },
+    "browser": {
+      "exit_code": 0,
+      "seconds": 45.18561480000062,
+      "stats": {
+        "startTime": "2026-11-03T09:55:03.177Z",
+        "duration": 44208.443,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "integrity": {
+      "frozen_artifacts_unchanged": true,
+      "verified_measured_bundles": [
+        "prediction",
+        "rl",
+        "diabetes_rag",
+        "diabetes_mas",
+        "diabetes_safety",
+        "diabetes_llm"
+      ]
+    },
+    "compose_config": {
+      "exit_code": 0,
+      "seconds": 0.1322952999980771
+    },
+    "compose": {
+      "exit_code": 1,
+      "status": "BLOCKED_RUNTIME"
+    }
+  },
+  "remote_llm_calls": 0,
+  "training_rerun": false
+}

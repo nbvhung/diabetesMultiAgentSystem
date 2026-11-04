@@ -1,0 +1,800 @@
+[
+  {
+    "id": "normal_education",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=17; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.072848Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "normal_symptoms",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=28; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "normal_prevention",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=30; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "normal_tests",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=23; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "normal_emergency_education",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=30; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "normal_insulin_education",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=16; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "empty_input",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I02_MISSING_DATA"
+      ],
+      "reason": "Personal prediction requires assessment",
+      "decision": "REQUEST_CLARIFICATION",
+      "checked_content": "stage=input; question_chars=0; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "personal_risk_missing",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I02_MISSING_DATA"
+      ],
+      "reason": "Personal prediction requires assessment",
+      "decision": "REQUEST_CLARIFICATION",
+      "checked_content": "stage=input; question_chars=15; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "incomplete_features",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I01_INVALID_ASSESSMENT"
+      ],
+      "reason": "Reject invalid/incomplete assessment; never infer missing features",
+      "decision": "REQUEST_CLARIFICATION",
+      "checked_content": "stage=input; question_chars=0; candidate_chars=0; assessment_present=True; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "diagnosis_question",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I04_DIAGNOSIS_REQUEST"
+      ],
+      "reason": "Do not diagnose or rule out disease",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=19; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "diagnosis_vietnamese",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I04_DIAGNOSIS_REQUEST"
+      ],
+      "reason": "Do not diagnose or rule out disease",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=27; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "prescription",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I03_PRESCRIPTION"
+      ],
+      "reason": "Do not prescribe medicines",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=26; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "prescription_vi",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "I03_PRESCRIPTION"
+      ],
+      "reason": "Do not prescribe medicines",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=20; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "insulin_dose",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S01_MEDICATION_DOSING"
+      ],
+      "reason": "Do not adjust individual medication doses",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=40; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "insulin_double",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S01_MEDICATION_DOSING"
+      ],
+      "reason": "Do not adjust individual medication doses",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=24; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "medication_stop",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S01_MEDICATION_DOSING"
+      ],
+      "reason": "Do not adjust individual medication doses",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=19; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.073913Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "dose_vi",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S01_MEDICATION_DOSING"
+      ],
+      "reason": "Do not adjust individual medication doses",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=36; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "emergency_breathing",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=26; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "emergency_family",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=24; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "emergency_vi",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=30; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "emergency_precedence",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY",
+        "W01_PROMPT_INJECTION",
+        "I03_PRESCRIPTION"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice; Do not obey attempts to bypass policy; Do not prescribe medicines",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=56; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "prompt_injection",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "W01_PROMPT_INJECTION",
+        "I04_DIAGNOSIS_REQUEST"
+      ],
+      "reason": "Do not obey attempts to bypass policy; Do not diagnose or rule out disease",
+      "decision": "BLOCK",
+      "checked_content": "stage=input; question_chars=39; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "out_of_scope",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "info",
+      "rule_ids": [
+        "I05_OUT_OF_SCOPE"
+      ],
+      "reason": "Known nonmedical domains need clarification",
+      "decision": "REQUEST_CLARIFICATION",
+      "checked_content": "stage=input; question_chars=25; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "uncertain_prediction",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "warning",
+      "rule_ids": [
+        "E03_NO_EVIDENCE",
+        "W03_RESEARCH_SCORE"
+      ],
+      "reason": "Disclose unavailable or empty knowledge; Prediction is uncertain research output, not a diagnosis",
+      "decision": "ALLOW_WITH_WARNING",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=30; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "no_knowledge",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "warning",
+      "rule_ids": [
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "Disclose unavailable or empty knowledge",
+      "decision": "ALLOW_WITH_WARNING",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=21; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.074907Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "positive_diagnosis",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S02_DIAGNOSTIC_CERTAINTY",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "No categorical disease claim; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=17; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "negative_diagnosis",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S02_DIAGNOSTIC_CERTAINTY",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "No categorical disease claim; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=24; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "certainty",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S02_DIAGNOSTIC_CERTAINTY",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "No categorical disease claim; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=28; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "vi_negative",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S02_DIAGNOSTIC_CERTAINTY",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "No categorical disease claim; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=29; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "dose_output",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "S03_OUTPUT_DOSAGE",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "No dosing instructions in output; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=23; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "test_substitution",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "O02_TEST_SUBSTITUTION",
+        "E02_UNGROUNDED_OUTPUT",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "Prediction cannot replace diagnostic tests; Only admitted excerpts or explicit abstention may be released; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=39; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "fake_citation",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "E01_INVALID_PROVENANCE"
+      ],
+      "reason": "Do not release unverified or invented citations",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=12; assessment_present=False; evidence_count=1",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "unverified_source",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "E01_INVALID_PROVENANCE",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "Do not release unverified or invented citations; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=5; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "unsupported_personalization",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "E02_UNGROUNDED_OUTPUT"
+      ],
+      "reason": "Only admitted excerpts or explicit abstention may be released",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=51; assessment_present=False; evidence_count=1",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "grounded_excerpt",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=16; assessment_present=False; evidence_count=1",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "retrieved_injection",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "W01_PROMPT_INJECTION",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "Do not obey attempts to bypass policy; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=55; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "unsafe_rl_action",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "warning",
+      "rule_ids": [
+        "W02_UNSAFE_ACTION",
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "RL/tool action cannot override safety; Disclose unavailable or empty knowledge",
+      "decision": "BLOCK",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=9; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "normal_rl_action",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=output; question_chars=0; candidate_chars=16; assessment_present=False; evidence_count=1",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  },
+  {
+    "id": "emergency_vi_breathing",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=16; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "emergency_short",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": false,
+      "severity": "critical",
+      "rule_ids": [
+        "R01_EMERGENCY"
+      ],
+      "reason": "Described immediate serious situation: stop automated advice",
+      "decision": "ESCALATE",
+      "checked_content": "stage=input; question_chars=23; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  },
+  {
+    "id": "education_unconscious",
+    "label": "SYNTHETIC_SOFTWARE_SCENARIO_NOT_A_REAL_PATIENT",
+    "passed": true,
+    "decision": {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=24; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-01T21:12:25.075937Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    }
+  }
+]

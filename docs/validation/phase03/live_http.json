@@ -1,0 +1,358 @@
+{
+  "health": {
+    "status": "ok",
+    "phase": "03",
+    "scope": "application_liveness"
+  },
+  "model": {
+    "model_id": "pima-mlp",
+    "model_version": "pima-mlp-0.2.0",
+    "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+    "device": "cpu",
+    "features": [
+      "pregnancies",
+      "glucose",
+      "blood_pressure",
+      "skin_thickness",
+      "insulin",
+      "bmi",
+      "diabetes_pedigree",
+      "age"
+    ],
+    "limitations": [
+      "Research score only; not calibrated clinical probability or diagnosis."
+    ]
+  },
+  "prior_run_from_new_process": {
+    "schema_version": "2.1",
+    "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+    "status": "DEGRADED",
+    "agent_results": {
+      "prediction": {
+        "schema_version": "2.1",
+        "agent_id": "prediction",
+        "status": "COMPLETED",
+        "implementation": "integrated",
+        "output": {
+          "schema_version": "1.1",
+          "model_id": "pima-mlp",
+          "model_version": "pima-mlp-0.2.0",
+          "predicted_class": 0,
+          "score": 0.015537431463599205,
+          "limitations": [
+            "Uncalibrated model score, not clinical disease probability.",
+            "Research on a restricted historical female Pima cohort; not a diagnosis.",
+            "Threshold 0.5; missing-zero transformation matches training."
+          ],
+          "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+          "inference_latency_ms": 13.611300000775373,
+          "warnings": [],
+          "persisted_record_id": "404f458f-86ee-4da5-befd-23bf52bc75d1"
+        },
+        "errors": []
+      },
+      "knowledge": {
+        "schema_version": "2.1",
+        "agent_id": "knowledge",
+        "status": "SKIPPED",
+        "implementation": "stub",
+        "output": null,
+        "errors": []
+      },
+      "education": {
+        "schema_version": "2.1",
+        "agent_id": "education",
+        "status": "COMPLETED",
+        "implementation": "minimal",
+        "output": {
+          "schema_version": "1.0",
+          "text": "Ch\u01b0a c\u00f3 ngu\u1ed3n tri th\u1ee9c \u0111\u01b0\u1ee3c truy h\u1ed3i \u0111\u1ec3 tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi gi\u00e1o d\u1ee5c c\u00f3 d\u1eabn ch\u1ee9ng. H\u1ec7 th\u1ed1ng kh\u00f4ng t\u1ea1o d\u1ef1 \u0111o\u00e1n nguy c\u01a1 ho\u1eb7c tr\u00edch d\u1eabn thay th\u1ebf cho c\u00f4ng c\u1ee5 ch\u01b0a t\u00edch h\u1ee3p. B\u1ea1n c\u00f3 th\u1ec3 chu\u1ea9n b\u1ecb c\u00e2u h\u1ecfi \u0111\u1ec3 trao \u0111\u1ed5i v\u1edbi nh\u00e2n vi\u00ean y t\u1ebf. \u0110\u00e2y kh\u00f4ng ph\u1ea3i ch\u1ea9n \u0111o\u00e1n hay ch\u1ec9 d\u1eabn \u0111i\u1ec1u tr\u1ecb.",
+          "evidence_ids": []
+        },
+        "errors": []
+      },
+      "safety": {
+        "schema_version": "2.1",
+        "agent_id": "safety",
+        "status": "COMPLETED",
+        "implementation": "minimal",
+        "output": {
+          "schema_version": "1.0",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [],
+          "reason": "Passed bounded Phase 01 checks; not clinical validation"
+        },
+        "errors": []
+      },
+      "rl": {
+        "schema_version": "2.1",
+        "agent_id": "rl",
+        "status": "UNAVAILABLE",
+        "implementation": "stub",
+        "output": null,
+        "errors": [
+          "NO_COMPATIBLE_POLICY"
+        ]
+      }
+    },
+    "response": "Ch\u01b0a c\u00f3 ngu\u1ed3n tri th\u1ee9c \u0111\u01b0\u1ee3c truy h\u1ed3i \u0111\u1ec3 tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi gi\u00e1o d\u1ee5c c\u00f3 d\u1eabn ch\u1ee9ng. H\u1ec7 th\u1ed1ng kh\u00f4ng t\u1ea1o d\u1ef1 \u0111o\u00e1n nguy c\u01a1 ho\u1eb7c tr\u00edch d\u1eabn thay th\u1ebf cho c\u00f4ng c\u1ee5 ch\u01b0a t\u00edch h\u1ee3p. B\u1ea1n c\u00f3 th\u1ec3 chu\u1ea9n b\u1ecb c\u00e2u h\u1ecfi \u0111\u1ec3 trao \u0111\u1ed5i v\u1edbi nh\u00e2n vi\u00ean y t\u1ebf. \u0110\u00e2y kh\u00f4ng ph\u1ea3i ch\u1ea9n \u0111o\u00e1n hay ch\u1ec9 d\u1eabn \u0111i\u1ec1u tr\u1ecb.",
+    "evidence": [],
+    "agent_trace": [
+      {
+        "schema_version": "2.1",
+        "sequence": 1,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 2,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 3,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": "pima-mlp-0.2.0",
+        "inference_latency_ms": 13.611300000775373,
+        "timestamp": "2026-11-01T20:29:15.110209Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 4,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "knowledge",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_QUESTION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 5,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 6,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 7,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.112208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 8,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.113210Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 9,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.116725Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 10,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.117725Z"
+      }
+    ],
+    "warnings": [
+      "rl: NO_COMPATIBLE_POLICY"
+    ],
+    "limitations": [
+      "Prediction uses the versioned research MLP; scores are not clinical probabilities or diagnoses.",
+      "Knowledge/RAG/RL remain stubs; Education abstains; Safety uses minimal lexical rules.",
+      "PostgreSQL stores synthetic-only assessments, predictions, runs and traces."
+    ]
+  },
+  "trace": {
+    "schema_version": "2.1",
+    "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+    "agent_trace": [
+      {
+        "schema_version": "2.1",
+        "sequence": 1,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 2,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 3,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": "pima-mlp-0.2.0",
+        "inference_latency_ms": 13.611300000775373,
+        "timestamp": "2026-11-01T20:29:15.110209Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 4,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "knowledge",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_QUESTION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 5,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 6,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 7,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.112208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 8,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.113210Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 9,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.116725Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 10,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.117725Z"
+      }
+    ]
+  }
+}

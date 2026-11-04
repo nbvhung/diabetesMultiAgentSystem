@@ -1,0 +1,87 @@
+{
+  "status": "LOCAL_ENVIRONMENT_VERIFIED",
+  "timestamp": "2026-11-02T20:20:43.845046+00:00",
+  "code_version": "source-sha256:4123ea737db80711cd0659173c428f7e502589dc441ac9f1eb9ebd992c924deb",
+  "postgresql": {
+    "connected": true,
+    "migration": "0002_phase03"
+  },
+  "neo4j": {
+    "status": "available",
+    "uri": "bolt://127.0.0.1:7687",
+    "browser": "http://127.0.0.1:7474/browser/",
+    "authentication": "enabled",
+    "wrong_password_rejected": true,
+    "restart_persistence_verified": true,
+    "chunks": 449,
+    "sources": 14,
+    "releases": [
+      "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+    ],
+    "supported_assertions": 11
+  },
+  "groq": {
+    "status": "actual_generation_and_independent_review_verified",
+    "model": "openai/gpt-oss-20b",
+    "successful_http_calls": 4,
+    "smoke_questions": 2,
+    "quality_metrics": null
+  },
+  "api_probe": {
+    "timestamp": "2026-11-02T20:18:00.215321+00:00",
+    "scope": "One actual ASGI API workflow, synthetic assessment, real PostgreSQL/Neo4j/frozen MLP/Q policy/Groq; two remote attempts maximum, not a quality benchmark",
+    "api_status_code": 201,
+    "run_id": "8215e17d-a281-4228-a12b-207de0baa1da",
+    "workflow_status": "DEGRADED",
+    "generation_mode": "llm",
+    "grounding": "independent_llm",
+    "all_six_agents_completed": true,
+    "both_safety_gates_allowed": true,
+    "evidence_count": 1,
+    "persisted_run_equal": true,
+    "persisted_trace_equal": true,
+    "requests": [
+      {
+        "method": "POST",
+        "host": "api.groq.com",
+        "status_code": 200
+      },
+      {
+        "method": "POST",
+        "host": "api.groq.com",
+        "status_code": 200
+      }
+    ],
+    "provider": {
+      "status": "available",
+      "provider": "Groq",
+      "model": "openai/gpt-oss-20b",
+      "last_verified_at": "2026-11-02T20:17:59.828955+00:00",
+      "code": null
+    },
+    "dependency_statuses": {
+      "backend": "available",
+      "coordinator": "available",
+      "safety": "available",
+      "postgresql": "available",
+      "neo4j": "available",
+      "model": "available",
+      "rl_policy": "available",
+      "diabetes_corpus": "available",
+      "diabetes_graph": "available",
+      "semantic_encoder": "available",
+      "reranker": "available",
+      "llm": "available",
+      "evidence_verifier": "available"
+    },
+    "quality_metrics": null
+  },
+  "focused_tests": {
+    "command": "python -m pytest backend/tests/test_diabetes_research.py -q -k 'gptoss or provider_errors or provider_json or bad_or_truncated or composition_and_separate or no_key_does_not or per_run_call_budget'",
+    "passed": 12,
+    "deselected": 42,
+    "scope": "focused adapter tests; full historical 243-test regression not rerun in this local-setup task"
+  },
+  "frozen_dl_rl_matches_phase07": true,
+  "remaining": "Full LLM benchmark/human source review; no Phase 08 or clinical readiness claim"
+}

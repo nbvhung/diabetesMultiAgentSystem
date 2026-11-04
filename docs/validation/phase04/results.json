@@ -1,0 +1,6 @@
+{
+  "seed": true,
+  "evaluation": true,
+  "pytest": true,
+  "postgres_api_workflow_citations": true
+}

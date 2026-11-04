@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-02T20:15:23.939343+00:00",
+  "scope": "One SYNTHETIC question over actual public Neo4j sources; genuine Groq calls, not a model-quality benchmark",
+  "provider": {
+    "status": "available",
+    "provider": "Groq",
+    "model": "openai/gpt-oss-20b",
+    "last_verified_at": "2026-11-02T20:15:23.939343+00:00",
+    "code": null
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "host": "api.groq.com",
+      "status_code": 200
+    },
+    {
+      "method": "POST",
+      "host": "api.groq.com",
+      "status_code": 200
+    }
+  ],
+  "generation_mode": "llm",
+  "provider_error": null,
+  "verified": true,
+  "verification_mode": "independent_llm",
+  "reason_codes": [
+    "INDEPENDENT_ENTAILMENT_ACCEPTED"
+  ],
+  "evidence_count": 2,
+  "claim_count": 1,
+  "latency_ms": 2416.8830000016897,
+  "input_tokens": 1467,
+  "output_tokens": 272,
+  "approved_response": "Bệnh tiểu đường thường gây tăng tiểu, khát nước, và cảm giác đói liên tục ngay cả sau khi ăn. [042436c3cb9b76ea4548fe645cf02e14207ae5fdbad0014559482e22a66fc72c]",
+  "quality_metrics": null
+}

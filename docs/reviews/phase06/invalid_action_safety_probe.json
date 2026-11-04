@@ -1,0 +1,432 @@
+{
+  "fixture": "SYNTHETIC_ADVERSARIAL_REVIEW_ONLY",
+  "action_in_phase06_whitelist": false,
+  "workflow_status": "DEGRADED",
+  "rl_action_returned": "START_METFORMIN",
+  "safety_decisions": [
+    {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "info",
+      "rule_ids": [
+        "P00_ALLOW"
+      ],
+      "reason": "No configured safety condition matched",
+      "decision": "ALLOW",
+      "checked_content": "stage=input; question_chars=17; candidate_chars=0; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-02T08:53:35.213686Z",
+      "policy_version": "safety-1.0",
+      "stage": "input"
+    },
+    {
+      "schema_version": "1.1",
+      "allowed": true,
+      "severity": "warning",
+      "rule_ids": [
+        "E03_NO_EVIDENCE"
+      ],
+      "reason": "Disclose unavailable or empty knowledge",
+      "decision": "ALLOW_WITH_WARNING",
+      "checked_content": "stage=output; question_chars=17; candidate_chars=271; assessment_present=False; evidence_count=0",
+      "timestamp": "2026-11-02T08:53:35.221669Z",
+      "policy_version": "safety-1.0",
+      "stage": "output"
+    }
+  ],
+  "full_run": {
+    "schema_version": "2.3",
+    "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+    "status": "DEGRADED",
+    "agent_results": {
+      "prediction": {
+        "schema_version": "2.3",
+        "agent_id": "prediction",
+        "status": "SKIPPED",
+        "implementation": "stub",
+        "output": null,
+        "errors": []
+      },
+      "knowledge": {
+        "schema_version": "2.3",
+        "agent_id": "knowledge",
+        "status": "UNAVAILABLE",
+        "implementation": "stub",
+        "output": null,
+        "errors": [
+          "TOOL_NOT_INTEGRATED"
+        ]
+      },
+      "education": {
+        "schema_version": "2.3",
+        "agent_id": "education",
+        "status": "COMPLETED",
+        "implementation": "integrated",
+        "output": {
+          "schema_version": "1.0",
+          "text": "Ch\u01b0a c\u00f3 ngu\u1ed3n tri th\u1ee9c \u0111\u01b0\u1ee3c truy h\u1ed3i \u0111\u1ec3 tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi gi\u00e1o d\u1ee5c c\u00f3 d\u1eabn ch\u1ee9ng. H\u1ec7 th\u1ed1ng kh\u00f4ng t\u1ea1o d\u1ef1 \u0111o\u00e1n nguy c\u01a1 ho\u1eb7c tr\u00edch d\u1eabn thay th\u1ebf cho c\u00f4ng c\u1ee5 ch\u01b0a t\u00edch h\u1ee3p. B\u1ea1n c\u00f3 th\u1ec3 chu\u1ea9n b\u1ecb c\u00e2u h\u1ecfi \u0111\u1ec3 trao \u0111\u1ed5i v\u1edbi nh\u00e2n vi\u00ean y t\u1ebf. \u0110\u00e2y kh\u00f4ng ph\u1ea3i ch\u1ea9n \u0111o\u00e1n hay ch\u1ec9 d\u1eabn \u0111i\u1ec1u tr\u1ecb.",
+          "evidence_ids": []
+        },
+        "errors": []
+      },
+      "safety": {
+        "schema_version": "2.3",
+        "agent_id": "safety",
+        "status": "COMPLETED",
+        "implementation": "integrated",
+        "output": {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "warning",
+          "rule_ids": [
+            "E03_NO_EVIDENCE"
+          ],
+          "reason": "Disclose unavailable or empty knowledge",
+          "decision": "ALLOW_WITH_WARNING",
+          "checked_content": "stage=output; question_chars=17; candidate_chars=271; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:53:35.221669Z",
+          "policy_version": "safety-1.0",
+          "stage": "output"
+        },
+        "errors": []
+      },
+      "rl": {
+        "schema_version": "2.3",
+        "agent_id": "rl",
+        "status": "COMPLETED",
+        "implementation": "integrated",
+        "output": {
+          "schema_version": "1.0",
+          "state": {
+            "label": "SYNTHETIC_ADVERSARIAL_REVIEW_NOT_A_REAL_POLICY"
+          },
+          "action": "START_METFORMIN",
+          "policy_version": "SYNTHETIC_REVIEW_ONLY",
+          "decision_source": "policy"
+        },
+        "errors": []
+      }
+    },
+    "response": "Ch\u01b0a c\u00f3 ngu\u1ed3n tri th\u1ee9c \u0111\u01b0\u1ee3c truy h\u1ed3i \u0111\u1ec3 tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi gi\u00e1o d\u1ee5c c\u00f3 d\u1eabn ch\u1ee9ng. H\u1ec7 th\u1ed1ng kh\u00f4ng t\u1ea1o d\u1ef1 \u0111o\u00e1n nguy c\u01a1 ho\u1eb7c tr\u00edch d\u1eabn thay th\u1ebf cho c\u00f4ng c\u1ee5 ch\u01b0a t\u00edch h\u1ee3p. B\u1ea1n c\u00f3 th\u1ec3 chu\u1ea9n b\u1ecb c\u00e2u h\u1ecfi \u0111\u1ec3 trao \u0111\u1ed5i v\u1edbi nh\u00e2n vi\u00ean y t\u1ebf. \u0110\u00e2y kh\u00f4ng ph\u1ea3i ch\u1ea9n \u0111o\u00e1n hay ch\u1ec9 d\u1eabn \u0111i\u1ec1u tr\u1ecb.",
+    "evidence": [],
+    "agent_trace": [
+      {
+        "schema_version": "2.3",
+        "sequence": 1,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.208656Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 2,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": "2ebe6114-01fd-42c6-92ce-64be2c6a469a",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.209659Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 3,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": "2ebe6114-01fd-42c6-92ce-64be2c6a469a",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "rule_ids": [
+          "P00_ALLOW"
+        ],
+        "safety_decision": "ALLOW",
+        "safety_stage": "input",
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.214662Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 4,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": null,
+        "status": "COMPLETED",
+        "reason": "SAFETY_GATE_INPUT",
+        "rule_ids": [
+          "P00_ALLOW"
+        ],
+        "safety_decision": "ALLOW",
+        "safety_stage": "input",
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.214662Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 5,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "prediction",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_ASSESSMENT",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.214662Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 6,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "knowledge",
+        "message_id": "72437471-0f4e-474c-a603-c429bd732652",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.214662Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 7,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "knowledge",
+        "message_id": "72437471-0f4e-474c-a603-c429bd732652",
+        "status": "UNAVAILABLE",
+        "reason": "TOOL_NOT_INTEGRATED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.215676Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 8,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "rl",
+        "message_id": "68952c75-6929-45f0-944c-254586fada2e",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.215676Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 9,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "rl",
+        "message_id": "68952c75-6929-45f0-944c-254586fada2e",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": "SYNTHETIC_REVIEW_ONLY",
+        "action": "START_METFORMIN",
+        "decision_source": "policy",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.216670Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 10,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "education",
+        "message_id": "010f8b5b-0bf2-4c97-ac72-e26d44a1cd53",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.216670Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 11,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "education",
+        "message_id": "010f8b5b-0bf2-4c97-ac72-e26d44a1cd53",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.219669Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 12,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": "f9c9f751-d1d5-4962-a51d-431af2885874",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.219669Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 13,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": "f9c9f751-d1d5-4962-a51d-431af2885874",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "rule_ids": [
+          "E03_NO_EVIDENCE"
+        ],
+        "safety_decision": "ALLOW_WITH_WARNING",
+        "safety_stage": "output",
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.222668Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 14,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": "safety",
+        "message_id": null,
+        "status": "COMPLETED",
+        "reason": "SAFETY_GATE_OUTPUT",
+        "rule_ids": [
+          "E03_NO_EVIDENCE"
+        ],
+        "safety_decision": "ALLOW_WITH_WARNING",
+        "safety_stage": "output",
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.222668Z"
+      },
+      {
+        "schema_version": "2.3",
+        "sequence": 15,
+        "run_id": "978e46be-2272-44b5-ac24-9aa62e45ed27",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "rule_ids": [],
+        "safety_decision": null,
+        "safety_stage": null,
+        "policy_version": null,
+        "action": null,
+        "decision_source": null,
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-02T08:53:35.222668Z"
+      }
+    ],
+    "warnings": [
+      "knowledge: TOOL_NOT_INTEGRATED",
+      "E03_NO_EVIDENCE",
+      "IN_MEMORY_STORAGE_NON_DURABLE"
+    ],
+    "limitations": [
+      "Deterministic safety policy, not clinical diagnosis/triage validation.",
+      "Prediction and RL outputs are research/simulator only; no clinical decisions.",
+      "Only configured evidence templates/abstentions may be released."
+    ],
+    "safety_decisions": [
+      {
+        "schema_version": "1.1",
+        "allowed": true,
+        "severity": "info",
+        "rule_ids": [
+          "P00_ALLOW"
+        ],
+        "reason": "No configured safety condition matched",
+        "decision": "ALLOW",
+        "checked_content": "stage=input; question_chars=17; candidate_chars=0; assessment_present=False; evidence_count=0",
+        "timestamp": "2026-11-02T08:53:35.213686Z",
+        "policy_version": "safety-1.0",
+        "stage": "input"
+      },
+      {
+        "schema_version": "1.1",
+        "allowed": true,
+        "severity": "warning",
+        "rule_ids": [
+          "E03_NO_EVIDENCE"
+        ],
+        "reason": "Disclose unavailable or empty knowledge",
+        "decision": "ALLOW_WITH_WARNING",
+        "checked_content": "stage=output; question_chars=17; candidate_chars=271; assessment_present=False; evidence_count=0",
+        "timestamp": "2026-11-02T08:53:35.221669Z",
+        "policy_version": "safety-1.0",
+        "stage": "output"
+      }
+    ]
+  }
+}

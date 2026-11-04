@@ -1,0 +1,434 @@
+[
+  {
+    "label": "SYNTHETIC_CASE_1_NOT_REAL_PATIENT",
+    "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+    "model_version": "pima-mlp-0.2.0",
+    "prediction_output": {
+      "schema_version": "1.1",
+      "model_id": "pima-mlp",
+      "model_version": "pima-mlp-0.2.0",
+      "predicted_class": 0,
+      "score": 0.015537431463599205,
+      "limitations": [
+        "Uncalibrated model score, not clinical disease probability.",
+        "Research on a restricted historical female Pima cohort; not a diagnosis.",
+        "Threshold 0.5; missing-zero transformation matches training."
+      ],
+      "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+      "inference_latency_ms": 13.611300000775373,
+      "warnings": [],
+      "persisted_record_id": "404f458f-86ee-4da5-befd-23bf52bc75d1"
+    },
+    "persisted_record_id": "404f458f-86ee-4da5-befd-23bf52bc75d1",
+    "agent_trace": [
+      {
+        "schema_version": "2.1",
+        "sequence": 1,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 2,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.038915Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 3,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "prediction",
+        "message_id": "e687225b-32da-4d0d-a88f-c3deca4f5086",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": "pima-mlp-0.2.0",
+        "inference_latency_ms": 13.611300000775373,
+        "timestamp": "2026-11-01T20:29:15.110209Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 4,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "knowledge",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_QUESTION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 5,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 6,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.111208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 7,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "education",
+        "message_id": "abb1538f-bebe-4a2d-8cea-695e65e5ec6e",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.112208Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 8,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.113210Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 9,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": "safety",
+        "message_id": "1c6c9c2c-2c69-4e8a-a7d2-812894139142",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.116725Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 10,
+        "run_id": "f73ef4ed-2b42-464e-8454-9716546c106b",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.117725Z"
+      }
+    ]
+  },
+  {
+    "label": "SYNTHETIC_CASE_2_NOT_REAL_PATIENT",
+    "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+    "model_version": "pima-mlp-0.2.0",
+    "prediction_output": {
+      "schema_version": "1.1",
+      "model_id": "pima-mlp",
+      "model_version": "pima-mlp-0.2.0",
+      "predicted_class": 0,
+      "score": 0.21802997589111328,
+      "limitations": [
+        "Uncalibrated model score, not clinical disease probability.",
+        "Research on a restricted historical female Pima cohort; not a diagnosis.",
+        "Threshold 0.5; missing-zero transformation matches training."
+      ],
+      "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+      "inference_latency_ms": 9.855000000243308,
+      "warnings": [],
+      "persisted_record_id": "458a415c-23a5-40ed-a1c6-a6f1f6f07f64"
+    },
+    "persisted_record_id": "458a415c-23a5-40ed-a1c6-a6f1f6f07f64",
+    "agent_trace": [
+      {
+        "schema_version": "2.1",
+        "sequence": 1,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.352001Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 2,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "prediction",
+        "message_id": "24b92042-09bb-44b1-98e1-beacd04ab70b",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.352001Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 3,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "prediction",
+        "message_id": "24b92042-09bb-44b1-98e1-beacd04ab70b",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": "pima-mlp-0.2.0",
+        "inference_latency_ms": 9.855000000243308,
+        "timestamp": "2026-11-01T20:29:15.377544Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 4,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "knowledge",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_QUESTION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.378557Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 5,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.378557Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 6,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "education",
+        "message_id": "5a04396e-2e51-4f97-b15e-6ce91fc30f64",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.378557Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 7,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "education",
+        "message_id": "5a04396e-2e51-4f97-b15e-6ce91fc30f64",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.379556Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 8,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "safety",
+        "message_id": "c9530042-fe8a-4c9c-b44c-6648daae68be",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.379556Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 9,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": "safety",
+        "message_id": "c9530042-fe8a-4c9c-b44c-6648daae68be",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.380556Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 10,
+        "run_id": "236cfc17-6a9b-456d-a842-a5da489852ea",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.380556Z"
+      }
+    ]
+  },
+  {
+    "label": "SYNTHETIC_CASE_3_NOT_REAL_PATIENT",
+    "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+    "model_version": "pima-mlp-0.2.0",
+    "prediction_output": {
+      "schema_version": "1.1",
+      "model_id": "pima-mlp",
+      "model_version": "pima-mlp-0.2.0",
+      "predicted_class": 0,
+      "score": 0.008898472413420677,
+      "limitations": [
+        "Uncalibrated model score, not clinical disease probability.",
+        "Research on a restricted historical female Pima cohort; not a diagnosis.",
+        "Threshold 0.5; missing-zero transformation matches training."
+      ],
+      "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+      "inference_latency_ms": 11.999700000160374,
+      "warnings": [],
+      "persisted_record_id": "bffb402a-26cf-4925-8b0e-0aea3dc2280a"
+    },
+    "persisted_record_id": "bffb402a-26cf-4925-8b0e-0aea3dc2280a",
+    "agent_trace": [
+      {
+        "schema_version": "2.1",
+        "sequence": 1,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.645124Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 2,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "prediction",
+        "message_id": "bf2f9596-38d5-491b-a758-aa2df6e8ec3d",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.645124Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 3,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "prediction",
+        "message_id": "bf2f9596-38d5-491b-a758-aa2df6e8ec3d",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": "pima-mlp-0.2.0",
+        "inference_latency_ms": 11.999700000160374,
+        "timestamp": "2026-11-01T20:29:15.674673Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 4,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "knowledge",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_QUESTION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.674673Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 5,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.674673Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 6,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "education",
+        "message_id": "65a78ab5-f7c6-4c0c-bb4e-66e66eb293c3",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.674673Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 7,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "education",
+        "message_id": "65a78ab5-f7c6-4c0c-bb4e-66e66eb293c3",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.674673Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 8,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "safety",
+        "message_id": "730ca8f8-96f2-4266-ac7f-035ff63e3e80",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.676181Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 9,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": "safety",
+        "message_id": "730ca8f8-96f2-4266-ac7f-035ff63e3e80",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.676181Z"
+      },
+      {
+        "schema_version": "2.1",
+        "sequence": 10,
+        "run_id": "188becfe-ddb6-47e9-8e25-d5755a003ebc",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "model_version": null,
+        "inference_latency_ms": null,
+        "timestamp": "2026-11-01T20:29:15.676181Z"
+      }
+    ]
+  }
+]

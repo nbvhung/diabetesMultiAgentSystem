@@ -1,0 +1,95 @@
+name: diabetes-mas
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: infra/docker/backend.Dockerfile
+  environment: &backend-env
+    APP_ENV: demo
+    POSTGRES_USER: ${POSTGRES_USER:?Run python scripts/setup_compose_env.py}
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.compose}
+    POSTGRES_DB: ${POSTGRES_DB:-diabetes_mas}
+    NEO4J_URI: bolt://neo4j:7687
+    NEO4J_USER: neo4j
+    NEO4J_PASSWORD: ${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env.compose}
+    GROQ_API_KEY: ${GROQ_API_KEY:-}
+    GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-20b}
+    DIABETES_LLM_ENABLED: ${DIABETES_LLM_ENABLED:-true}
+    MODEL_DEVICE: cpu
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    TOKENIZERS_PARALLELISM: 'false'
+    PYTHONUNBUFFERED: '1'
+    OMP_NUM_THREADS: '2'
+  volumes:
+    - ./artifacts:/app/artifacts:ro
+    - ./data/knowledge:/app/data/knowledge:ro
+    - ./experiments:/app/experiments:ro
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:-diabetes_mas}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -h 127.0.0.1 -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+  neo4j:
+    image: neo4j:5.26.0-community
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD}
+      NEO4J_server_memory_heap_initial__size: 256m
+      NEO4J_server_memory_heap_max__size: 768m
+      NEO4J_server_memory_pagecache_size: 256m
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    healthcheck:
+      test: [CMD-SHELL, 'cypher-shell -a bolt://127.0.0.1:7687 -u neo4j -p "$${NEO4J_AUTH#*/}" "RETURN 1" >/dev/null 2>&1']
+      interval: 10s
+      timeout: 15s
+      retries: 30
+      start_period: 30s
+    restart: unless-stopped
+  initialize:
+    <<: *backend
+    command: [python, scripts/bootstrap_demo.py]
+    depends_on:
+      postgres: {condition: service_healthy}
+      neo4j: {condition: service_healthy}
+    restart: 'no'
+  backend:
+    <<: *backend
+    command: [python, -m, uvicorn, backend.app.main:app, --host, 0.0.0.0, --port, '8000', --workers, '1']
+    depends_on:
+      initialize: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, 'import urllib.request; urllib.request.urlopen("http://127.0.0.1:8000/health",timeout=5)']
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    restart: unless-stopped
+  frontend:
+    build:
+      context: .
+      dockerfile: infra/docker/frontend.Dockerfile
+    ports:
+      - '127.0.0.1:${DEMO_PORT:-8080}:8080'
+    depends_on:
+      backend: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, wget, -q, --spider, http://127.0.0.1:8080/healthz]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  neo4j_data:
+  neo4j_logs:

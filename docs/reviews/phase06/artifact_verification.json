@@ -1,0 +1,11 @@
+{
+  "q_exactly_reproducible": true,
+  "visits_exactly_reproducible": true,
+  "shape": [
+    7938,
+    6
+  ],
+  "nonzero": 6924,
+  "phase02_model_load": true,
+  "phase02_model_version": "pima-mlp-0.2.0"
+}

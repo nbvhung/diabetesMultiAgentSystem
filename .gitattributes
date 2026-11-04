@@ -1,0 +1,5 @@
+# Preserve original bytes: experiment manifests contain file SHA256 hashes.
+# Automatic CRLF/LF conversion would invalidate those measured artifacts.
+* -text
+*.woff2 binary
+*.woff binary

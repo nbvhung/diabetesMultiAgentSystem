@@ -1,0 +1,1414 @@
+{
+  "scope": "Project-authored 24-question benchmark. Citation correctness checks exact excerpt/URL provenance, not clinical entailment.",
+  "summary": [
+    {
+      "strategy": "vector",
+      "recall_at_5": 0.5408333333333333,
+      "mrr_at_5": 0.7516666666666667,
+      "citation_correctness": 1.0,
+      "citation_count": 82,
+      "no_evidence_accuracy": 1,
+      "latency_ms": 20.86207916670446
+    },
+    {
+      "strategy": "graph",
+      "recall_at_5": 0.92,
+      "mrr_at_5": 0.925,
+      "citation_correctness": 1.0,
+      "citation_count": 61,
+      "no_evidence_accuracy": 1,
+      "latency_ms": 8.46841250002702
+    },
+    {
+      "strategy": "hybrid",
+      "recall_at_5": 0.9175,
+      "mrr_at_5": 0.925,
+      "citation_correctness": 1.0,
+      "citation_count": 89,
+      "no_evidence_accuracy": 1,
+      "latency_ms": 29.07384583329531
+    }
+  ],
+  "rows": [
+    {
+      "strategy": "vector",
+      "question_id": "Q01",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2"
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "rr_at_5": 0.5,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 27.755100000376842
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q02",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [],
+      "recall_at_5": 0.0,
+      "rr_at_5": 0,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": null,
+      "latency_ms": 0.4262000002199784
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q03",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 34.06670000003942
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q04",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 31.642899999951624
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q05",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 23.822799999834388
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q06",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 20.383900000069843
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q07",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 0.2,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 29.037899999821093
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q08",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 0.25,
+      "rr_at_5": 1.0,
+      "citation_count": 2,
+      "correct_citations": 2,
+      "no_evidence_correct": null,
+      "latency_ms": 22.63810000022204
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q09",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 0.5,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 24.046099999850412
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q10",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 30.026100000213773
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q11",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+      ],
+      "retrieved_ids": [
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "recall_at_5": 0.4,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 20.280300000194984
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q12",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+      ],
+      "retrieved_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 18.426899999667512
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q13",
+      "relevant_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 0.5,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 22.825700000339566
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q14",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "recall_at_5": 0.5,
+      "rr_at_5": 0.5,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 20.871100000022125
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q15",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f"
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "rr_at_5": 0.3333333333333333,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 30.172199999924487
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q16",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 20.828400000027614
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q17",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 26.152899999942747
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q18",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+      ],
+      "recall_at_5": 0.5,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 31.104099999993196
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q19",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 33.54029999991326
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q20",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [],
+      "recall_at_5": 0.0,
+      "rr_at_5": 0,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": null,
+      "latency_ms": 31.934699999965233
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q21",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.21340000012060045
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q22",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.16080000023066532
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q23",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.15510000002905144
+    },
+    {
+      "strategy": "vector",
+      "question_id": "Q24",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.1781999999366235
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q01",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 15.05540000016481
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q02",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [],
+      "recall_at_5": 0.0,
+      "rr_at_5": 0,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": null,
+      "latency_ms": 0.44870000010632793
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q03",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 15.369100000043545
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q04",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 12.228099999902042
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q05",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 13.160500000140019
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q06",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 16.170099999726517
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q07",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 0.5,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 12.050100000124075
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q08",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 11.60440000012386
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q09",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 13.381199999912496
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q10",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 16.651599999931932
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q11",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+      ],
+      "retrieved_ids": [
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+      ],
+      "recall_at_5": 0.4,
+      "rr_at_5": 1.0,
+      "citation_count": 2,
+      "correct_citations": 2,
+      "no_evidence_correct": null,
+      "latency_ms": 8.17349999988437
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q12",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+      ],
+      "retrieved_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 6.884200000058627
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q13",
+      "relevant_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "retrieved_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 1,
+      "correct_citations": 1,
+      "no_evidence_correct": null,
+      "latency_ms": 5.736499999784428
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q14",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 8.091200000308163
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q15",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 10.032099999989441
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q16",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 8.178500000212807
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q17",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 2,
+      "correct_citations": 2,
+      "no_evidence_correct": null,
+      "latency_ms": 7.009100000232138
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q18",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 4,
+      "correct_citations": 4,
+      "no_evidence_correct": null,
+      "latency_ms": 9.742300000198156
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q19",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 7.220999999844935
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q20",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 1,
+      "correct_citations": 1,
+      "no_evidence_correct": null,
+      "latency_ms": 5.484700000124576
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q21",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.16659999982948648
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q22",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.1283999999941443
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q23",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.1276999996662198
+    },
+    {
+      "strategy": "graph",
+      "question_id": "Q24",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.14690000034534023
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q01",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 35.62239999973826
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q02",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [],
+      "recall_at_5": 0.0,
+      "rr_at_5": 0,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": null,
+      "latency_ms": 0.15450000000782893
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q03",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 34.9316000001636
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q04",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 38.83009999981368
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q05",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 40.282399999796326
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q06",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 29.50009999995018
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q07",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 0.5,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 35.36099999973885
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q08",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 37.744300000213116
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q09",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 39.38160000006974
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q10",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 36.25330000022586
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q11",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+      ],
+      "retrieved_ids": [
+        "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "recall_at_5": 0.6,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 37.36269999990327
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q12",
+      "relevant_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+      ],
+      "retrieved_ids": [
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 38.226899999699526
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q13",
+      "relevant_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "retrieved_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 41.34969999995519
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q14",
+      "relevant_ids": [
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+      ],
+      "retrieved_ids": [
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+        "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+        "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 27.75549999978466
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q15",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 29.310500000065076
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q16",
+      "relevant_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+      ],
+      "retrieved_ids": [
+        "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+        "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+        "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+        "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+        "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 44.76019999992786
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q17",
+      "relevant_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+      ],
+      "retrieved_ids": [
+        "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 3,
+      "correct_citations": 3,
+      "no_evidence_correct": null,
+      "latency_ms": 33.312000000023545
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q18",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f"
+      ],
+      "recall_at_5": 0.75,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 40.04260000010618
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q19",
+      "relevant_ids": [
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "retrieved_ids": [
+        "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+        "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+        "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+        "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+        "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 5,
+      "correct_citations": 5,
+      "no_evidence_correct": null,
+      "latency_ms": 43.283599999995204
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q20",
+      "relevant_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "retrieved_ids": [
+        "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+      ],
+      "recall_at_5": 1.0,
+      "rr_at_5": 1.0,
+      "citation_count": 1,
+      "correct_citations": 1,
+      "no_evidence_correct": null,
+      "latency_ms": 33.72850000005201
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q21",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.18039999986285693
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q22",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.12849999984609894
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q23",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.1253000000360771
+    },
+    {
+      "strategy": "hybrid",
+      "question_id": "Q24",
+      "relevant_ids": [],
+      "retrieved_ids": [],
+      "recall_at_5": null,
+      "rr_at_5": null,
+      "citation_count": 0,
+      "correct_citations": 0,
+      "no_evidence_correct": 1,
+      "latency_ms": 0.14460000011240481
+    }
+  ]
+}

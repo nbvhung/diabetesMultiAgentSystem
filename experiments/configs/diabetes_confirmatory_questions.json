@@ -1,0 +1,26 @@
+{
+  "version":"diabetes-confirmatory-phrasing-1.0",
+  "scope":"40 SYNTHETIC project-authored questions fixed after first-pass cross-encoder architecture/threshold selection. Descriptive first-pass evaluation and reproducibility runs; topics/sources overlap development. Scores were not used to select thresholds. A later retry-control fix uses a separate development safety case. No claim of clinical validation, an unseen retry test or strict external generalization.",
+  "questions":{
+    "definition":["Trong định nghĩa bệnh tiểu đường, đường glucose có vai trò gì?","What role does glucose have in the definition of diabetes?"],
+    "symptoms":["Hãy liệt kê những biểu hiện thường được nhắc đến của đái tháo đường.","List the commonly described signs and symptoms of diabetes."],
+    "risk":["Những đặc điểm nào khiến một người có nguy cơ mắc tiểu đường týp 2 cao hơn?","Which characteristics are linked to a greater risk of type 2 diabetes?"],
+    "prevention":["Những thay đổi lối sống nào được nêu để trì hoãn bệnh tiểu đường týp 2?","Which lifestyle changes are described for delaying type 2 diabetes?"],
+    "carbohydrate":["Vì sao người tìm hiểu về tiểu đường cần biết carbohydrate liên quan đến glucose?","Why is carbohydrate relevant to understanding blood glucose in diabetes?"],
+    "nutrition":["Các nhóm thực phẩm và đồ uống được đề cập trong chế độ ăn cho người bị tiểu đường là gì?","Which food and drink choices are discussed in diabetes healthy eating education?"],
+    "activity_benefits":["Hoạt động thể chất hỗ trợ sức khỏe của người bị tiểu đường ở những mặt nào?","In what ways can physical activity support the health of people with diabetes?"],
+    "activity_safety":["Người bị tiểu đường cần tìm hiểu những biện pháp an toàn nào trước và trong lúc tập thể dục?","What safety precautions are described before and during exercise with diabetes?"],
+    "monitoring":["Tài liệu hướng dẫn tìm hiểu việc kiểm tra đường huyết tại nhà như thế nào?","How does the source describe checking blood glucose at home?"],
+    "management":["Khái niệm ABCs trong quản lý tiểu đường có ý nghĩa gì?","What do the ABCs mean in managing diabetes?"],
+    "type1":["Tại sao hệ miễn dịch được nhắc đến khi giải thích tiểu đường týp 1?","Why is the immune system mentioned when explaining type 1 diabetes?"],
+    "type2":["Tế bào và insulin liên quan thế nào trong giải thích bệnh tiểu đường týp 2?","How are cells and insulin involved in the explanation of type 2 diabetes?"],
+    "prediabetes":["Tiền tiểu đường khác mức đường huyết bình thường như thế nào theo định nghĩa?","How does the definition of prediabetes differ from normal blood glucose?"],
+    "insulin_resistance":["Điều gì xảy ra với đáp ứng của tế bào khi có kháng insulin?","What happens to the cellular response when insulin resistance occurs?"],
+    "gestational":["Bệnh tiểu đường trong thời kỳ mang thai được định nghĩa ra sao?","How is diabetes occurring during pregnancy defined?"],
+    "a1c":["Xét nghiệm HbA1c cho biết thông tin gì về đường huyết theo tài liệu?","What information about blood glucose is provided by the A1C test?"],
+    "fasting_test":["Cần tìm hiểu gì về thời gian nhịn ăn trước xét nghiệm đường huyết lúc đói?","What does the source explain about fasting before a fasting glucose test?"],
+    "eye":["Đường huyết cao có thể tác động tới mắt ra sao trong bệnh tiểu đường?","How can high blood glucose affect the eyes in diabetes?"],
+    "foot":["Vì sao bàn chân cần được quan tâm trong giáo dục về biến chứng tiểu đường?","Why are the feet discussed in education about diabetes complications?"],
+    "neuropathy":["Bệnh lý thần kinh do đái tháo đường đề cập đến loại tổn thương nào?","What kind of damage is meant by diabetic neuropathy?"]
+  }
+}

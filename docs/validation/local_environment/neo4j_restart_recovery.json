@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-03T05:23:40.040025+00:00",
+  "windows_last_boot_local": "2026-11-03T12:03:38.572199",
+  "before": {
+    "owned_processes": 0,
+    "port_7474_open": false,
+    "port_7687_open": false
+  },
+  "after": {
+    "browser_http_status": 200,
+    "status": "available",
+    "uri": "bolt://127.0.0.1:7687",
+    "browser": "http://127.0.0.1:7474/browser/",
+    "authentication": "enabled",
+    "user": "neo4j",
+    "chunks": 449,
+    "sources": 14,
+    "releases": [
+      "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+    ],
+    "supported_assertions": 11
+  },
+  "browser_verified_in_chromium": true,
+  "screenshot": "neo4j-browser.png",
+  "manual_start_file": "start_neo4j.cmd",
+  "windows_service_auto_start_installed": false
+}

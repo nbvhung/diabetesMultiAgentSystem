@@ -1,0 +1,10 @@
+{
+  "rule_scenarios": 41,
+  "rule_scenarios_pass": 41,
+  "pytest_exit": 0,
+  "pytest_no_skips": true,
+  "api_workflow_cases": 5,
+  "two_gates_persisted": true,
+  "legacy_snapshot_rejected": true,
+  "blocked_assessment_no_prediction_insert": true
+}

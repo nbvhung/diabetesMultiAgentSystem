@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-03T10:19:45.069946+00:00",
+  "csv_sha256": {
+    "experiments/results/prediction.csv": "84ca9aebe52e22b8700bb648a9583340b33f931042ed3a777086593edce90f5d",
+    "experiments/results/diabetes_rag.csv": "512be1a9669d9b3469d1d853c7a85c90fdc402ee63f4f5517b4058087d6c8446",
+    "experiments/results/diabetes_mas.csv": "6b382b4eb6cd2b33a458730d160b4369c075304bc92c4ff1adff17814f0dabfc",
+    "experiments/results/rl.csv": "fa5e5d405a28196401d39f922af3944b3898a08a9ebb7469538cc003930fe2b8",
+    "experiments/results/diabetes_safety.csv": "876c3ab04467fabaa76bb046595845e71319645b3e6ede44a138ce6f8d7cce19",
+    "experiments/results/diabetes_llm.csv": "d7fa69b2e87f0026fcdd9678574a588cfc2d34df411610221a6b1f39aba38b78",
+    "experiments/results/diabetes_llm_rows.csv": "3369e5a88d2bae0cb0b57a23fd6b251e4386098b85a123f8aeebaa54b8b50cb4"
+  },
+  "meaning": "Frozen evidence snapshot for the manual report narrative; not a benchmark target."
+}

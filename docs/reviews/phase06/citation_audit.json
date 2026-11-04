@@ -1,0 +1,65 @@
+{
+  "evidence": [
+    {
+      "case": "SYNTHETIC_EDUCATION",
+      "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_EDUCATION",
+      "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_EDUCATION",
+      "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_EDUCATION",
+      "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_EDUCATION",
+      "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+      "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+      "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+      "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+      "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+      "exact_source_match": true,
+      "cited_in_response": true
+    },
+    {
+      "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+      "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+      "exact_source_match": true,
+      "cited_in_response": true
+    }
+  ],
+  "source_scope": "cached accessed NIDDK corpus; current external web availability not tested"
+}

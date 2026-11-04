@@ -1,0 +1,72 @@
+{
+  "nodes": {
+    "c": [
+      6,
+      4,
+      "Coordinator\nrun-local state"
+    ],
+    "p": [
+      2,
+      6.5,
+      "Prediction"
+    ],
+    "k": [
+      6,
+      6.5,
+      "Knowledge"
+    ],
+    "r": [
+      10,
+      6.5,
+      "RL decision"
+    ],
+    "e": [
+      2,
+      1.5,
+      "Education"
+    ],
+    "v": [
+      6,
+      1.5,
+      "Verifier"
+    ],
+    "s": [
+      10,
+      1.5,
+      "Safety"
+    ]
+  },
+  "edges": [
+    [
+      "c",
+      "p",
+      "PredictionTask / Result"
+    ],
+    [
+      "c",
+      "k",
+      "KnowledgeTask / Result"
+    ],
+    [
+      "c",
+      "r",
+      "RLTask / Result"
+    ],
+    [
+      "c",
+      "e",
+      "EducationTask / Result"
+    ],
+    [
+      "c",
+      "v",
+      "VerifierTask / Result"
+    ],
+    [
+      "c",
+      "s",
+      "SafetyTask / Decision"
+    ]
+  ],
+  "source": "backend/app/research/schemas.py; agents.py; coordinator.py"
+}

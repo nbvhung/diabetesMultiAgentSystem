@@ -1,0 +1,36 @@
+{
+  "corpus": {
+    "dataset_version": "diabetes-corpus-2.0",
+    "source_count": 14,
+    "chunk_count": 449,
+    "chunks_sha256": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+  },
+  "seed": {
+    "exit_code": 0,
+    "seconds": 10.85745130000032
+  },
+  "pytest": {
+    "exit_code": 0,
+    "seconds": 99.7688704000002
+  },
+  "frontend_unit": {
+    "exit_code": 0,
+    "seconds": 7.4589047999998
+  },
+  "frontend_build": {
+    "exit_code": 0,
+    "seconds": 6.413285999999971
+  },
+  "diabetes_rag": {
+    "exit_code": 0,
+    "seconds": 236.84208059999946
+  },
+  "diabetes_mas": {
+    "exit_code": 0,
+    "seconds": 190.66950710000037
+  },
+  "status": "BLOCKED_CHECK_FAILURE",
+  "failure": "diabetes_safety failed; inspect actual log",
+  "timestamp": "2026-11-02T17:11:36.161391+00:00",
+  "code_version": "source-sha256:02f9a6ae17b618e8c43e9de29d26ec440223cb3fa4a310111f7f243143ea0d1c"
+}

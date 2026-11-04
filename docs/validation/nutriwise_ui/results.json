@@ -1,0 +1,135 @@
+{
+  "status": "NUTRIWISE_INSPIRED_UI_VERIFIED",
+  "timestamp": "2026-11-03T06:39:25.906016+00:00",
+  "reference": "D:/intern/nutriwise-fe",
+  "reference_components": [
+    "app/layout.tsx",
+    "app/globals.css",
+    "components/landing/HeroSection.tsx",
+    "components/dashboard/StatsCards.tsx",
+    "components/Sidebar/DesktopSidebar.tsx"
+  ],
+  "design": {
+    "font": "Be Vietnam Pro",
+    "font_weights": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "font_subsets": [
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "font_license": "SIL OFL 1.1",
+    "primary": [
+      "#059669",
+      "#0d9488"
+    ],
+    "backgrounds": [
+      "#ecfdf5",
+      "#ffffff",
+      "#f0fdfa"
+    ]
+  },
+  "frontend_unit_passed": 22,
+  "frontend_build": "PASS",
+  "browser": {
+    "startTime": "2026-11-03T06:37:14.737Z",
+    "duration": 57754.702,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "visual": {
+    "timestamp": "2026-11-03T06:36:39.893Z",
+    "typography": {
+      "body": "\"Be Vietnam Pro\", sans-serif",
+      "hero": "\"Be Vietnam Pro\", sans-serif",
+      "loaded": true
+    },
+    "fontErrors": [],
+    "widths": [
+      {
+        "width": 320,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 360,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 1280,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "page": "overview",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "page": "knowledge",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "page": "knowledge",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "page": "knowledge",
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "page": "knowledge",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "page": "knowledge",
+        "overflow": false
+      }
+    ],
+    "errors": []
+  },
+  "frozen_dl_rl_unchanged": true,
+  "models_retrained": false,
+  "new_experiment_metrics": false,
+  "new_live_groq_requests": 0,
+  "full_backend_suite_rerun": false,
+  "ports_open_after_checks": {
+    "8000": true,
+    "5173": true,
+    "18000": false,
+    "18001": false
+  },
+  "source_sha256": {
+    "frontend/src/style.css": "eb15c00eef053fbec429d6ce4f453e1545613044365ec76c23a0f4d2989fc5aa",
+    "frontend/src/fonts.css": "0c8ad26f26d5c696ecfc2ff0efc8afbba3cb8084b56ddf04baf8a0f6b831e410",
+    "frontend/src/App.tsx": "4a9173c61ae19ea93b07072d96667e2328c55b310438229ddebbb814a7aeef9c"
+  }
+}

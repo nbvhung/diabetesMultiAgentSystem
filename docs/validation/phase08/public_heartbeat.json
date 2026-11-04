@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-11-03T10:16:41.738434+00:00",
+  "url": "https://champion-sonic-dept-charged.trycloudflare.com",
+  "anonymous": 401,
+  "authenticated_frontend": 200,
+  "readback": [
+    {
+      "run_id": "a5d6fcb4-d279-4694-8542-56d74b34092a",
+      "persisted_readback_equal": true
+    },
+    {
+      "run_id": "dcf0d7d9-15d5-4b4c-bfff-c4b724a17e62",
+      "persisted_readback_equal": true
+    },
+    {
+      "run_id": "84fcc626-bc57-4adb-89f1-5abe2c56a507",
+      "persisted_readback_equal": true
+    }
+  ],
+  "components": {
+    "backend": "available",
+    "coordinator": "available",
+    "safety": "available",
+    "postgresql": "available",
+    "neo4j": "available",
+    "model": "available",
+    "rl_policy": "available",
+    "diabetes_corpus": "available",
+    "diabetes_graph": "available",
+    "semantic_encoder": "available",
+    "reranker": "available",
+    "llm": "available",
+    "evidence_verifier": "available"
+  },
+  "new_remote_llm_calls": 0
+}

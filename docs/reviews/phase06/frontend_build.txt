@@ -1,0 +1,5 @@
+Review tool execution record (source frontend, no source edits)
+COMMAND: npm run build
+EXIT_CODE: 0
+TypeScript --noEmit + Vite v7.3.7; 28 modules transformed; build completed in 3.57s.
+Browser interaction was not tested.

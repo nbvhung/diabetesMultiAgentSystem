@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-11-02T20:18:00.215321+00:00",
+  "scope": "One actual ASGI API workflow, synthetic assessment, real PostgreSQL/Neo4j/frozen MLP/Q policy/Groq; two remote attempts maximum, not a quality benchmark",
+  "api_status_code": 201,
+  "run_id": "8215e17d-a281-4228-a12b-207de0baa1da",
+  "workflow_status": "DEGRADED",
+  "generation_mode": "llm",
+  "grounding": "independent_llm",
+  "all_six_agents_completed": true,
+  "both_safety_gates_allowed": true,
+  "evidence_count": 1,
+  "persisted_run_equal": true,
+  "persisted_trace_equal": true,
+  "requests": [
+    {
+      "method": "POST",
+      "host": "api.groq.com",
+      "status_code": 200
+    },
+    {
+      "method": "POST",
+      "host": "api.groq.com",
+      "status_code": 200
+    }
+  ],
+  "provider": {
+    "status": "available",
+    "provider": "Groq",
+    "model": "openai/gpt-oss-20b",
+    "last_verified_at": "2026-11-02T20:17:59.828955+00:00",
+    "code": null
+  },
+  "dependency_statuses": {
+    "backend": "available",
+    "coordinator": "available",
+    "safety": "available",
+    "postgresql": "available",
+    "neo4j": "available",
+    "model": "available",
+    "rl_policy": "available",
+    "diabetes_corpus": "available",
+    "diabetes_graph": "available",
+    "semantic_encoder": "available",
+    "reranker": "available",
+    "llm": "available",
+    "evidence_verifier": "available"
+  },
+  "quality_metrics": null
+}

@@ -1,0 +1,41 @@
+{
+  "status": "UIUX_DELIVERED_RESEARCH_REVIEWED",
+  "timestamp": "2026-11-03T06:21:07.528308+00:00",
+  "code_version": "source-sha256:141fe64ad44912b0739c5e8615ebda900bf5e5935ee0f738f8a9c75bb70bd518",
+  "frontend_unit_passed": 22,
+  "frontend_build": "PASS",
+  "browser": {
+    "startTime": "2026-11-03T06:15:46.078Z",
+    "duration": 37166.437,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "live_browser": {
+    "http_status": 201,
+    "generation_mode": "llm",
+    "grounding": "independent_llm",
+    "citations": 2,
+    "page_errors": []
+  },
+  "frozen_dl_rl_unchanged": true,
+  "verified_historical_experiment_names": [
+    "prediction",
+    "rl",
+    "diabetes_rag",
+    "diabetes_mas",
+    "diabetes_safety"
+  ],
+  "experiment_metrics_recomputed": false,
+  "models_retrained": false,
+  "full_backend_suite_rerun": false,
+  "ports_open_after_checks": {
+    "8000": true,
+    "5173": true,
+    "18000": false,
+    "18001": false
+  },
+  "review": "docs/project_review_uiux.md",
+  "limits": "No clinical validation; full LLM benchmark and budget-matched MAS comparisons remain pending"
+}

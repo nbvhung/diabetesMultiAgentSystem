@@ -1,0 +1,1390 @@
+[
+  {
+    "path": "backend/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/api/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/api/experiments.py",
+    "lines": 54,
+    "sha256": "062dc7804f5461d0cf1e952a8c46e8f52150f9dbad2bb5db9e4401191cec1ebc",
+    "symbols": [
+      "read_report",
+      "experiments",
+      "figure"
+    ]
+  },
+  {
+    "path": "backend/app/api/knowledge.py",
+    "lines": 21,
+    "sha256": "32c7e2f244d2860d48f6154f8a4b120b2f674e42ba25fed9e29db21993417c72",
+    "symbols": [
+      "SearchInput",
+      "summary",
+      "search"
+    ]
+  },
+  {
+    "path": "backend/app/api/mas.py",
+    "lines": 79,
+    "sha256": "5ab5fdb5a538e7fb6ccd5f92a669b2b94e76b20b20182d24dd06ecb29189e263",
+    "symbols": [
+      "create_run",
+      "get_run",
+      "get_trace",
+      "get_agents",
+      "integrated_registry"
+    ]
+  },
+  {
+    "path": "backend/app/api/readiness.py",
+    "lines": 42,
+    "sha256": "09e3cd71944500e62003937b682a868c4c27e3e0f85074af40c0cba35eafc282",
+    "symbols": [
+      "readiness",
+      "probe_db",
+      "probe_model",
+      "probe_policy"
+    ]
+  },
+  {
+    "path": "backend/app/api/system.py",
+    "lines": 31,
+    "sha256": "78df50af5e5e2b4f250381046aecae147e8a8c657e2b67ccd950f646d014756f",
+    "symbols": [
+      "health",
+      "capabilities",
+      "current_model"
+    ]
+  },
+  {
+    "path": "backend/app/core/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/core/config.py",
+    "lines": 13,
+    "sha256": "8b03567e0df6036c3263fcb87008dd7c54101650f4d3c74231df04705a3bb635",
+    "symbols": [
+      "Settings"
+    ]
+  },
+  {
+    "path": "backend/app/db/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/db/migrations/env.py",
+    "lines": 14,
+    "sha256": "2303196363906628aeba297b5e37bd61d6ee284a947e1e31d80acbc2b1e34d50",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/db/migrations/versions/0001_phase02.py",
+    "lines": 22,
+    "sha256": "a93f422e379d448915c072263664ec108760867d41b925b9bfb59849d47c0134",
+    "symbols": [
+      "stamp",
+      "identity",
+      "upgrade",
+      "downgrade"
+    ]
+  },
+  {
+    "path": "backend/app/db/migrations/versions/0002_phase03.py",
+    "lines": 15,
+    "sha256": "6eece77b6ce0cf74a3db814249f77c4a926bd97f754756a40bb5da0311242e90",
+    "symbols": [
+      "upgrade",
+      "downgrade"
+    ]
+  },
+  {
+    "path": "backend/app/db/prediction_repository.py",
+    "lines": 46,
+    "sha256": "de4014ec5b6a01baca271301eaf09607a2498fb603e322b6880715550649d01c",
+    "symbols": [
+      "PredictionRepository",
+      "LegacyRunRequiresReview",
+      "PostgresRunRepository"
+    ]
+  },
+  {
+    "path": "backend/app/db/session.py",
+    "lines": 10,
+    "sha256": "5daef9601d1207dd6e8f388b7aa56d459f61e1814fc60646bd02ce85b4e66372",
+    "symbols": [
+      "Base"
+    ]
+  },
+  {
+    "path": "backend/app/demo_gateway.py",
+    "lines": 78,
+    "sha256": "e1a26199277d4872a6064c7d8c4b595fe014b29f213e6f165d1baa19f76da51b",
+    "symbols": [
+      "create_gateway"
+    ]
+  },
+  {
+    "path": "backend/app/knowledge/store.py",
+    "lines": 109,
+    "sha256": "c5b02eff51b4c2e713e11cd79d1dc3d32349fa758494d051755b93b040df4e66",
+    "symbols": [
+      "digest",
+      "validate_url",
+      "normalize",
+      "safe_text",
+      "embedding",
+      "documents",
+      "KnowledgeUnavailable",
+      "GraphStore"
+    ]
+  },
+  {
+    "path": "backend/app/main.py",
+    "lines": 52,
+    "sha256": "6e47908ecd1f08ace29853ea7c98aa65791a3330d3e868433ea9ccb9a24a7cd7",
+    "symbols": [
+      "create_app"
+    ]
+  },
+  {
+    "path": "backend/app/mas/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/mas/agents/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/mas/agents/base.py",
+    "lines": 45,
+    "sha256": "cadd0cd1a484a20babd83ba39a87dca20c79d304dfb581e2cb0a34a6771e0ac7",
+    "symbols": [
+      "AgentSpec",
+      "StubAgent",
+      "AgentDefinition",
+      "BaseAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/agents/knowledge.py",
+    "lines": 42,
+    "sha256": "276d79eb483cf7181d7dd0d8fc09ff4c32377416ba68f215dd220d411d20831e",
+    "symbols": [
+      "KnowledgeAgent",
+      "EducationAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/agents/prediction.py",
+    "lines": 22,
+    "sha256": "e8678359c4acda0fc85d2d50497862a41e753956f13d90d89e1ff7ee222dce30",
+    "symbols": [
+      "PredictionAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/agents/rl_decision.py",
+    "lines": 17,
+    "sha256": "76dfffdba2e840008acb104edbb8eb7460d77ab66e55c231b11a1bdd1bcad082",
+    "symbols": [
+      "RLDecisionAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/agents/runtime.py",
+    "lines": 93,
+    "sha256": "5da4def63bc9502a50079aa7d66af9660e321e0f13927abc7471054a789d033b",
+    "symbols": [
+      "definition",
+      "RuntimeAgent",
+      "UnavailableAgent",
+      "PredictionAgent",
+      "KnowledgeAgent",
+      "RLDecisionAgent",
+      "EducationAgent",
+      "normalize",
+      "safety_rules",
+      "LegacySafetyAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/agents/safety.py",
+    "lines": 14,
+    "sha256": "fbf31557bc98a6f25307af45e8577ebbbfbf0c7795c864223fd5defc31f9e65b",
+    "symbols": [
+      "SafetyAgent"
+    ]
+  },
+  {
+    "path": "backend/app/mas/coordinator.py",
+    "lines": 241,
+    "sha256": "109f6ef5e66dc07ed010e8f4c8ba8e01c918c5a4bc564775b77b69805f4e22a9",
+    "symbols": [
+      "Coordinator"
+    ]
+  },
+  {
+    "path": "backend/app/mas/legacy.py",
+    "lines": 34,
+    "sha256": "aff5a2970b7a86f553842076cea2e724325497e6c3fe3cd873a32dfa39b6574a",
+    "symbols": [
+      "Coordinator"
+    ]
+  },
+  {
+    "path": "backend/app/mas/messages.py",
+    "lines": 1,
+    "sha256": "6b9cc6643f08a31845246c343b235954ec5e6fc1d2949741a3bd0491734bfdd5",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/mas/registry.py",
+    "lines": 43,
+    "sha256": "fe21bd634bf729234965549df81b544ebbb855d37504833dafc9b5c715f55ee3",
+    "symbols": [
+      "build_registry",
+      "AgentRegistry",
+      "build_runtime_registry"
+    ]
+  },
+  {
+    "path": "backend/app/mas/repository.py",
+    "lines": 29,
+    "sha256": "7ba599913cc351f96baf714ee47475f14b0b7f9eb84f1c6f6f844dd6a2fb7d69",
+    "symbols": [
+      "RunRepository",
+      "InMemoryRunRepository"
+    ]
+  },
+  {
+    "path": "backend/app/mas/state.py",
+    "lines": 39,
+    "sha256": "9498478385a7fd363b728b217cba4dd40ebd9d9d3dc92df992bbab428d2c2b68",
+    "symbols": [
+      "record",
+      "transition_agent",
+      "transition_workflow"
+    ]
+  },
+  {
+    "path": "backend/app/ml/pipeline.py",
+    "lines": 136,
+    "sha256": "cf411ff60d50309d27c9acba75e27948efad10d54006a876c45710398abe93c6",
+    "symbols": [
+      "sha",
+      "save_json",
+      "seed_all",
+      "load_data",
+      "validate_data",
+      "split_indices",
+      "features",
+      "prepare",
+      "arrays",
+      "MLP",
+      "load_checkpoint",
+      "train",
+      "evaluate"
+    ]
+  },
+  {
+    "path": "backend/app/ml/serving.py",
+    "lines": 65,
+    "sha256": "1387e6893368720eadfe9e5969b0cdeee535a9d5e7e33636fa1dc5659159b8d6",
+    "symbols": [
+      "ModelUnavailable",
+      "ModelService"
+    ]
+  },
+  {
+    "path": "backend/app/rag/retrieval.py",
+    "lines": 40,
+    "sha256": "e953003fa2699a5a4765507b3bfd7e115538babfa2f7813f5b4d45de9b497c85",
+    "symbols": [
+      "keywords",
+      "Retriever",
+      "Retrieval"
+    ]
+  },
+  {
+    "path": "backend/app/research/__init__.py",
+    "lines": 1,
+    "sha256": "712da4a71647cb3a0d8cb9b3f51695e4ceff37220bfec06fa0f8aa00f698369a",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/research/agents.py",
+    "lines": 116,
+    "sha256": "5e0179af12a18ef13048d37c0ae6893cfd028e135ee1a0c8473f61e326915b58",
+    "symbols": [
+      "Definition",
+      "Agent",
+      "PredictionAgent",
+      "KnowledgeAgent",
+      "PolicyAgent",
+      "EducationAgent",
+      "VerifierAgent",
+      "SafetyAgent",
+      "Registry",
+      "RunLLMBudget",
+      "build_registry"
+    ]
+  },
+  {
+    "path": "backend/app/research/api.py",
+    "lines": 169,
+    "sha256": "ebc5599641e96397083810eb0172063ba668989f7768e1199127c62dbdd2316a",
+    "symbols": [
+      "Services",
+      "services",
+      "create_run",
+      "read_run",
+      "trace",
+      "agents",
+      "readiness",
+      "corpus_info",
+      "semantic_info",
+      "reranker_info",
+      "sources",
+      "graph",
+      "SearchInput",
+      "search"
+    ]
+  },
+  {
+    "path": "backend/app/research/config.py",
+    "lines": 22,
+    "sha256": "9cf3a4537e575137315e9aa456371dd49367f9de372dff370d967f576da6cf6d",
+    "symbols": [
+      "ResearchSettings"
+    ]
+  },
+  {
+    "path": "backend/app/research/coordinator.py",
+    "lines": 174,
+    "sha256": "927738002e23fcb5f4a44cb7e6787346766747ca268cd5298e5455266e9458f1",
+    "symbols": [
+      "Coordinator"
+    ]
+  },
+  {
+    "path": "backend/app/research/corpus.py",
+    "lines": 132,
+    "sha256": "ea9d8bf587453403d2e5fc377b1dc859c13388bccbc9c240af837c0739293596",
+    "symbols": [
+      "sha_bytes",
+      "normalize",
+      "source_config",
+      "allowed_urls",
+      "validate_source_url",
+      "safe_document_text",
+      "parse_page",
+      "prepare_corpus",
+      "Corpus"
+    ]
+  },
+  {
+    "path": "backend/app/research/graph.py",
+    "lines": 81,
+    "sha256": "51533544edbd405160305439a1f0998dfae6a8a23fc390f244575afdbcfad8d6",
+    "symbols": [
+      "AssertionRule",
+      "supported_assertions",
+      "DiabetesGraph"
+    ]
+  },
+  {
+    "path": "backend/app/research/grounding.py",
+    "lines": 110,
+    "sha256": "e4e090dd9786f5b8f182f8826df93f711b631ef01fc7466a7a8c4f23770891ec",
+    "symbols": [
+      "candidate_digest",
+      "render_claims",
+      "render_extractive",
+      "extractive",
+      "validate_claim_support",
+      "publication_errors",
+      "verify_candidate",
+      "compose"
+    ]
+  },
+  {
+    "path": "backend/app/research/llm.py",
+    "lines": 72,
+    "sha256": "fc02fbb31957bfd4b8eeb77981da45552d875e127a0889771e40d0cbe6f3ee0a",
+    "symbols": [
+      "LLMUnavailable",
+      "redact_question",
+      "Completion",
+      "GroqService"
+    ]
+  },
+  {
+    "path": "backend/app/research/repository.py",
+    "lines": 21,
+    "sha256": "3b124d8daf90abff1056da09f424a996e95f5b59a5e1fba67d8cf28f8328a4a0",
+    "symbols": [
+      "ResearchRepository",
+      "get_run"
+    ]
+  },
+  {
+    "path": "backend/app/research/reranker.py",
+    "lines": 43,
+    "sha256": "d86f632df4e00a040e8ed86b470d15ec544c21a7a8ed4e1e47bd6ae5e38db73d",
+    "symbols": [
+      "Reranker",
+      "prepare_reranker"
+    ]
+  },
+  {
+    "path": "backend/app/research/retrieval.py",
+    "lines": 162,
+    "sha256": "bd75dac9021cb500006ccc119d807242ff213faf9855dda814c01e574f90e784",
+    "symbols": [
+      "norm",
+      "query_topics",
+      "rewrite_query",
+      "Retriever"
+    ]
+  },
+  {
+    "path": "backend/app/research/safety.py",
+    "lines": 34,
+    "sha256": "452f38d9c787cadaf7f9fad22cb6061d2d231b89214cfa842cd9327e27c65492",
+    "symbols": [
+      "categorical_diagnosis",
+      "evaluate",
+      "safe_message"
+    ]
+  },
+  {
+    "path": "backend/app/research/schemas.py",
+    "lines": 244,
+    "sha256": "bb6c733ff9f68cc8ebde41b31a02ad8fcd2199d8b8483f4972c2e78b6fee9176",
+    "symbols": [
+      "Strict",
+      "Contract",
+      "AgentId",
+      "RunInput",
+      "Evidence",
+      "Support",
+      "Claim",
+      "Draft",
+      "Entailment",
+      "Review",
+      "PredictionTask",
+      "KnowledgeTask",
+      "RLTask",
+      "EducationTask",
+      "KnowledgeOutput",
+      "EducationOutput",
+      "VerifierTask",
+      "VerifierOutput",
+      "SafetyTask",
+      "SafetyDecision",
+      "Message",
+      "Result",
+      "Event",
+      "WorkflowResponse"
+    ]
+  },
+  {
+    "path": "backend/app/research/semantic.py",
+    "lines": 47,
+    "sha256": "0d7a264384500d83cf9ce4ae5c20d8aadaa881e58c48be12add8b35436a489bb",
+    "symbols": [
+      "SemanticUnavailable",
+      "SemanticEncoder",
+      "prepare_encoder"
+    ]
+  },
+  {
+    "path": "backend/app/rl/experiments.py",
+    "lines": 67,
+    "sha256": "e301fcecabd5750cb3b2683f073fc79a54475262d8276084373fb15c0f16947c",
+    "symbols": [
+      "evaluate",
+      "run_experiments"
+    ]
+  },
+  {
+    "path": "backend/app/rl/learning.py",
+    "lines": 25,
+    "sha256": "fed82e9a3af5d5b9ce301be6b477ad480dc484fdebcdf49fad8fa6b668825915",
+    "symbols": [
+      "td_update",
+      "train"
+    ]
+  },
+  {
+    "path": "backend/app/rl/mdp.py",
+    "lines": 61,
+    "sha256": "e8cf45a55310c1f9bf38f822d4102d4acf514bf07f3563b6d13f53228e0cb521",
+    "symbols": [
+      "encode",
+      "allowed_actions",
+      "baseline",
+      "EducationEnv"
+    ]
+  },
+  {
+    "path": "backend/app/rl/policy.py",
+    "lines": 76,
+    "sha256": "0f5799e066327a73c78a36b8849a2ab62bce8a89db6b4ecef91b39771904f3c6",
+    "symbols": [
+      "Config",
+      "Manifest",
+      "PolicyUnavailable",
+      "PolicyService"
+    ]
+  },
+  {
+    "path": "backend/app/rl/rendering.py",
+    "lines": 30,
+    "sha256": "5bb7bb2d9f0d6756b4bd97351d77eafd71662a0f8afafe1e7d4d864c79d8d7a6",
+    "symbols": [
+      "EducationPlan",
+      "render_plan",
+      "render_action"
+    ]
+  },
+  {
+    "path": "backend/app/rl/reward.py",
+    "lines": 10,
+    "sha256": "b10c05cfc01134de5769c1a178761f566c4c0eef818cb816613f2e212589fecb",
+    "symbols": [
+      "reward"
+    ]
+  },
+  {
+    "path": "backend/app/rl/selection.py",
+    "lines": 8,
+    "sha256": "5d11d2358973eeaea79525e0235b504be92cdb7680a338a482b7b1f98aed524c",
+    "symbols": [
+      "select_action"
+    ]
+  },
+  {
+    "path": "backend/app/rules/engine.py",
+    "lines": 91,
+    "sha256": "2ed1d4186179e731baa69816c5cea6d9a006cf9a90ac65dbe07be4955db7644e",
+    "symbols": [
+      "norm",
+      "match",
+      "Context",
+      "Rule",
+      "invalid_assessment",
+      "dose",
+      "emergency",
+      "RuleEngine"
+    ]
+  },
+  {
+    "path": "backend/app/schemas/__init__.py",
+    "lines": 1,
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "symbols": []
+  },
+  {
+    "path": "backend/app/schemas/contracts.py",
+    "lines": 115,
+    "sha256": "52e46c15ebfb0dde48113e9b157fe22f68101edb44edc6720636a2bf7b99ffce",
+    "symbols": [
+      "Contract",
+      "AgentName",
+      "AssessmentInput",
+      "AgentMessage",
+      "PredictionResult",
+      "EvidenceItem",
+      "RLDecision",
+      "SafetyDecision",
+      "EducationOutput",
+      "KnowledgeOutput",
+      "AgentResult",
+      "TraceEvent",
+      "WorkflowState",
+      "WorkflowResponse"
+    ]
+  },
+  {
+    "path": "backend/app/schemas/education.py",
+    "lines": 19,
+    "sha256": "f10f777e4df35d5b410d1f3786aa49aad34c8a672224f8cc7b6d2646df0c79fd",
+    "symbols": [
+      "EducationOutput"
+    ]
+  },
+  {
+    "path": "backend/app/schemas/prediction.py",
+    "lines": 11,
+    "sha256": "177c0e5b3f8684042fe21559df229302faeff390d8dc7b330c7bd53aa905a945",
+    "symbols": [
+      "PredictionResult"
+    ]
+  },
+  {
+    "path": "backend/app/schemas/runtime.py",
+    "lines": 175,
+    "sha256": "20acad8fb6238ed0bfff65a56b9394bd8dfe00d62bbc650f34046399a34148f3",
+    "symbols": [
+      "RuntimeContract",
+      "AgentStatus",
+      "WorkflowStatus",
+      "RunInput",
+      "PredictionTask",
+      "KnowledgeTask",
+      "RLTask",
+      "EducationTask",
+      "SafetyTask",
+      "AgentMessage",
+      "AgentResult",
+      "TraceEvent",
+      "WorkflowState",
+      "WorkflowResponse"
+    ]
+  },
+  {
+    "path": "backend/app/schemas/safety.py",
+    "lines": 20,
+    "sha256": "6c056d6cfd904bf8bc2cd3412ea27ecaf7c4ab8498adb63670468648466db635",
+    "symbols": [
+      "SafetyDecision"
+    ]
+  },
+  {
+    "path": "backend/tests/test_bootstrap.py",
+    "lines": 105,
+    "sha256": "3e483a65c2e5d73290d301f1516212ccb7f71816ec601451168511cacf08e68d",
+    "symbols": [
+      "test_health_and_capabilities",
+      "test_invalid_assessment",
+      "test_schema_roundtrip",
+      "test_each_agent_contract_and_stub",
+      "test_dispatch_trace_and_failures",
+      "test_env_example_uses_placeholders",
+      "test_cors",
+      "test_agent_output_invariants"
+    ]
+  },
+  {
+    "path": "backend/tests/test_deployment_phase08.py",
+    "lines": 48,
+    "sha256": "499cb47719f1b8e269e155ebe01f94bd804c431a74ae09abbd5659af2a1c884f",
+    "symbols": [
+      "gateway",
+      "test_gate_requires_credentials_and_never_proxies_unauthorized_calls",
+      "test_gate_serves_build_and_allows_only_current_demo_routes",
+      "test_gate_limits_workflow_requests_and_body_size",
+      "test_gate_fails_closed_for_missing_password_or_external_upstream"
+    ]
+  },
+  {
+    "path": "backend/tests/test_diabetes_research.py",
+    "lines": 435,
+    "sha256": "0800e4a7da09d40d03b1618c81317f16332603e251fdd1822bec1766ec279150",
+    "symbols": [
+      "corpus",
+      "evidence_from",
+      "evidence",
+      "CorpusReplayGraph",
+      "fake_groq",
+      "test_research_contract_rejects_untrusted_permissions_and_old_version",
+      "test_corpus_is_real_expanded_content_and_lists_preserve_context",
+      "test_exact_source_registry_rejects_ssrf_and_unregistered_urls",
+      "test_modified_source_snapshot_is_not_admitted",
+      "test_no_key_does_not_make_remote_request",
+      "test_composition_and_separate_verifier_calls",
+      "test_real_ids_do_not_make_forged_claims_valid",
+      "test_semantic_rejection_is_not_overridden_by_valid_quote",
+      "test_extra_unverified_prose_and_evidence_substitution_rejected",
+      "test_secrets_and_personal_identifiers_not_in_prompt_or_repr",
+      "test_provider_errors_are_sanitized",
+      "test_bad_or_truncated_provider_response_never_released",
+      "test_gptoss_request_keeps_reasoning_out_of_structured_publication",
+      "test_provider_json_rejection_has_sanitized_error_code",
+      "test_per_run_call_budget",
+      "test_versioned_safety_distinguishes_source_conditionals_from_diagnosis",
+      "integrated",
+      "test_real_multilingual_retrieval_and_active_graph_release",
+      "test_graph_assertions_require_exact_source_clause_and_section",
+      "test_real_graph_reseed_has_one_exact_support_per_assertion",
+      "test_actual_api_no_key_discloses_fallback_and_persists_all_agents",
+      "test_actual_api_veto_before_model_graph_llm",
+      "test_weak_evidence_triggers_bounded_coordinator_retrieval_feedback",
+      "test_real_weak_activity_question_is_recovered_by_bounded_rewrite",
+      "test_historical_v1_still_works_and_v2_reads_without_relabeling",
+      "test_six_agents_and_provider_readiness_are_honest",
+      "test_concurrent_research_runs_are_correlated_and_durable",
+      "test_coordinator_repairs_rejects_and_erases_unverified_drafts",
+      "test_llm_allow_verdict_cannot_override_deterministic_safety",
+      "test_missing_graph_never_falls_back_to_unqueried_local_evidence",
+      "test_missing_model_and_policy_are_explicit",
+      "test_timeout_and_missing_safety_cannot_publish",
+      "test_snapshot_tampering_cannot_forge_grounding_or_extra_prose",
+      "test_compromised_verifier_cannot_skip_coordinator_source_admission"
+    ]
+  },
+  {
+    "path": "backend/tests/test_knowledge_phase04.py",
+    "lines": 62,
+    "sha256": "00d0249d2ea063edbedcbe5637608e186de9e9188c9c7af03de9d7f8c355aee1",
+    "symbols": [
+      "test_source_validation",
+      "test_real_document_metadata_and_filtering",
+      "Down",
+      "test_unavailable_agent",
+      "test_no_evidence_and_injection",
+      "graph",
+      "test_connection_constraints_idempotence",
+      "test_real_retrieval",
+      "test_real_coordinator_knowledge_and_citations"
+    ]
+  },
+  {
+    "path": "backend/tests/test_ml_phase02.py",
+    "lines": 64,
+    "sha256": "4e281fc0c6858df8636b44aa58debd4cd4f42369d31c7c4cce45d48109f32064",
+    "symbols": [
+      "test_dataset_schema",
+      "test_split_reproducibility_and_no_leakage",
+      "test_transform_consistency_and_shape",
+      "test_notebooks_executed_without_error",
+      "test_postgres_migration"
+    ]
+  },
+  {
+    "path": "backend/tests/test_phase06_review_fixes.py",
+    "lines": 92,
+    "sha256": "e59a917049626149c9ca882885dd43a327b536e7248e13dd5995d806974ce7b1",
+    "symbols": [
+      "test_bad_rl_action_never_reaches_education_or_response",
+      "test_independent_safety_rule_rejects_unknown_action",
+      "test_serving_and_evaluator_have_exact_full_trajectory_parity",
+      "test_render_override_is_explicit",
+      "test_coordinator_persists_proposed_and_effective_actions",
+      "test_notebook_stdout_selected_seed_matches_manifest",
+      "test_persisted_response_cannot_reintroduce_unknown_rl_action"
+    ]
+  },
+  {
+    "path": "backend/tests/test_phase07.py",
+    "lines": 175,
+    "sha256": "b836a59c8ee747c25a0d39fc6efc30f63902ea5232d65af0f61b7082d938b17c",
+    "symbols": [
+      "integrated_app",
+      "test_dependency_probes_are_actual_and_sanitized",
+      "test_assessment_plus_education_durable_trace_and_citations",
+      "test_missing_dependency_is_disclosed",
+      "test_unsafe_request_veto_before_business_dispatch",
+      "test_invalid_assessment_api",
+      "test_concurrent_workflows_correlate_and_persist",
+      "test_no_fabricated_metrics_and_tampering_rejected",
+      "test_conflicting_provenance_and_timeout",
+      "test_verified_report_rejects_post_evaluation_tampering",
+      "test_same_tool_baseline_matches_mas_on_reference_case"
+    ]
+  },
+  {
+    "path": "backend/tests/test_prediction_phase03.py",
+    "lines": 135,
+    "sha256": "f72818d0dc997b4ef778a405c62d8e3c3e1db679bf153eef9bb084b889aa0728",
+    "symbols": [
+      "test_serving_checkpoint_feature_order_determinism",
+      "test_model_unavailable",
+      "db_engine",
+      "test_api_integration_persistence_restart_and_validation",
+      "test_database_failure_rolls_back",
+      "test_missing_model_never_predicts",
+      "test_prediction_result_in_workflow_state",
+      "test_nonfinite_negative_input"
+    ]
+  },
+  {
+    "path": "backend/tests/test_rl_phase06.py",
+    "lines": 137,
+    "sha256": "6896b5f79f79a565242939b139d63fb7203ff71ae6c23e4be834ff3edf57363a",
+    "symbols": [
+      "test_seeded_transition_and_reset_api",
+      "test_mdp_restrictions_reward_and_horizon",
+      "test_invalid_action_never_enters_environment",
+      "test_q_update_terminal_and_truncated_targets",
+      "test_small_training_reproducible_and_actually_updates_q",
+      "test_invalid_state_fallback",
+      "test_trained_artifact_loaded_readonly_and_visited_policy_used",
+      "test_missing_or_invalid_artifact_falls_back_safely",
+      "test_agent_and_concurrent_requests_do_not_learn_or_share_state",
+      "test_real_rl_coordinator_call_trace_and_safety_veto",
+      "test_notebook_executed_and_simulator_seed_partitions",
+      "test_selected_seed_metadata_matches_validation_selection"
+    ]
+  },
+  {
+    "path": "backend/tests/test_runtime.py",
+    "lines": 256,
+    "sha256": "6c1a2b152c957f3e60495fdb084d8630129d7920e00686d9b03a3ac8400b579e",
+    "symbols": [
+      "run",
+      "registry_with",
+      "test_input_validation",
+      "test_typed_message_validation_and_roundtrip",
+      "test_registry_contract_and_duplicates",
+      "test_no_assessment_no_prediction_and_knowledge_unavailable",
+      "test_assessment_only_prediction_unavailable_knowledge_skipped",
+      "test_each_unintegrated_agent_is_unavailable",
+      "SlowEducation",
+      "BrokenEducation",
+      "test_timeout_exception_and_education_fallback",
+      "test_medication_request_safety_veto",
+      "UnsafeEducation",
+      "test_output_safety_veto_redacts_rejected_text",
+      "BrokenSafety",
+      "test_safety_failure_and_missing_agent_fail_closed",
+      "HallucinatedCitation",
+      "test_unsupported_citation_is_not_released",
+      "test_trace_order_correlation_and_state_guards",
+      "test_concurrent_coordinator_runs_are_isolated",
+      "test_repository_copy_eviction_and_app_isolation",
+      "test_api_routes_validation_readback_and_cors",
+      "test_concurrent_http_requests_do_not_share_state",
+      "SyntheticKnowledge",
+      "SyntheticPolicy",
+      "test_compatible_policy_only_runs_with_valid_context"
+    ]
+  },
+  {
+    "path": "backend/tests/test_safety_phase05.py",
+    "lines": 161,
+    "sha256": "9e8cf690db5ed9e5bbc310b88591966be0d0062439c2d36d5cc880998d38f20e",
+    "symbols": [
+      "test_rule_scenario",
+      "test_rules_metadata_and_config_errors",
+      "test_two_gate_coordinator_and_early_veto",
+      "make_registry",
+      "BrokenSafety",
+      "SlowSafety",
+      "test_safety_failure_no_business_actions",
+      "UnsafeEducation",
+      "test_output_veto_redacts_unsafe_output",
+      "test_dispatch_and_finalization_cannot_bypass_safety",
+      "AlwaysAllow",
+      "test_replaced_safety_cannot_downgrade_mandatory_rules",
+      "FailedOutputSafety",
+      "test_output_gate_failure_withholds_completed_education",
+      "test_rl_action_cannot_override_safety",
+      "test_explicit_old_runtime_version_is_rejected",
+      "test_snapshot_missing_safety_audit_is_rejected",
+      "test_snapshot_veto_cannot_be_relabelled_completed",
+      "test_forged_quote_on_official_host_is_blocked"
+    ]
+  },
+  {
+    "path": "scripts/bootstrap_demo.py",
+    "lines": 28,
+    "sha256": "967926b855b5e781d76eed2a259d0dc8a0c8631c0230137416125f2106e47941",
+    "symbols": [
+      "initialize"
+    ]
+  },
+  {
+    "path": "scripts/build_final_report.py",
+    "lines": 157,
+    "sha256": "9051d15480e7d047bcaf88a7356d9b0c85d2e86cb58135ee0027872be695cd38",
+    "symbols": [
+      "sha",
+      "field",
+      "plain",
+      "measured_tables",
+      "appendix",
+      "render_markdown",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/build_report_pdf.py",
+    "lines": 21,
+    "sha256": "b6ce9247c25af96ee26ef620f397a1298fa65876127af09725634a868eb6dc49",
+    "symbols": []
+  },
+  {
+    "path": "scripts/check_diabetes_expansion.py",
+    "lines": 83,
+    "sha256": "4b97576a6278685559673f12c92522103f41e860d7b9e1234b26589186dae8cf",
+    "symbols": [
+      "run",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/check_phase01.py",
+    "lines": 75,
+    "sha256": "37cb50de8dfb48d48164af80a469a9b5091ef687081ada5cf16aaaaf4786070a",
+    "symbols": [
+      "run"
+    ]
+  },
+  {
+    "path": "scripts/check_phase03.py",
+    "lines": 39,
+    "sha256": "5d912bb989d628c3ebb6dd624a21c425b34f339a59e8d24afa7a43bf8d51eb48",
+    "symbols": []
+  },
+  {
+    "path": "scripts/check_phase04.py",
+    "lines": 26,
+    "sha256": "cd7c210ba77b91cae492faa58992467e62127c08afc9df68539af6309bd57c0a",
+    "symbols": []
+  },
+  {
+    "path": "scripts/check_phase05.py",
+    "lines": 61,
+    "sha256": "5fd792f3bd5003a67e0fed36c1794a20941282e2ee0c14c71bb9eae09ba03aa2",
+    "symbols": []
+  },
+  {
+    "path": "scripts/check_phase06.py",
+    "lines": 68,
+    "sha256": "a2d150807eadabe043c9436b343d3c3f15344f7b3641ef2bcb8cf3daf49dfbe7",
+    "symbols": [
+      "concurrent"
+    ]
+  },
+  {
+    "path": "scripts/check_phase07.py",
+    "lines": 88,
+    "sha256": "d32223ac1273430a536a69b440f961d49b6cd4e4ea7d4f9314179113b1baae77",
+    "symbols": [
+      "run",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/check_phase08.py",
+    "lines": 103,
+    "sha256": "0dab8b9ae9b4c006bb2b45451a3715e5eb1462b07440a3f89ba1606215262e0e",
+    "symbols": [
+      "execute",
+      "browser",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/container_entrypoint.py",
+    "lines": 10,
+    "sha256": "8975d1477854e1b076bcec4d9af1f246799e121567752e4fab018589b87b9637",
+    "symbols": []
+  },
+  {
+    "path": "scripts/demo_host.py",
+    "lines": 90,
+    "sha256": "8a3cc7e49acae62e0cc4d6f97028371c8a4eb0ab7443d1a3f45cefd0767fbd50",
+    "symbols": [
+      "alive",
+      "status",
+      "start",
+      "stop",
+      "restart_gateway"
+    ]
+  },
+  {
+    "path": "scripts/demo_mas.py",
+    "lines": 45,
+    "sha256": "8a21aa19631c0fa937322afa9af9d5bd71a0d3ae93bbbd43a464f1fc815dd017",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/demo_prediction.py",
+    "lines": 30,
+    "sha256": "c9ef385984d8bc4b77db7e279effccf4b168ae3b883109d9c42f89f61624b2d1",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/diabetes_baseline.py",
+    "lines": 45,
+    "sha256": "8eb1605c3ca387308fce09de2f77f6e37dbc92c22bb9b436908687a3a0599096",
+    "symbols": [
+      "run_single"
+    ]
+  },
+  {
+    "path": "scripts/download_pima.py",
+    "lines": 11,
+    "sha256": "1b67cece497b471094b9aad51a24e85877838d3be75adc8e8100945d1bd2f2ef",
+    "symbols": []
+  },
+  {
+    "path": "scripts/evaluate_diabetes_llm.py",
+    "lines": 39,
+    "sha256": "3324a2ced6ff12fdd10a6c725ec307e3aee97fca424b454f0226942db956f71d",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_diabetes_mas.py",
+    "lines": 62,
+    "sha256": "9af6ad5907b1eccedbc3044ab313166135f23f32eafb91e5488c72e57aa800ab",
+    "symbols": [
+      "normalize",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_diabetes_rag.py",
+    "lines": 46,
+    "sha256": "631b047e3cd86725b3d313602750d4ae23bdf497e33fe17015f910fb7e2bda78",
+    "symbols": [
+      "questions",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_diabetes_safety.py",
+    "lines": 61,
+    "sha256": "f99aa3280f5fbdaffbb6c8dc36966041021da3f14b2bd95850047cf43aadc39d",
+    "symbols": [
+      "Slow",
+      "Conflicting",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_knowledge.py",
+    "lines": 24,
+    "sha256": "7bc730547e6b8243da3b90260b5aa245c3a1915571397bb872faeb13cd0e3890",
+    "symbols": []
+  },
+  {
+    "path": "scripts/evaluate_mas.py",
+    "lines": 83,
+    "sha256": "4bb772217947b134326e9c92ff6fd3a60225d45d1fc66aefb6cb46fba42efeaa",
+    "symbols": [
+      "normalize",
+      "score",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_prediction.py",
+    "lines": 27,
+    "sha256": "6220abf4b310cfbd879d6456667e207e1bc942f812dffd279fe2f24eb5161450",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_rag.py",
+    "lines": 28,
+    "sha256": "ca12ab9fd7990ef3e7c7df67166f5a1de375181942001c50257914fc75f4c98e",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_rl.py",
+    "lines": 30,
+    "sha256": "cce6e7e26156efd96ffc0bc07214faf618c69d51255b1eb6c14ae90a58222ad3",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/evaluate_safety.py",
+    "lines": 79,
+    "sha256": "1adcd4c15a35ac99394a8da1c9f21e59c73c2f79d7aa83117be529f206ec2e48",
+    "symbols": [
+      "TimeoutKnowledge",
+      "ConflictingKnowledge",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/export_report.ps1",
+    "lines": 13,
+    "sha256": "1ef97ffba39cf944de34576dfd29a2ed33a0b55d24d2b044a59583a62c2f622e"
+  },
+  {
+    "path": "scripts/generate_report_assets.py",
+    "lines": 80,
+    "sha256": "a00c3aba4240896124736993d34baf4ab98cafc70c6154bcd73b74f844bc0e64",
+    "symbols": [
+      "sha",
+      "diagram",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/inspect_report.py",
+    "lines": 42,
+    "sha256": "9d3a1804149d0c7df5f8f1ef9f62c8684a8df458e80bf26f66779874b20c7415",
+    "symbols": []
+  },
+  {
+    "path": "scripts/local_neo4j.py",
+    "lines": 165,
+    "sha256": "c69caef4fc00b8b403252a998935f0de3456108eb8e83360cd1bbfcf1247d46f",
+    "symbols": [
+      "configuration",
+      "paths",
+      "command",
+      "owned_processes",
+      "occupied",
+      "verify",
+      "setup",
+      "start",
+      "stop",
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/package_demo_artifacts.py",
+    "lines": 26,
+    "sha256": "2565cffcfaee841c059e28e3a5dc114ff0a0b2a7d59bb07f0f9e146c4ce70874",
+    "symbols": []
+  },
+  {
+    "path": "scripts/pdf_report_pages.py",
+    "lines": 14,
+    "sha256": "e1bcdf4b72571bfb9cad8275b6c5a1984aa1d3a2b7a126fd4d0014d80786d560",
+    "symbols": [
+      "normalize"
+    ]
+  },
+  {
+    "path": "scripts/phase07_baseline.py",
+    "lines": 44,
+    "sha256": "ff94865c55b1a69e213f43d1918145482e70b3f9e8814b85a117d2734e631761",
+    "symbols": [
+      "run_single"
+    ]
+  },
+  {
+    "path": "scripts/phase07_common.py",
+    "lines": 110,
+    "sha256": "f345d7d35c3bb921cd96a1d75d5ace5dbe7fe8b6b869f5f4da525bbe6be54607",
+    "symbols": [
+      "sha",
+      "source_version",
+      "save",
+      "plot_bars",
+      "dataset_scenarios",
+      "UnavailableGraph",
+      "make_registry",
+      "admitted"
+    ]
+  },
+  {
+    "path": "scripts/phase07_fault_app.py",
+    "lines": 12,
+    "sha256": "429e99641ea3a1b5b20c0b77ff2fcf50466de3dafb476e9ad010c9af3c263d56",
+    "symbols": [
+      "DownGraph",
+      "knowledge_down"
+    ]
+  },
+  {
+    "path": "scripts/prepare_diabetes_corpus.py",
+    "lines": 8,
+    "sha256": "29e315136387695335f41fd78f5f8087f5857d904abdd252199326de4449d521",
+    "symbols": []
+  },
+  {
+    "path": "scripts/prepare_diabetes_embeddings.py",
+    "lines": 17,
+    "sha256": "a281fb750bd03ceebb9b7e855f7a366cf91965127b2aa54c0ecd05ff5efd9689",
+    "symbols": []
+  },
+  {
+    "path": "scripts/prepare_diabetes_reranker.py",
+    "lines": 7,
+    "sha256": "cb7e8a1435c97575df6b7afec87809a016d5335daaeb014e6c33d3deee7fdbbf",
+    "symbols": []
+  },
+  {
+    "path": "scripts/prepare_serving.py",
+    "lines": 10,
+    "sha256": "9686288fb8798e2b9607ea3cf3e574c5e8ffe4cf243d8c09c51818be7f48aa60",
+    "symbols": []
+  },
+  {
+    "path": "scripts/render_report_pdf.cjs",
+    "lines": 30,
+    "sha256": "10174936a4c9647f114ac2468fe6f1583a8d21dfcc13e2128181e386a67baaaa"
+  },
+  {
+    "path": "scripts/run_checks.py",
+    "lines": 58,
+    "sha256": "cf6d4c3ecb99f7428f4e30edae0433b5fade53b21d6c6c510c4c8f1ae9c0038f",
+    "symbols": [
+      "run"
+    ]
+  },
+  {
+    "path": "scripts/run_diabetes_demo.py",
+    "lines": 50,
+    "sha256": "68701759cdfa85dd43a6a0dd79e51b53de2df3b684f0fa845db7c44590ee017e",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/run_e2e_demo.py",
+    "lines": 53,
+    "sha256": "7310ef77382ccc0944fc7e178108e057416a2687bd2534dc3ee81d6ac161e6fd",
+    "symbols": [
+      "main"
+    ]
+  },
+  {
+    "path": "scripts/run_phase02.py",
+    "lines": 12,
+    "sha256": "13026e05f3b65d5b6c4c1f89f33521831b2fc682170fcf17a0ca75e61564b0f6",
+    "symbols": []
+  },
+  {
+    "path": "scripts/seed_diabetes_graph.py",
+    "lines": 13,
+    "sha256": "be2d8094a6c4c73d150a5d5a2a58f1c5c8d8b4baa0cf5d291b67e2956f10ce41",
+    "symbols": []
+  },
+  {
+    "path": "scripts/seed_knowledge.py",
+    "lines": 15,
+    "sha256": "b641b92b7646c917d7c0aa97593551f9de4c00a629fd4581896157f90362f3e5",
+    "symbols": []
+  },
+  {
+    "path": "scripts/setup_compose_env.py",
+    "lines": 11,
+    "sha256": "5015be793f6df836c10ff0a43f3817085dae709c88fedac230795cf8f78e4307",
+    "symbols": []
+  },
+  {
+    "path": "scripts/update_report_toc.ps1",
+    "lines": 18,
+    "sha256": "8be096cc2038a29671185c5f0b52f54980c01facce69e58f2d84926367de3581"
+  },
+  {
+    "path": "scripts/verify_phase00.py",
+    "lines": 24,
+    "sha256": "3cf90177cab37cf2d30e70d3d02508e5d98f35aedf6d50d6d1e800b05250005e",
+    "symbols": []
+  },
+  {
+    "path": "scripts/verify_phase06_review.py",
+    "lines": 52,
+    "sha256": "4edf315c191e8abc3b5c4fb014bfd2522334ff0f338ade9e120ba00d9c0f26ce",
+    "symbols": []
+  },
+  {
+    "path": "frontend/src/api.test.ts",
+    "lines": 16,
+    "sha256": "94d28a2ae12a2a75d1cbcd1dbf84f5d31424123fe09f2ef033f06d06425e4428"
+  },
+  {
+    "path": "frontend/src/api.ts",
+    "lines": 32,
+    "sha256": "04cfc3091ff3e7437cb7f24b1e5067689bde220070371d0bf2a89168b043659a"
+  },
+  {
+    "path": "frontend/src/App.test.tsx",
+    "lines": 18,
+    "sha256": "9168cef5b00f153db8591f522641ab0c484e9ba9cf5fb03bc87b40f8b7d59ded"
+  },
+  {
+    "path": "frontend/src/App.tsx",
+    "lines": 48,
+    "sha256": "4a9173c61ae19ea93b07072d96667e2328c55b310438229ddebbb814a7aeef9c"
+  },
+  {
+    "path": "frontend/src/fonts.css",
+    "lines": 135,
+    "sha256": "0c8ad26f26d5c696ecfc2ff0efc8afbba3cb8084b56ddf04baf8a0f6b831e410"
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "lines": 5,
+    "sha256": "2fe4642d876463b795029ca172088c0aa819417c6aaedc08093c5df29e29202a"
+  },
+  {
+    "path": "frontend/src/ResearchPanels.tsx",
+    "lines": 14,
+    "sha256": "f2d56e42af63f015048aac8122962d93a028844178b602b4cc27698e39c95373"
+  },
+  {
+    "path": "frontend/src/style.css",
+    "lines": 368,
+    "sha256": "eb15c00eef053fbec429d6ce4f453e1545613044365ec76c23a0f4d2989fc5aa"
+  },
+  {
+    "path": "frontend/src/test-setup.ts",
+    "lines": 4,
+    "sha256": "02daa934ec93dd1d525f2e8a034dd1798a88e33f5800574a2f6d573b690af50b"
+  },
+  {
+    "path": "frontend/src/ui.tsx",
+    "lines": 42,
+    "sha256": "9abd16cdbe4c51f5bbbc34e8d8fb37e0ed4b59b5ca83b40b01aaeb85a268a6ac"
+  },
+  {
+    "path": "frontend/src/vite-env.d.ts",
+    "lines": 1,
+    "sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92"
+  },
+  {
+    "path": "frontend/src/WorkflowPanels.tsx",
+    "lines": 49,
+    "sha256": "a2c4ce120b41c7ba781e3c1796e32a77fb62e18d9744d0ecf81b0cfb3bff6735"
+  },
+  {
+    "path": "infra/docker/backend.Dockerfile",
+    "lines": 16,
+    "sha256": "2bb3d1791ac2a251190f98311f091ec7a8a0b4d0161f712ffb3932856cbb6413"
+  },
+  {
+    "path": "infra/docker/compose.dev.yaml",
+    "lines": 10,
+    "sha256": "803ba9e1cc029198f0a140ca04f3c10c876a323daa32a900c32645256428569c"
+  },
+  {
+    "path": "infra/docker/compose.yaml",
+    "lines": 19,
+    "sha256": "c6f19f954fe534ac4f72ea333639411c53b99abc6a47469acd6272e249b8f6f6"
+  },
+  {
+    "path": "infra/docker/frontend.Dockerfile",
+    "lines": 10,
+    "sha256": "78b29bc1ea2e32318028aa429cc7fc6ddcf5582e586688a5ee26489b446af108"
+  },
+  {
+    "path": "infra/docker/runtime-requirements.txt",
+    "lines": 19,
+    "sha256": "32f54ad83739c48ec444e54f88c726f75aef1ceb4ea8fb9d816adce201ad15ad"
+  }
+]

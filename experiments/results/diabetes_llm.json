@@ -1,0 +1,113 @@
+{
+  "scope": "Actual remote LLM calls. Automated verifier acceptance is not clinical accuracy; approved responses require further human source review.",
+  "summary": [
+    {
+      "provider": "Groq",
+      "model": "openai/gpt-oss-20b",
+      "questions": 6,
+      "actual_llm_responses": 3,
+      "independent_verifier_acceptance": 1,
+      "latency_ms": 2278.7040333332698,
+      "input_tokens": 4477,
+      "output_tokens": 694
+    }
+  ],
+  "rows": [
+    {
+      "question_id": "definition:confirmatory:0",
+      "language": "vi",
+      "generation_mode": "clarification",
+      "accepted": 0,
+      "claims": 0,
+      "verification_mode": "abstention",
+      "reason_codes": [
+        "CONTROLLED_ABSTENTION"
+      ],
+      "provider_error": null,
+      "latency_ms": 2.7454999999463325,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "approved_response": null
+    },
+    {
+      "question_id": "definition:confirmatory:1",
+      "language": "en",
+      "generation_mode": "llm",
+      "accepted": 1,
+      "claims": 1,
+      "verification_mode": "independent_llm",
+      "reason_codes": [
+        "INDEPENDENT_ENTAILMENT_ACCEPTED"
+      ],
+      "provider_error": null,
+      "latency_ms": 2600.8892000008927,
+      "input_tokens": 1317,
+      "output_tokens": 245,
+      "approved_response": "Glucose is the substance whose elevated level in the blood defines diabetes. [947befad3eac3baedee8053845dfc989f8495e566dac91faebf2aa6071069dd6]"
+    },
+    {
+      "question_id": "symptoms:confirmatory:0",
+      "language": "vi",
+      "generation_mode": "clarification",
+      "accepted": 0,
+      "claims": 0,
+      "verification_mode": "abstention",
+      "reason_codes": [
+        "CONTROLLED_ABSTENTION"
+      ],
+      "provider_error": null,
+      "latency_ms": 0.11199999971722718,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "approved_response": null
+    },
+    {
+      "question_id": "symptoms:confirmatory:1",
+      "language": "en",
+      "generation_mode": "llm",
+      "accepted": 1,
+      "claims": 1,
+      "verification_mode": "independent_llm",
+      "reason_codes": [
+        "INDEPENDENT_ENTAILMENT_ACCEPTED"
+      ],
+      "provider_error": null,
+      "latency_ms": 2479.024999998728,
+      "input_tokens": 1541,
+      "output_tokens": 250,
+      "approved_response": "Common symptoms of diabetes include increased urination, feeling very thirsty, feeling very hungry even after eating, blurred vision, fatigue, sores that do not heal, and frequent infections such as urinary tract infections, skin infections, or yeast infections [042436c3cb9b76ea4548fe645cf02e14207ae5fdbad0014559482e22a66fc72c]"
+    },
+    {
+      "question_id": "risk:confirmatory:0",
+      "language": "vi",
+      "generation_mode": "extractive",
+      "accepted": 0,
+      "claims": 0,
+      "verification_mode": "exact_quote",
+      "reason_codes": [
+        "EXACT_SOURCE_QUOTES"
+      ],
+      "provider_error": "GROQ_STRUCTURED_OUTPUT_REJECTED",
+      "latency_ms": 1480.157699999836,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "approved_response": null
+    },
+    {
+      "question_id": "risk:confirmatory:1",
+      "language": "en",
+      "generation_mode": "llm",
+      "accepted": 1,
+      "claims": 1,
+      "verification_mode": "independent_llm",
+      "reason_codes": [
+        "INDEPENDENT_ENTAILMENT_ACCEPTED"
+      ],
+      "provider_error": null,
+      "latency_ms": 1756.1979000001884,
+      "input_tokens": 1619,
+      "output_tokens": 199,
+      "approved_response": "Being overweight or having obesity increases the risk of type 2 diabetes. [af4682d68e8a373b2b060f34c3aceaa5f44a3d52874251cd2bab8653ef0eea32]"
+    }
+  ]
+}

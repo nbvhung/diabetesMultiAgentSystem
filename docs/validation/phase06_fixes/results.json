@@ -1,0 +1,11 @@
+{
+  "prior_notebook_execution_verified": true,
+  "evaluation": true,
+  "pytest": true,
+  "proposed_effective_actions_persisted": true,
+  "api_rl_policy_and_trace": true,
+  "safety_veto": true,
+  "missing_policy_explicit_fallback": true,
+  "concurrent_requests": 4,
+  "q_table_not_updated_by_requests": true
+}

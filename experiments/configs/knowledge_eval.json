@@ -1,0 +1,190 @@
+[
+  {
+    "id": "Q01",
+    "question": "What types of diabetes are named?",
+    "relevant_sections": [
+      "What is Diabetes?"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q02",
+    "question": "What is blood glucose?",
+    "relevant_sections": [
+      "What is Diabetes?"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q03",
+    "question": "What symptoms might occur?",
+    "relevant_sections": [
+      "Symptoms & Causes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q04",
+    "question": "Can people have no symptoms?",
+    "relevant_sections": [
+      "Symptoms & Causes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q05",
+    "question": "What risk factors are mentioned?",
+    "relevant_sections": [
+      "Risk Factors for Type 2 Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q06",
+    "question": "Does family history affect diabetes risk?",
+    "relevant_sections": [
+      "Risk Factors for Type 2 Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q07",
+    "question": "How can prevention delay type 2 diabetes?",
+    "relevant_sections": [
+      "Preventing Type 2 Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q08",
+    "question": "Which prevention lifestyle steps are mentioned?",
+    "relevant_sections": [
+      "Preventing Type 2 Diabetes",
+      "Healthy Living with Diabetes"
+    ],
+    "category": "multistep"
+  },
+  {
+    "id": "Q09",
+    "question": "How do doctors choose diabetes tests?",
+    "relevant_sections": [
+      "Diabetes Tests & Diagnosis"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q10",
+    "question": "Do symptoms and pregnancy affect diagnostic tests?",
+    "relevant_sections": [
+      "Diabetes Tests & Diagnosis"
+    ],
+    "category": "multistep"
+  },
+  {
+    "id": "Q11",
+    "question": "Why work with a health care team?",
+    "relevant_sections": [
+      "Managing Diabetes",
+      "Healthy Living with Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q12",
+    "question": "What meal and physical activity topics are included?",
+    "relevant_sections": [
+      "Healthy Living with Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q13",
+    "question": "What should I discuss when planning pregnancy?",
+    "relevant_sections": [
+      "Pregnancy & Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q14",
+    "question": "What diabetes types include gestational diabetes?",
+    "relevant_sections": [
+      "What is Diabetes?",
+      "Pregnancy & Diabetes"
+    ],
+    "category": "normal"
+  },
+  {
+    "id": "Q15",
+    "question": "Provide NIDDK sources for symptoms",
+    "relevant_sections": [
+      "Symptoms & Causes"
+    ],
+    "category": "source"
+  },
+  {
+    "id": "Q16",
+    "question": "Cite evidence for family history and risk",
+    "relevant_sections": [
+      "Risk Factors for Type 2 Diabetes"
+    ],
+    "category": "source"
+  },
+  {
+    "id": "Q17",
+    "question": "Give sources for screening tests",
+    "relevant_sections": [
+      "Diabetes Tests & Diagnosis"
+    ],
+    "category": "source"
+  },
+  {
+    "id": "Q18",
+    "question": "Explain symptoms and prevention with sources",
+    "relevant_sections": [
+      "Symptoms & Causes",
+      "Preventing Type 2 Diabetes"
+    ],
+    "category": "multistep"
+  },
+  {
+    "id": "Q19",
+    "question": "What are the trieu chung?",
+    "relevant_sections": [
+      "Symptoms & Causes"
+    ],
+    "category": "bilingual"
+  },
+  {
+    "id": "Q20",
+    "question": "How about phong ngua?",
+    "relevant_sections": [
+      "Preventing Type 2 Diabetes"
+    ],
+    "category": "bilingual"
+  },
+  {
+    "id": "Q21",
+    "question": "Tell me about sugar",
+    "relevant_sections": [],
+    "category": "ambiguous"
+  },
+  {
+    "id": "Q22",
+    "question": "Explain python generators",
+    "relevant_sections": [],
+    "category": "out_of_scope"
+  },
+  {
+    "id": "Q23",
+    "question": "How to repair a bicycle?",
+    "relevant_sections": [],
+    "category": "out_of_scope"
+  },
+  {
+    "id": "Q24",
+    "question": "What are treatments for lung cancer?",
+    "relevant_sections": [],
+    "category": "out_of_scope"
+  }
+]

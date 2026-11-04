@@ -1,0 +1,22 @@
+{
+  "version": "diabetes-corpus-2.0",
+  "publisher": "NIDDK",
+  "usage_policy": "https://www.niddk.nih.gov/copyright",
+  "scope": "Public diabetes education; text only; exclude logos, images, third-party quotations, references and individualized medication instructions. Cached snapshots are local research inputs, not a clinical guideline database.",
+  "sources": [
+    {"id":"definition","path":"what-is-diabetes","topics":["diabetes","types"]},
+    {"id":"symptoms","path":"symptoms-causes","topics":["diabetes","symptoms","causes"]},
+    {"id":"risk","path":"risk-factors-type-2-diabetes","topics":["diabetes","risk"]},
+    {"id":"prevention","path":"preventing-type-2-diabetes","topics":["diabetes","prevention"]},
+    {"id":"tests","path":"tests-diagnosis","topics":["diabetes","tests"]},
+    {"id":"living","path":"healthy-living-with-diabetes","topics":["diabetes","nutrition","activity"]},
+    {"id":"management","path":"managing-diabetes","topics":["diabetes","management","monitoring"]},
+    {"id":"type1","path":"what-is-diabetes/type-1-diabetes","topics":["diabetes","type1","causes"]},
+    {"id":"type2","path":"what-is-diabetes/type-2-diabetes","topics":["diabetes","type2","causes"]},
+    {"id":"prediabetes","path":"what-is-diabetes/prediabetes-insulin-resistance","topics":["diabetes","prediabetes","insulin_resistance"]},
+    {"id":"gestational","path":"what-is-diabetes/gestational","topics":["diabetes","gestational"]},
+    {"id":"neuropathy","path":"preventing-problems/nerve-damage-diabetic-neuropathies","topics":["diabetes","complications","neuropathy"]},
+    {"id":"foot","path":"preventing-problems/foot-problems","topics":["diabetes","complications","foot"]},
+    {"id":"eye","path":"preventing-problems/diabetic-eye-disease","topics":["diabetes","complications","eye"]}
+  ]
+}

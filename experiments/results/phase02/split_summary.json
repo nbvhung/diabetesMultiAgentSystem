@@ -1,0 +1,14 @@
+{
+  "train": {
+    "n": 537,
+    "positive": 187
+  },
+  "validation": {
+    "n": 115,
+    "positive": 40
+  },
+  "test": {
+    "n": 116,
+    "positive": 41
+  }
+}

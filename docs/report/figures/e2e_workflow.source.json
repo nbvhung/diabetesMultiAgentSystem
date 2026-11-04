@@ -1,0 +1,92 @@
+{
+  "nodes": {
+    "u": [
+      2,
+      6.8,
+      "Synthetic assessment\n+ diabetes question"
+    ],
+    "s1": [
+      6,
+      6.8,
+      "Safety input"
+    ],
+    "p": [
+      10,
+      6.8,
+      "Prediction\nMLP / score"
+    ],
+    "k": [
+      10,
+      4.4,
+      "Knowledge\nevidence / retry"
+    ],
+    "r": [
+      6,
+      4.4,
+      "RL\naction / fallback"
+    ],
+    "e": [
+      2,
+      4.4,
+      "Education\nclaims / extractive"
+    ],
+    "v": [
+      2,
+      2,
+      "Verifier\naccept / repair"
+    ],
+    "s2": [
+      6,
+      2,
+      "Safety output\nallow / veto"
+    ],
+    "db": [
+      10,
+      2,
+      "SQL commit\nReact results"
+    ]
+  },
+  "edges": [
+    [
+      "u",
+      "s1",
+      ""
+    ],
+    [
+      "s1",
+      "p",
+      "allow"
+    ],
+    [
+      "p",
+      "k",
+      ""
+    ],
+    [
+      "k",
+      "r",
+      ""
+    ],
+    [
+      "r",
+      "e",
+      ""
+    ],
+    [
+      "e",
+      "v",
+      ""
+    ],
+    [
+      "v",
+      "s2",
+      "admitted"
+    ],
+    [
+      "s2",
+      "db",
+      "release"
+    ]
+  ],
+  "source": "backend/app/research/coordinator.py; repository.py"
+}

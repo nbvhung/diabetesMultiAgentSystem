@@ -1,0 +1,310 @@
+{
+  "data_label": "SYNTHETIC_HTTP_CHECK",
+  "health": {
+    "status": "ok",
+    "phase": "01",
+    "scope": "application_liveness"
+  },
+  "capabilities": {
+    "schema_version": "1.0",
+    "phase": "01",
+    "components": {
+      "api": "available",
+      "coordinator": "available",
+      "database": "unavailable",
+      "deep_learning": "stub",
+      "neo4j_rag": "stub",
+      "rules": "available",
+      "rl_policy": "stub",
+      "prediction_agent": "stub",
+      "knowledge_agent": "stub",
+      "rl_agent": "stub",
+      "education_agent": "available",
+      "safety_agent": "available",
+      "run_storage": "available"
+    },
+    "note": "Education is abstention-only; safety is minimal lexical rules. Models/RAG/policy are NOT integrated. Storage is bounded process-local RAM; database connectivity is unverified."
+  },
+  "run": {
+    "schema_version": "2.0",
+    "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+    "status": "DEGRADED",
+    "agent_results": {
+      "prediction": {
+        "schema_version": "2.0",
+        "agent_id": "prediction",
+        "status": "SKIPPED",
+        "implementation": "stub",
+        "output": null,
+        "errors": []
+      },
+      "knowledge": {
+        "schema_version": "2.0",
+        "agent_id": "knowledge",
+        "status": "UNAVAILABLE",
+        "implementation": "stub",
+        "output": null,
+        "errors": [
+          "TOOL_NOT_INTEGRATED"
+        ]
+      },
+      "education": {
+        "schema_version": "2.0",
+        "agent_id": "education",
+        "status": "COMPLETED",
+        "implementation": "minimal",
+        "output": {
+          "schema_version": "1.0",
+          "text": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+          "evidence_ids": []
+        },
+        "errors": []
+      },
+      "safety": {
+        "schema_version": "2.0",
+        "agent_id": "safety",
+        "status": "COMPLETED",
+        "implementation": "minimal",
+        "output": {
+          "schema_version": "1.0",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [],
+          "reason": "Passed bounded Phase 01 checks; not clinical validation"
+        },
+        "errors": []
+      },
+      "rl": {
+        "schema_version": "2.0",
+        "agent_id": "rl",
+        "status": "UNAVAILABLE",
+        "implementation": "stub",
+        "output": null,
+        "errors": [
+          "NO_COMPATIBLE_POLICY"
+        ]
+      }
+    },
+    "response": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+    "evidence": [],
+    "agent_trace": [
+      {
+        "schema_version": "2.0",
+        "sequence": 1,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 2,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "prediction",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_ASSESSMENT",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 3,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "knowledge",
+        "message_id": "c2771b4d-c850-42f7-b531-9138f02ef0e0",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 4,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "knowledge",
+        "message_id": "c2771b4d-c850-42f7-b531-9138f02ef0e0",
+        "status": "UNAVAILABLE",
+        "reason": "TOOL_NOT_INTEGRATED",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 5,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 6,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "education",
+        "message_id": "b681bd40-21ef-4ef4-bd7a-b231109139ab",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 7,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "education",
+        "message_id": "b681bd40-21ef-4ef4-bd7a-b231109139ab",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 8,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "safety",
+        "message_id": "f033e2ac-4c26-44ba-986e-ecbc442ea5a3",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 9,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "safety",
+        "message_id": "f033e2ac-4c26-44ba-986e-ecbc442ea5a3",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 10,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      }
+    ],
+    "warnings": [
+      "knowledge: TOOL_NOT_INTEGRATED",
+      "rl: NO_COMPATIBLE_POLICY",
+      "IN_MEMORY_STORAGE_NON_DURABLE"
+    ],
+    "limitations": [
+      "Prediction, Neo4j/RAG and RL policy are stubs; no clinical computation or retrieval.",
+      "Education only provides a transparent abstention; safety rules are minimal lexical checks, not a clinical engine.",
+      "Runs are stored in bounded process-local RAM; restart/eviction loses data; workers do not share runs."
+    ]
+  },
+  "trace": {
+    "schema_version": "2.0",
+    "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+    "agent_trace": [
+      {
+        "schema_version": "2.0",
+        "sequence": 1,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": null,
+        "message_id": null,
+        "status": "RUNNING",
+        "reason": "WORKFLOW_TRANSITION",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 2,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "prediction",
+        "message_id": null,
+        "status": "SKIPPED",
+        "reason": "NO_ASSESSMENT",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 3,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "knowledge",
+        "message_id": "c2771b4d-c850-42f7-b531-9138f02ef0e0",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 4,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "knowledge",
+        "message_id": "c2771b4d-c850-42f7-b531-9138f02ef0e0",
+        "status": "UNAVAILABLE",
+        "reason": "TOOL_NOT_INTEGRATED",
+        "timestamp": "2026-11-01T20:04:57.710434Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 5,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "rl",
+        "message_id": null,
+        "status": "UNAVAILABLE",
+        "reason": "NO_COMPATIBLE_POLICY",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 6,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "education",
+        "message_id": "b681bd40-21ef-4ef4-bd7a-b231109139ab",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 7,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "education",
+        "message_id": "b681bd40-21ef-4ef4-bd7a-b231109139ab",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "timestamp": "2026-11-01T20:04:57.711941Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 8,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "safety",
+        "message_id": "f033e2ac-4c26-44ba-986e-ecbc442ea5a3",
+        "status": "RUNNING",
+        "reason": "TASK_DISPATCHED",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 9,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": "safety",
+        "message_id": "f033e2ac-4c26-44ba-986e-ecbc442ea5a3",
+        "status": "COMPLETED",
+        "reason": "TASK_COMPLETED",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      },
+      {
+        "schema_version": "2.0",
+        "sequence": 10,
+        "run_id": "bde62595-f282-435d-9011-d3262b09ecba",
+        "agent_id": null,
+        "message_id": null,
+        "status": "DEGRADED",
+        "reason": "WORKFLOW_TRANSITION",
+        "timestamp": "2026-11-01T20:04:57.712532Z"
+      }
+    ]
+  },
+  "agent_count": 5
+}

@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-11-03T10:02:30.990347+00:00",
+  "author_confirmed": {
+    "name": "Nguyễn Bá Việt Hùng",
+    "student_id": "B23DCCN358",
+    "group": 13,
+    "class": "06",
+    "advisor": "PGS.TS. Trần Đình Quế"
+  },
+  "readiness": "BLOCKED_DOCKER_RUNTIME",
+  "training_rerun": false,
+  "measured_evidence": [
+    {
+      "name": "prediction",
+      "csv_sha256": "84ca9aebe52e22b8700bb648a9583340b33f931042ed3a777086593edce90f5d",
+      "manifest_sha256": "b83d52ffcfd9c4221b5e1fff293e4d53647477bef7361fc7814ec3363a4765da",
+      "measurement_timestamp": "2026-11-02T14:01:04.906129+00:00",
+      "measurement_code_version": "source-sha256:6e300213edbb82d84ef47370ee421acd999ad9cda1b31fab94abeafb7eca7b45"
+    },
+    {
+      "name": "diabetes_rag",
+      "csv_sha256": "512be1a9669d9b3469d1d853c7a85c90fdc402ee63f4f5517b4058087d6c8446",
+      "manifest_sha256": "778f8d274d57b753623014a34ad921b1c0841a1b0223a2995e5c980935fd2fa9",
+      "measurement_timestamp": "2026-11-02T17:28:32.920377+00:00",
+      "measurement_code_version": "source-sha256:927ed5c179c660560625a8c1362ae8ceef22706e6669f4a187a5afe8f63d5166"
+    },
+    {
+      "name": "diabetes_mas",
+      "csv_sha256": "6b382b4eb6cd2b33a458730d160b4369c075304bc92c4ff1adff17814f0dabfc",
+      "manifest_sha256": "ebff457f57f445f909672b4179288824fecfd3dc121583d294d049e3ecbb9293",
+      "measurement_timestamp": "2026-11-02T17:29:48.696880+00:00",
+      "measurement_code_version": "source-sha256:927ed5c179c660560625a8c1362ae8ceef22706e6669f4a187a5afe8f63d5166"
+    },
+    {
+      "name": "rl",
+      "csv_sha256": "fa5e5d405a28196401d39f922af3944b3898a08a9ebb7469538cc003930fe2b8",
+      "manifest_sha256": "613ba4be1bfb3376c7b205ee9d48d54d07e42c282122236a1723b7c5e217c6d7",
+      "measurement_timestamp": "2026-11-02T14:01:51.244914+00:00",
+      "measurement_code_version": "source-sha256:6e300213edbb82d84ef47370ee421acd999ad9cda1b31fab94abeafb7eca7b45"
+    },
+    {
+      "name": "diabetes_safety",
+      "csv_sha256": "876c3ab04467fabaa76bb046595845e71319645b3e6ede44a138ce6f8d7cce19",
+      "manifest_sha256": "a4078795394f60f8e03de10e23ce19aeb6f56c0370fa3b1b19d16939de332b12",
+      "measurement_timestamp": "2026-11-02T17:30:13.487241+00:00",
+      "measurement_code_version": "source-sha256:927ed5c179c660560625a8c1362ae8ceef22706e6669f4a187a5afe8f63d5166"
+    },
+    {
+      "name": "diabetes_llm",
+      "csv_sha256": "d7fa69b2e87f0026fcdd9678574a588cfc2d34df411610221a6b1f39aba38b78",
+      "manifest_sha256": "ef85c1167c7e409ce4a7ad1d89e63ed7a7c0b9d2cdd6ff8662097e31a6cbe743",
+      "measurement_timestamp": "2026-11-03T08:30:44.253290+00:00",
+      "measurement_code_version": "source-sha256:0a67a5fe99a2da141acc158fea57267e4f7e2a2ccf6387d608bf0e9c8517d04b"
+    }
+  ],
+  "chapter_sha256": {
+    "01_introduction.md": "2a55b04045d8c3254421cfb199ab9f210519313ecb869e998b4590a1ae8a60a8",
+    "02_multi_agent.md": "8b5ee007ef14213765be7f291498a410a0db8dfdd93ac705aa4dbea4149a59c8",
+    "03_architecture.md": "257c001e874602dee8c817c3ca01dda8166b819b2fadb29696e610257c21e06f",
+    "04_components.md": "6434315b1e97398d4c2ec6033926a97c6c62a6e35161da426044dde376c6fd92",
+    "05_demo_evaluation.md": "5296bb88c7a23281cf3f2b949376d0f9251069f89b84ec5bde0d78ae560fa730",
+    "06_references.md": "7017c72a3dcef873d30a8c69fcbab01d9a9bd02b36e47668581f8d67a8b5be6a",
+    "07_measured_tables.md": "0c327288e639be642f899769df32be4325f4a3dc70eb4e119e05564b923b2027",
+    "08_appendix.md": "15354bf4d60f7e98292141c42238beee9d50d9dcadcede57eb81fef158b70ca3"
+  },
+  "docx_sha256": "4a504ea673bf1b698a415c66cb57f73ccdd671fe884523c8c818857ab0de2ca9",
+  "pdf_status": "RENDERED_AND_STRUCTURALLY_CHECKED",
+  "pdf_pages": 48,
+  "pdf_sha256": "f176761d69f1e198a70d77782abd7492784ee8af97c6b485081e932ad9613523",
+  "pdf_renderer": "Chromium, measured PDF TOC; native Word export did not complete"
+}

@@ -1,0 +1,67 @@
+{
+  "nodes": {
+    "s": [
+      2,
+      6.5,
+      "DiabetesSource\nURL / publisher / version"
+    ],
+    "c": [
+      6,
+      6.5,
+      "DiabetesEvidence\nSHA256 / release / quote"
+    ],
+    "t": [
+      10,
+      6.5,
+      "DiabetesTopic"
+    ],
+    "a": [
+      6,
+      3.5,
+      "DiabetesAssertion\nsubject / predicate / quote"
+    ],
+    "sub": [
+      2,
+      1,
+      "DiabetesConcept\nsubject"
+    ],
+    "obj": [
+      10,
+      1,
+      "DiabetesConcept\nobject"
+    ]
+  },
+  "edges": [
+    [
+      "s",
+      "c",
+      "HAS_CHUNK"
+    ],
+    [
+      "t",
+      "c",
+      "SUPPORTED_BY"
+    ],
+    [
+      "a",
+      "c",
+      "SUPPORTED_BY"
+    ],
+    [
+      "sub",
+      "a",
+      "SUBJECT_OF"
+    ],
+    [
+      "a",
+      "obj",
+      "OBJECT"
+    ],
+    [
+      "sub",
+      "obj",
+      "typed relation + release"
+    ]
+  ],
+  "source": "backend/app/research/graph.py; corpus.py"
+}

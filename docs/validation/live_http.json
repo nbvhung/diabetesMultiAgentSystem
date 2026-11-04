@@ -1,0 +1,26 @@
+{
+  "health": {
+    "status": "ok",
+    "phase": "00",
+    "scope": "application_liveness"
+  },
+  "capabilities": {
+    "schema_version": "1.0",
+    "phase": "00",
+    "components": {
+      "api": "available",
+      "coordinator": "stub",
+      "database": "unavailable",
+      "deep_learning": "stub",
+      "neo4j_rag": "stub",
+      "rules": "stub",
+      "rl_policy": "stub",
+      "prediction_agent": "stub",
+      "knowledge_agent": "stub",
+      "education_agent": "stub",
+      "safety_agent": "stub",
+      "rl_agent": "stub"
+    },
+    "note": "Database connectivity has not been probed. No prediction endpoint is implemented."
+  }
+}

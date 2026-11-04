@@ -1,0 +1,9 @@
+{
+  "pytest": true,
+  "structure_env": true,
+  "alembic_heads": true,
+  "db_import": true,
+  "frontend_build": true,
+  "versions": true,
+  "live_http": true
+}

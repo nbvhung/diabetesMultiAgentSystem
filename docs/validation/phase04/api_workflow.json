@@ -1,0 +1,302 @@
+{
+  "schema_version": "2.1",
+  "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+  "status": "DEGRADED",
+  "agent_results": {
+    "prediction": {
+      "schema_version": "2.1",
+      "agent_id": "prediction",
+      "status": "SKIPPED",
+      "implementation": "integrated",
+      "output": null,
+      "errors": []
+    },
+    "knowledge": {
+      "schema_version": "2.1",
+      "agent_id": "knowledge",
+      "status": "COMPLETED",
+      "implementation": "integrated",
+      "output": {
+        "schema_version": "1.0",
+        "evidence": [
+          {
+            "schema_version": "1.0",
+            "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+            "source_title": "Diabetes Overview",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+            "publisher": "NIDDK",
+            "section": "Symptoms & Causes",
+            "retrieved_at": "2026-11-01T20:35:55.772223Z",
+            "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+          },
+          {
+            "schema_version": "1.0",
+            "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+            "source_title": "Diabetes Overview",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+            "publisher": "NIDDK",
+            "section": "Symptoms & Causes",
+            "retrieved_at": "2026-11-01T20:35:55.772223Z",
+            "excerpt": "Each type of diabetes has different causes."
+          },
+          {
+            "schema_version": "1.0",
+            "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+            "source_title": "Diabetes Overview",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+            "publisher": "NIDDK",
+            "section": "Symptoms & Causes",
+            "retrieved_at": "2026-11-01T20:35:55.772223Z",
+            "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+          },
+          {
+            "schema_version": "1.0",
+            "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+            "source_title": "Diabetes Overview",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+            "publisher": "NIDDK",
+            "section": "What is Diabetes?",
+            "retrieved_at": "2026-11-01T20:35:55.772223Z",
+            "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+          },
+          {
+            "schema_version": "1.0",
+            "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+            "source_title": "Diabetes Overview",
+            "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+            "publisher": "NIDDK",
+            "section": "What is Diabetes?",
+            "retrieved_at": "2026-11-01T20:35:55.772223Z",
+            "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+          }
+        ]
+      },
+      "errors": []
+    },
+    "education": {
+      "schema_version": "2.1",
+      "agent_id": "education",
+      "status": "COMPLETED",
+      "implementation": "integrated",
+      "output": {
+        "schema_version": "1.0",
+        "text": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+        "evidence_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+        ]
+      },
+      "errors": []
+    },
+    "safety": {
+      "schema_version": "2.1",
+      "agent_id": "safety",
+      "status": "COMPLETED",
+      "implementation": "minimal",
+      "output": {
+        "schema_version": "1.0",
+        "allowed": true,
+        "severity": "info",
+        "rule_ids": [],
+        "reason": "Passed bounded Phase 01 checks; not clinical validation"
+      },
+      "errors": []
+    },
+    "rl": {
+      "schema_version": "2.1",
+      "agent_id": "rl",
+      "status": "UNAVAILABLE",
+      "implementation": "stub",
+      "output": null,
+      "errors": [
+        "NO_COMPATIBLE_POLICY"
+      ]
+    }
+  },
+  "response": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+  "evidence": [
+    {
+      "schema_version": "1.0",
+      "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+      "source_title": "Diabetes Overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "section": "Symptoms & Causes",
+      "retrieved_at": "2026-11-01T20:35:55.772223Z",
+      "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+      "source_title": "Diabetes Overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "section": "Symptoms & Causes",
+      "retrieved_at": "2026-11-01T20:35:55.772223Z",
+      "excerpt": "Each type of diabetes has different causes."
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+      "source_title": "Diabetes Overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "section": "Symptoms & Causes",
+      "retrieved_at": "2026-11-01T20:35:55.772223Z",
+      "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+      "source_title": "Diabetes Overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "section": "What is Diabetes?",
+      "retrieved_at": "2026-11-01T20:35:55.772223Z",
+      "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+      "source_title": "Diabetes Overview",
+      "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "section": "What is Diabetes?",
+      "retrieved_at": "2026-11-01T20:35:55.772223Z",
+      "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+    }
+  ],
+  "agent_trace": [
+    {
+      "schema_version": "2.1",
+      "sequence": 1,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": null,
+      "message_id": null,
+      "status": "RUNNING",
+      "reason": "WORKFLOW_TRANSITION",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.892187Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 2,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "prediction",
+      "message_id": null,
+      "status": "SKIPPED",
+      "reason": "NO_ASSESSMENT",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.892187Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 3,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "knowledge",
+      "message_id": "1de99c8b-a0fd-4564-bbec-e4c3d54880e7",
+      "status": "RUNNING",
+      "reason": "TASK_DISPATCHED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.892187Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 4,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "knowledge",
+      "message_id": "1de99c8b-a0fd-4564-bbec-e4c3d54880e7",
+      "status": "COMPLETED",
+      "reason": "TASK_COMPLETED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.973409Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 5,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "rl",
+      "message_id": null,
+      "status": "UNAVAILABLE",
+      "reason": "NO_COMPATIBLE_POLICY",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.973409Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 6,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "education",
+      "message_id": "240ce8fc-c3df-449a-8fca-0ec90d466f44",
+      "status": "RUNNING",
+      "reason": "TASK_DISPATCHED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.974445Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 7,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "education",
+      "message_id": "240ce8fc-c3df-449a-8fca-0ec90d466f44",
+      "status": "COMPLETED",
+      "reason": "TASK_COMPLETED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.975433Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 8,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "safety",
+      "message_id": "da87f5b1-304b-4039-bbb3-9a3487f9ef94",
+      "status": "RUNNING",
+      "reason": "TASK_DISPATCHED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.976413Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 9,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": "safety",
+      "message_id": "da87f5b1-304b-4039-bbb3-9a3487f9ef94",
+      "status": "COMPLETED",
+      "reason": "TASK_COMPLETED",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.978503Z"
+    },
+    {
+      "schema_version": "2.1",
+      "sequence": 10,
+      "run_id": "a628b997-0e7c-4a0d-9d67-393df841310a",
+      "agent_id": null,
+      "message_id": null,
+      "status": "DEGRADED",
+      "reason": "WORKFLOW_TRANSITION",
+      "model_version": null,
+      "inference_latency_ms": null,
+      "timestamp": "2026-11-01T20:43:53.979109Z"
+    }
+  ],
+  "warnings": [
+    "rl: NO_COMPATIBLE_POLICY"
+  ],
+  "limitations": [
+    "Prediction uses the versioned research MLP; scores are not clinical probabilities or diagnoses.",
+    "Knowledge retrieval requires Neo4j; Education uses source excerpts; RL remains stub; Safety uses minimal rules.",
+    "PostgreSQL stores synthetic-only assessments, predictions, runs and traces."
+  ]
+}

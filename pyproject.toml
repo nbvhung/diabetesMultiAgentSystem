@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "diabetes-mas-final"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2.9,<3", "pydantic-settings>=2.5,<3", "SQLAlchemy>=2.0,<3", "alembic>=1.13,<2", "psycopg[binary]>=3.2,<4"]
+[project.optional-dependencies]
+report = ["python-docx>=1.1,<2", "PyMuPDF>=1.24,<2", "Pillow>=10,<13"]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1"]
+ml = ["torch>=2.4,<3", "scikit-learn>=1.5,<2", "jupyter>=1,<2", "pandas>=2,<4", "numpy>=1.26,<3", "matplotlib>=3.8,<4", "seaborn>=0.13,<1", "joblib>=1.3,<2", "nbconvert>=7,<8", "nbformat>=5,<6", "ipykernel>=6,<8"]
+knowledge = ["neo4j>=5.24,<7", "beautifulsoup4>=4.12,<5", "scikit-learn>=1.5,<2", "numpy>=1.26,<3", "psutil>=5.9,<8"]
+semantic = ["sentence-transformers>=3.4,<7", "huggingface-hub>=0.27,<2", "httpx>=0.27,<1"]
+rl = ["numpy>=1.26,<3", "pandas>=2,<4", "matplotlib>=3.8,<4", "jupyter>=1,<2", "nbconvert>=7,<8", "nbformat>=5,<6", "ipykernel>=6,<8"]
+[tool.setuptools.packages.find]
+include = ["backend*"]
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]

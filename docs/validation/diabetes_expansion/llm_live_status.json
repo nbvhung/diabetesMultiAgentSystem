@@ -1,0 +1,13 @@
+{
+  "status": "LIVE_EXECUTED",
+  "timestamp": "2026-11-03T08:30:42.924022+00:00",
+  "actual_generated_responses": 3,
+  "attempted_questions": 6,
+  "provider": {
+    "status": "available",
+    "provider": "Groq",
+    "model": "openai/gpt-oss-20b",
+    "last_verified_at": "2026-11-03T08:30:42.924022+00:00",
+    "code": null
+  }
+}

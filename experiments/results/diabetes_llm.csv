@@ -1,0 +1,2 @@
+provider,model,questions,actual_llm_responses,independent_verifier_acceptance,latency_ms,input_tokens,output_tokens
+Groq,openai/gpt-oss-20b,6,3,1,2278.7040333332698,4477,694

@@ -1,0 +1,422 @@
+{
+  "before": {
+    "nodes": 30,
+    "relationships": 48,
+    "chunks": 19
+  },
+  "after": {
+    "nodes": 30,
+    "relationships": 48,
+    "chunks": 19
+  },
+  "second_run": {
+    "nodes": 30,
+    "relationships": 48,
+    "chunks": 19
+  },
+  "idempotent": true,
+  "chunks": [
+    {
+      "id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+      "text": "Diabetes occurs when your blood glucose, also called blood sugar, is too high.",
+      "section": "What is Diabetes?",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Condition",
+      "entity": "diabetes",
+      "aliases": [
+        "diabetes",
+        "blood sugar",
+        "type 1",
+        "type 2",
+        "gestational",
+        "tieu duong"
+      ]
+    },
+    {
+      "id": "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+      "text": "High blood glucose can cause health problems over time.",
+      "section": "What is Diabetes?",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Condition",
+      "entity": "diabetes",
+      "aliases": [
+        "diabetes",
+        "blood sugar",
+        "type 1",
+        "type 2",
+        "gestational",
+        "tieu duong"
+      ]
+    },
+    {
+      "id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+      "text": "The main types of diabetes are type 1, type 2, and gestational.",
+      "section": "What is Diabetes?",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Condition",
+      "entity": "diabetes",
+      "aliases": [
+        "diabetes",
+        "blood sugar",
+        "type 1",
+        "type 2",
+        "gestational",
+        "tieu duong"
+      ]
+    },
+    {
+      "id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+      "text": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes.",
+      "section": "Symptoms & Causes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Symptom",
+      "entity": "symptoms",
+      "aliases": [
+        "symptoms",
+        "thirst",
+        "urination",
+        "vision",
+        "fatigue",
+        "trieu chung"
+      ]
+    },
+    {
+      "id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+      "text": "Many people have no symptoms and don\u2019t know they have diabetes.",
+      "section": "Symptoms & Causes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Symptom",
+      "entity": "symptoms",
+      "aliases": [
+        "symptoms",
+        "thirst",
+        "urination",
+        "vision",
+        "fatigue",
+        "trieu chung"
+      ]
+    },
+    {
+      "id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+      "text": "Each type of diabetes has different causes.",
+      "section": "Symptoms & Causes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Symptom",
+      "entity": "symptoms",
+      "aliases": [
+        "symptoms",
+        "thirst",
+        "urination",
+        "vision",
+        "fatigue",
+        "trieu chung"
+      ]
+    },
+    {
+      "id": "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+      "text": "You are more likely to develop type 2 diabetes if you have a family history of diabetes, are overweight or have obesity, or are 35 or older.",
+      "section": "Risk Factors for Type 2 Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "RiskFactor",
+      "entity": "risk factors",
+      "aliases": [
+        "risk",
+        "family history",
+        "obesity",
+        "inactivity",
+        "nguy co"
+      ]
+    },
+    {
+      "id": "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+      "text": "Physical inactivity, race, ethnicity, and certain health problems also affect your chances of developing type 2 diabetes.",
+      "section": "Risk Factors for Type 2 Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "RiskFactor",
+      "entity": "risk factors",
+      "aliases": [
+        "risk",
+        "family history",
+        "obesity",
+        "inactivity",
+        "nguy co"
+      ]
+    },
+    {
+      "id": "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+      "text": "A history of gestational diabetes is a risk factor for the parent and the child.",
+      "section": "Risk Factors for Type 2 Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "RiskFactor",
+      "entity": "risk factors",
+      "aliases": [
+        "risk",
+        "family history",
+        "obesity",
+        "inactivity",
+        "nguy co"
+      ]
+    },
+    {
+      "id": "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+      "text": "You can prevent or delay type 2 diabetes by losing weight if you are overweight, being active for 30 minutes most days of the week, and following a reduced-calorie eating plan.",
+      "section": "Preventing Type 2 Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "EducationalAction",
+      "entity": "prevention",
+      "aliases": [
+        "prevent",
+        "prevention",
+        "delay",
+        "phong ngua"
+      ]
+    },
+    {
+      "id": "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+      "text": "Doctors use a variety of tests to diagnose diabetes and prediabetes.",
+      "section": "Diabetes Tests & Diagnosis",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "DiagnosticTest",
+      "entity": "screening tests",
+      "aliases": [
+        "tests",
+        "screening",
+        "diagnosis",
+        "diagnostic",
+        "xet nghiem"
+      ]
+    },
+    {
+      "id": "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+      "text": "Your doctor may recommend different tests depending on whether you have symptoms or not, or whether you are pregnant.",
+      "section": "Diabetes Tests & Diagnosis",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "DiagnosticTest",
+      "entity": "screening tests",
+      "aliases": [
+        "tests",
+        "screening",
+        "diagnosis",
+        "diagnostic",
+        "xet nghiem"
+      ]
+    },
+    {
+      "id": "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+      "text": "Managing your diabetes means managing your blood glucose, blood pressure, and cholesterol levels.",
+      "section": "Managing Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "EducationalAction",
+      "entity": "care team",
+      "aliases": [
+        "care team",
+        "health care",
+        "professional",
+        "doctor",
+        "chuyen gia"
+      ]
+    },
+    {
+      "id": "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+      "text": "Work with your health care team to create a diabetes care plan that works for you.",
+      "section": "Managing Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "EducationalAction",
+      "entity": "care team",
+      "aliases": [
+        "care team",
+        "health care",
+        "professional",
+        "doctor",
+        "chuyen gia"
+      ]
+    },
+    {
+      "id": "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+      "text": "Your diabetes meal plan helps you manage your blood glucose.",
+      "section": "Healthy Living with Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "LifestyleTopic",
+      "entity": "lifestyle",
+      "aliases": [
+        "lifestyle",
+        "meal",
+        "diet",
+        "physical activity",
+        "exercise",
+        "song lanh manh"
+      ]
+    },
+    {
+      "id": "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+      "text": "Moderate physical activity most days of the week also helps control blood glucose.",
+      "section": "Healthy Living with Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "LifestyleTopic",
+      "entity": "lifestyle",
+      "aliases": [
+        "lifestyle",
+        "meal",
+        "diet",
+        "physical activity",
+        "exercise",
+        "song lanh manh"
+      ]
+    },
+    {
+      "id": "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+      "text": "Talk with your health care team about a plan for eating and physical activity that is right for you.",
+      "section": "Healthy Living with Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "LifestyleTopic",
+      "entity": "lifestyle",
+      "aliases": [
+        "lifestyle",
+        "meal",
+        "diet",
+        "physical activity",
+        "exercise",
+        "song lanh manh"
+      ]
+    },
+    {
+      "id": "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+      "text": "Learn more about less-common types of diabetes.",
+      "section": "Other Types of Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Condition",
+      "entity": "other diabetes",
+      "aliases": [
+        "other types"
+      ]
+    },
+    {
+      "id": "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+      "text": "If you have diabetes and plan to get pregnant, or develop diabetes during pregnancy, you can take steps to keep yourself and your baby healthy.",
+      "section": "Pregnancy & Diabetes",
+      "title": "Diabetes Overview",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+      "publisher": "NIDDK",
+      "retrieved_at": "2026-11-01T20:35:55.772223+00:00",
+      "publication_date": null,
+      "version": "6fd3188c8097a9b67a16ccb8feeef13a49f6fc5f2ec530ef4a75db60fc05a9f9",
+      "usage_notes": "NIDDK copyright policy: majority copyright free; text only, no logos/images/third-party material. https://www.niddk.nih.gov/copyright",
+      "label": "Condition",
+      "entity": "gestational diabetes",
+      "aliases": [
+        "gestational",
+        "pregnancy",
+        "pregnant",
+        "thai ky"
+      ]
+    }
+  ]
+}

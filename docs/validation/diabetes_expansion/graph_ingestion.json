@@ -1,0 +1,136 @@
+{
+  "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+  "chunks": 449,
+  "sources": 14,
+  "assertions": [
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:type2:HAS_RISK_FACTOR:obesity",
+      "subject": "type2",
+      "predicate": "HAS_RISK_FACTOR",
+      "object": "obesity",
+      "evidence_id": "af4682d68e8a373b2b060f34c3aceaa5f44a3d52874251cd2bab8653ef0eea32",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "are overweight or have obesity .",
+      "section_context": "What are the risk factors for type 2 diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:type2:HAS_RISK_FACTOR:family_history",
+      "subject": "type2",
+      "predicate": "HAS_RISK_FACTOR",
+      "object": "family_history",
+      "evidence_id": "af4682d68e8a373b2b060f34c3aceaa5f44a3d52874251cd2bab8653ef0eea32",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "have a family history of diabetes.",
+      "section_context": "What are the risk factors for type 2 diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:type2:HAS_RISK_FACTOR:physical_inactivity",
+      "subject": "type2",
+      "predicate": "HAS_RISK_FACTOR",
+      "object": "physical_inactivity",
+      "evidence_id": "af4682d68e8a373b2b060f34c3aceaa5f44a3d52874251cd2bab8653ef0eea32",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "are not physically active, because of physical limitations, a sedentary lifestyle, or a job that requires sitting for long periods of time.",
+      "section_context": "What are the risk factors for type 2 diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_SYMPTOM:thirst",
+      "subject": "diabetes",
+      "predicate": "HAS_SYMPTOM",
+      "object": "thirst",
+      "evidence_id": "042436c3cb9b76ea4548fe645cf02e14207ae5fdbad0014559482e22a66fc72c",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "feeling very thirsty",
+      "section_context": "What are the symptoms of diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_SYMPTOM:frequent_urination",
+      "subject": "diabetes",
+      "predicate": "HAS_SYMPTOM",
+      "object": "frequent_urination",
+      "evidence_id": "042436c3cb9b76ea4548fe645cf02e14207ae5fdbad0014559482e22a66fc72c",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "increased urination",
+      "section_context": "What are the symptoms of diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_SYMPTOM:fatigue",
+      "subject": "diabetes",
+      "predicate": "HAS_SYMPTOM",
+      "object": "fatigue",
+      "evidence_id": "042436c3cb9b76ea4548fe645cf02e14207ae5fdbad0014559482e22a66fc72c",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "blurred vision fatigue sores that do not heal",
+      "section_context": "What are the symptoms of diabetes?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:SCREENED_WITH:a1c",
+      "subject": "diabetes",
+      "predicate": "SCREENED_WITH",
+      "object": "a1c",
+      "evidence_id": "8d9adb51cee101cda50995386f08690f264c3228905fed0752f530b8ad650f86",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "Before using the A1C test to diagnose diabetes, your doctor will consider factors",
+      "section_context": "What tests are used to diagnose diabetes? / A1C test"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:SCREENED_WITH:fasting_glucose",
+      "subject": "diabetes",
+      "predicate": "SCREENED_WITH",
+      "object": "fasting_glucose",
+      "evidence_id": "fa4a0e4eb98a4abc884861df22a9238bebbbafa98ed6eacc0b0dd047ba7f2b2c",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "The fasting plasma glucose (FPG) test measures your blood glucose level at a single point in time.",
+      "section_context": "What tests are used to diagnose diabetes? / Fasting plasma glucose test"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_COMPLICATION:neuropathy",
+      "subject": "diabetes",
+      "predicate": "HAS_COMPLICATION",
+      "object": "neuropathy",
+      "evidence_id": "47d41d6c5c298e2b47762bbc77c5083664cda1f0ed6ba079ee0677e72592e39d",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "Diabetic neuropathy is nerve damage that is caused by diabetes.",
+      "section_context": "What Is Diabetic Neuropathy?"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_COMPLICATION:retinopathy",
+      "subject": "diabetes",
+      "predicate": "HAS_COMPLICATION",
+      "object": "retinopathy",
+      "evidence_id": "ec9c913e1ffe4c54ec1be8ac1718459dd8fc060c8368e791d72e0b3c7d511cfa",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "Damaged blood vessels can harm the retina, causing a disease called diabetic retinopathy.",
+      "section_context": "How does diabetes affect my eyes? / Diabetic retinopathy"
+    },
+    {
+      "id": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724:diabetes:HAS_COMPLICATION:foot_problems",
+      "subject": "diabetes",
+      "predicate": "HAS_COMPLICATION",
+      "object": "foot_problems",
+      "evidence_id": "1cbc4877f45e4408b2ac3f8aa32a59d52d8bdaa0c4ed182b068c93fb24071b9d",
+      "release": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724",
+      "extraction_rule": "curated-exact-source-clause-2.0",
+      "supporting_quote": "Diabetes also can lower the amount of blood flow in your feet.",
+      "section_context": "How can diabetes affect my feet?"
+    }
+  ],
+  "graph": {
+    "chunks": 449,
+    "sources": 14,
+    "releases": [
+      "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+    ],
+    "supported_assertions": 11
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "case": [
+      2,
+      6.5,
+      "demo_cases\nid PK; synthetic=true"
+    ],
+    "a": [
+      2,
+      4,
+      "assessments\ncase FK; features JSON"
+    ],
+    "m": [
+      6,
+      6.5,
+      "model_versions\nid PK; version; SHA256"
+    ],
+    "p": [
+      6,
+      4,
+      "predictions\nscore; class; result JSON"
+    ],
+    "w": [
+      10,
+      4,
+      "workflow_runs\nstatus; response JSON"
+    ],
+    "e": [
+      10,
+      1.5,
+      "agent_events\nrun FK; seq; event JSON"
+    ]
+  },
+  "edges": [
+    [
+      "case",
+      "a",
+      "1 : N"
+    ],
+    [
+      "a",
+      "p",
+      "1 : N"
+    ],
+    [
+      "m",
+      "p",
+      "1 : N"
+    ],
+    [
+      "w",
+      "p",
+      "1 : N"
+    ],
+    [
+      "w",
+      "e",
+      "1 : N; unique(run,seq)"
+    ]
+  ],
+  "source": "backend/app/db/migrations/versions/0001_phase02.py; 0002_phase03.py"
+}

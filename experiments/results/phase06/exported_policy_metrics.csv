@@ -1,0 +1,4 @@
+policy,average_episode_reward,completion_rate,unsafe_action_attempts,mean_episode_length,reward_variance_across_scenarios
+q_learning,4.276,0.97,0,2.47,8.358457333333334
+q_learning_unmasked,4.166,0.9633333333333334,0,2.47,9.071794
+rule_baseline,4.311,0.9833333333333333,0,2.0366666666666666,8.504162333333333

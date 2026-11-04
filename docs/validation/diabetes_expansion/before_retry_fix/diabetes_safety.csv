@@ -1,0 +1,4 @@
+layer,cases,passed,pass_rate
+actual_coordinator_fault,2,2,1
+actual_workflow,8,7,0.875
+rules,4,4,1

@@ -1,0 +1,1807 @@
+[
+  {
+    "case": "SYNTHETIC_EDUCATION",
+    "run": {
+      "schema_version": "2.3",
+      "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+      "status": "COMPLETED",
+      "agent_results": {
+        "prediction": {
+          "schema_version": "2.3",
+          "agent_id": "prediction",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "knowledge": {
+          "schema_version": "2.3",
+          "agent_id": "knowledge",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "evidence": [
+              {
+                "schema_version": "1.0",
+                "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Each type of diabetes has different causes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "What is Diabetes?",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "What is Diabetes?",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+              }
+            ]
+          },
+          "errors": []
+        },
+        "education": {
+          "schema_version": "2.3",
+          "agent_id": "education",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "text": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+            "evidence_ids": [
+              "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+              "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+              "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+              "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+              "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+            ]
+          },
+          "errors": []
+        },
+        "safety": {
+          "schema_version": "2.3",
+          "agent_id": "safety",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.1",
+            "allowed": true,
+            "severity": "info",
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "reason": "No configured safety condition matched",
+            "decision": "ALLOW",
+            "checked_content": "stage=output; question_chars=38; candidate_chars=1287; assessment_present=False; evidence_count=5",
+            "timestamp": "2026-11-02T08:51:31.698152Z",
+            "policy_version": "safety-1.0",
+            "stage": "output"
+          },
+          "errors": []
+        },
+        "rl": {
+          "schema_version": "2.3",
+          "agent_id": "rl",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "state": {
+              "prediction_band": "unavailable",
+              "simulated_knowledge_level": "medium",
+              "simulated_engagement_level": "medium",
+              "evidence_availability": "sufficient",
+              "safety_status": "normal",
+              "encoder_state": [
+                0,
+                1,
+                1,
+                2,
+                0,
+                6,
+                6
+              ],
+              "user_context_source": "SIMULATED_DEFAULTS_NOT_MEASURED",
+              "decision_reason": "TRAINED_Q_TABLE"
+            },
+            "action": "SHOW_EVIDENCE",
+            "policy_version": "education-q-1.0",
+            "decision_source": "policy"
+          },
+          "errors": []
+        }
+      },
+      "response": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Each type of diabetes has different causes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "What is Diabetes?",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "What is Diabetes?",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+        }
+      ],
+      "agent_trace": [
+        {
+          "schema_version": "2.3",
+          "sequence": 1,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": null,
+          "message_id": null,
+          "status": "RUNNING",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.413526Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 2,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": "a89c4874-6e39-401c-bae5-26163a432dcc",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.414532Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 3,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": "a89c4874-6e39-401c-bae5-26163a432dcc",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.419420Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 4,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_INPUT",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.420427Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 5,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "prediction",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "NO_ASSESSMENT",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.420427Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 6,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "knowledge",
+          "message_id": "27e7c59f-e956-41de-88a4-a18c5572e66b",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.420427Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 7,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "knowledge",
+          "message_id": "27e7c59f-e956-41de-88a4-a18c5572e66b",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.521414Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 8,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "rl",
+          "message_id": "dfb84639-7eff-417c-8990-90bb80ec817f",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.522412Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 9,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "rl",
+          "message_id": "dfb84639-7eff-417c-8990-90bb80ec817f",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": "education-q-1.0",
+          "action": "SHOW_EVIDENCE",
+          "decision_source": "policy",
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.531413Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 10,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "education",
+          "message_id": "af7020fd-9b45-496e-928e-628a519f3bbb",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.533414Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 11,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "education",
+          "message_id": "af7020fd-9b45-496e-928e-628a519f3bbb",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.537417Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 12,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": "c5582289-9698-46d4-89a3-023d7477c424",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.694153Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 13,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": "c5582289-9698-46d4-89a3-023d7477c424",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.698152Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 14,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_OUTPUT",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.700151Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 15,
+          "run_id": "c0cef7fd-9a2d-4c8e-8423-b5d00c4f3170",
+          "agent_id": null,
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.700151Z"
+        }
+      ],
+      "warnings": [],
+      "limitations": [
+        "Deterministic safety policy, not clinical diagnosis/triage validation.",
+        "Prediction and RL outputs are research/simulator only; no clinical decisions.",
+        "Only configured evidence templates/abstentions may be released."
+      ],
+      "safety_decisions": [
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "reason": "No configured safety condition matched",
+          "decision": "ALLOW",
+          "checked_content": "stage=input; question_chars=38; candidate_chars=0; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:31.418424Z",
+          "policy_version": "safety-1.0",
+          "stage": "input"
+        },
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "reason": "No configured safety condition matched",
+          "decision": "ALLOW",
+          "checked_content": "stage=output; question_chars=38; candidate_chars=1287; assessment_present=False; evidence_count=5",
+          "timestamp": "2026-11-02T08:51:31.698152Z",
+          "policy_version": "safety-1.0",
+          "stage": "output"
+        }
+      ]
+    }
+  },
+  {
+    "case": "SYNTHETIC_ASSESSMENT",
+    "run": {
+      "schema_version": "2.3",
+      "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+      "status": "DEGRADED",
+      "agent_results": {
+        "prediction": {
+          "schema_version": "2.3",
+          "agent_id": "prediction",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.1",
+            "model_id": "pima-mlp",
+            "model_version": "pima-mlp-0.2.0",
+            "predicted_class": 0,
+            "score": 0.015537431463599205,
+            "limitations": [
+              "Uncalibrated model score, not clinical disease probability.",
+              "Research on a restricted historical female Pima cohort; not a diagnosis.",
+              "Threshold 0.5; missing-zero transformation matches training."
+            ],
+            "preprocessing_version": "sha256:45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+            "inference_latency_ms": 14.063099999930273,
+            "warnings": [],
+            "persisted_record_id": "f6042f30-4ccc-4004-ba64-af7cf5bf4d4b"
+          },
+          "errors": []
+        },
+        "knowledge": {
+          "schema_version": "2.3",
+          "agent_id": "knowledge",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "education": {
+          "schema_version": "2.3",
+          "agent_id": "education",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "text": "Please clarify which diabetes education topic or source you would like to review. No missing personal information is inferred.",
+            "evidence_ids": []
+          },
+          "errors": []
+        },
+        "safety": {
+          "schema_version": "2.3",
+          "agent_id": "safety",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.1",
+            "allowed": true,
+            "severity": "warning",
+            "rule_ids": [
+              "E03_NO_EVIDENCE",
+              "W03_RESEARCH_SCORE"
+            ],
+            "reason": "Disclose unavailable or empty knowledge; Prediction is uncertain research output, not a diagnosis",
+            "decision": "ALLOW_WITH_WARNING",
+            "checked_content": "stage=output; question_chars=0; candidate_chars=126; assessment_present=False; evidence_count=0",
+            "timestamp": "2026-11-02T08:51:32.083034Z",
+            "policy_version": "safety-1.0",
+            "stage": "output"
+          },
+          "errors": []
+        },
+        "rl": {
+          "schema_version": "2.3",
+          "agent_id": "rl",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "state": {
+              "prediction_band": "lower-score",
+              "simulated_knowledge_level": "medium",
+              "simulated_engagement_level": "medium",
+              "evidence_availability": "none",
+              "safety_status": "normal",
+              "encoder_state": [
+                1,
+                1,
+                1,
+                0,
+                0,
+                6,
+                6
+              ],
+              "user_context_source": "SIMULATED_DEFAULTS_NOT_MEASURED",
+              "decision_reason": "TRAINED_Q_TABLE"
+            },
+            "action": "ASK_COMPREHENSION_QUESTION",
+            "policy_version": "education-q-1.0",
+            "decision_source": "policy"
+          },
+          "errors": []
+        }
+      },
+      "response": "Please clarify which diabetes education topic or source you would like to review. No missing personal information is inferred.",
+      "evidence": [],
+      "agent_trace": [
+        {
+          "schema_version": "2.3",
+          "sequence": 1,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": null,
+          "message_id": null,
+          "status": "RUNNING",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.978274Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 2,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": "bd3a782a-b2be-477c-bd82-b8e411a4d5e7",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.978274Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 3,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": "bd3a782a-b2be-477c-bd82-b8e411a4d5e7",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.978274Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 4,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_INPUT",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.979265Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 5,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "prediction",
+          "message_id": "077045a0-7983-4c22-9d57-dccff922af93",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:31.980270Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 6,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "prediction",
+          "message_id": "077045a0-7983-4c22-9d57-dccff922af93",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": "pima-mlp-0.2.0",
+          "inference_latency_ms": 14.063099999930273,
+          "timestamp": "2026-11-02T08:51:32.081031Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 7,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "knowledge",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "NO_QUESTION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.081031Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 8,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "rl",
+          "message_id": "68c54ce1-11d6-4a64-a5e7-491950f2d4a9",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.081031Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 9,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "rl",
+          "message_id": "68c54ce1-11d6-4a64-a5e7-491950f2d4a9",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": "education-q-1.0",
+          "action": "ASK_COMPREHENSION_QUESTION",
+          "decision_source": "policy",
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.082032Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 10,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "education",
+          "message_id": "45457dac-3688-4600-9cda-5fc6599f47d7",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.083034Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 11,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "education",
+          "message_id": "45457dac-3688-4600-9cda-5fc6599f47d7",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.083034Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 12,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": "981b83e4-8db6-4df9-9d85-a9d778b598f1",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.083034Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 13,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": "981b83e4-8db6-4df9-9d85-a9d778b598f1",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "E03_NO_EVIDENCE",
+            "W03_RESEARCH_SCORE"
+          ],
+          "safety_decision": "ALLOW_WITH_WARNING",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.084032Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 14,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_OUTPUT",
+          "rule_ids": [
+            "E03_NO_EVIDENCE",
+            "W03_RESEARCH_SCORE"
+          ],
+          "safety_decision": "ALLOW_WITH_WARNING",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.085041Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 15,
+          "run_id": "31f15d34-ddea-46b6-a050-00c763b3c2fd",
+          "agent_id": null,
+          "message_id": null,
+          "status": "DEGRADED",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.085041Z"
+        }
+      ],
+      "warnings": [
+        "E03_NO_EVIDENCE",
+        "W03_RESEARCH_SCORE"
+      ],
+      "limitations": [
+        "Deterministic safety policy, not clinical diagnosis/triage validation.",
+        "Prediction and RL outputs are research/simulator only; no clinical decisions.",
+        "Only configured evidence templates/abstentions may be released."
+      ],
+      "safety_decisions": [
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "reason": "No configured safety condition matched",
+          "decision": "ALLOW",
+          "checked_content": "stage=input; question_chars=0; candidate_chars=0; assessment_present=True; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:31.978274Z",
+          "policy_version": "safety-1.0",
+          "stage": "input"
+        },
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "warning",
+          "rule_ids": [
+            "E03_NO_EVIDENCE",
+            "W03_RESEARCH_SCORE"
+          ],
+          "reason": "Disclose unavailable or empty knowledge; Prediction is uncertain research output, not a diagnosis",
+          "decision": "ALLOW_WITH_WARNING",
+          "checked_content": "stage=output; question_chars=0; candidate_chars=126; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:32.083034Z",
+          "policy_version": "safety-1.0",
+          "stage": "output"
+        }
+      ]
+    }
+  },
+  {
+    "case": "SYNTHETIC_SAFETY_VETO",
+    "run": {
+      "schema_version": "2.3",
+      "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+      "status": "BLOCKED",
+      "agent_results": {
+        "prediction": {
+          "schema_version": "2.3",
+          "agent_id": "prediction",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "knowledge": {
+          "schema_version": "2.3",
+          "agent_id": "knowledge",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "education": {
+          "schema_version": "2.3",
+          "agent_id": "education",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "safety": {
+          "schema_version": "2.3",
+          "agent_id": "safety",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.1",
+            "allowed": false,
+            "severity": "warning",
+            "rule_ids": [
+              "I03_PRESCRIPTION",
+              "E03_NO_EVIDENCE"
+            ],
+            "reason": "Do not prescribe medicines; Disclose unavailable or empty knowledge",
+            "decision": "BLOCK",
+            "checked_content": "stage=output; question_chars=17; candidate_chars=179; assessment_present=False; evidence_count=0",
+            "timestamp": "2026-11-02T08:51:32.337562Z",
+            "policy_version": "safety-1.0",
+            "stage": "output"
+          },
+          "errors": []
+        },
+        "rl": {
+          "schema_version": "2.3",
+          "agent_id": "rl",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        }
+      },
+      "response": "H\u1ec7 th\u1ed1ng kh\u00f4ng cung c\u1ea5p h\u01b0\u1edbng d\u1eabn v\u1ec1 li\u1ec1u thu\u1ed1c ho\u1eb7c t\u1ef1 \u0111i\u1ec1u ch\u1ec9nh \u0111i\u1ec1u tr\u1ecb. H\u00e3y trao \u0111\u1ed5i tr\u1ef1c ti\u1ebfp v\u1edbi nh\u00e2n vi\u00ean y t\u1ebf ph\u1ee5 tr\u00e1ch. N\u1ed9i dung ch\u01b0a \u0111\u01b0\u1ee3c ph\u00e1t h\u00e0nh v\u00ec gi\u1edbi h\u1ea1n an to\u00e0n.",
+      "evidence": [],
+      "agent_trace": [
+        {
+          "schema_version": "2.3",
+          "sequence": 1,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": null,
+          "message_id": null,
+          "status": "RUNNING",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.335561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 2,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": "ecf5c269-35e4-445e-a1c7-cdae21be9961",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.335561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 3,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": "ecf5c269-35e4-445e-a1c7-cdae21be9961",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "I03_PRESCRIPTION"
+          ],
+          "safety_decision": "BLOCK",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 4,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_INPUT",
+          "rule_ids": [
+            "I03_PRESCRIPTION"
+          ],
+          "safety_decision": "BLOCK",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 5,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "prediction",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "SAFETY_PREFLIGHT_DENIED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 6,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "knowledge",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "SAFETY_PREFLIGHT_DENIED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 7,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "rl",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "SAFETY_PREFLIGHT_DENIED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 8,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "education",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "SAFETY_PREFLIGHT_DENIED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 9,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": "9e9a494e-6e1e-4f40-ad59-1b543c1350cc",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.336561Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 10,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": "9e9a494e-6e1e-4f40-ad59-1b543c1350cc",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "I03_PRESCRIPTION",
+            "E03_NO_EVIDENCE"
+          ],
+          "safety_decision": "BLOCK",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.337562Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 11,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_OUTPUT",
+          "rule_ids": [
+            "I03_PRESCRIPTION",
+            "E03_NO_EVIDENCE"
+          ],
+          "safety_decision": "BLOCK",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.338562Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 12,
+          "run_id": "f509314c-3f30-42b2-8f73-0e275f093c87",
+          "agent_id": null,
+          "message_id": null,
+          "status": "BLOCKED",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:32.338562Z"
+        }
+      ],
+      "warnings": [
+        "I03_PRESCRIPTION",
+        "I03_PRESCRIPTION",
+        "E03_NO_EVIDENCE"
+      ],
+      "limitations": [
+        "Deterministic safety policy, not clinical diagnosis/triage validation.",
+        "Prediction and RL outputs are research/simulator only; no clinical decisions.",
+        "Only configured evidence templates/abstentions may be released."
+      ],
+      "safety_decisions": [
+        {
+          "schema_version": "1.1",
+          "allowed": false,
+          "severity": "warning",
+          "rule_ids": [
+            "I03_PRESCRIPTION"
+          ],
+          "reason": "Do not prescribe medicines",
+          "decision": "BLOCK",
+          "checked_content": "stage=input; question_chars=17; candidate_chars=0; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:32.336561Z",
+          "policy_version": "safety-1.0",
+          "stage": "input"
+        },
+        {
+          "schema_version": "1.1",
+          "allowed": false,
+          "severity": "warning",
+          "rule_ids": [
+            "I03_PRESCRIPTION",
+            "E03_NO_EVIDENCE"
+          ],
+          "reason": "Do not prescribe medicines; Disclose unavailable or empty knowledge",
+          "decision": "BLOCK",
+          "checked_content": "stage=output; question_chars=17; candidate_chars=179; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:32.337562Z",
+          "policy_version": "safety-1.0",
+          "stage": "output"
+        }
+      ]
+    }
+  },
+  {
+    "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+    "run": {
+      "schema_version": "2.3",
+      "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+      "status": "DEGRADED",
+      "agent_results": {
+        "prediction": {
+          "schema_version": "2.3",
+          "agent_id": "prediction",
+          "status": "SKIPPED",
+          "implementation": "integrated",
+          "output": null,
+          "errors": []
+        },
+        "knowledge": {
+          "schema_version": "2.3",
+          "agent_id": "knowledge",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "evidence": [
+              {
+                "schema_version": "1.0",
+                "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Each type of diabetes has different causes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "Symptoms & Causes",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "What is Diabetes?",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+              },
+              {
+                "schema_version": "1.0",
+                "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+                "source_title": "Diabetes Overview",
+                "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+                "publisher": "NIDDK",
+                "section": "What is Diabetes?",
+                "retrieved_at": "2026-11-01T20:35:55.772223Z",
+                "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+              }
+            ]
+          },
+          "errors": []
+        },
+        "education": {
+          "schema_version": "2.3",
+          "agent_id": "education",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "text": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+            "evidence_ids": [
+              "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+              "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+              "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+              "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+              "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+            ]
+          },
+          "errors": []
+        },
+        "safety": {
+          "schema_version": "2.3",
+          "agent_id": "safety",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.1",
+            "allowed": true,
+            "severity": "info",
+            "rule_ids": [
+              "P00_ALLOW"
+            ],
+            "reason": "No configured safety condition matched",
+            "decision": "ALLOW",
+            "checked_content": "stage=output; question_chars=37; candidate_chars=1287; assessment_present=False; evidence_count=5",
+            "timestamp": "2026-11-02T08:51:35.287307Z",
+            "policy_version": "safety-1.0",
+            "stage": "output"
+          },
+          "errors": []
+        },
+        "rl": {
+          "schema_version": "2.3",
+          "agent_id": "rl",
+          "status": "COMPLETED",
+          "implementation": "integrated",
+          "output": {
+            "schema_version": "1.0",
+            "state": {
+              "prediction_band": "unavailable",
+              "simulated_knowledge_level": "medium",
+              "simulated_engagement_level": "medium",
+              "evidence_availability": "sufficient",
+              "safety_status": "normal",
+              "encoder_state": [
+                0,
+                1,
+                1,
+                2,
+                0,
+                6,
+                6
+              ],
+              "user_context_source": "SIMULATED_DEFAULTS_NOT_MEASURED",
+              "decision_reason": "POLICY_UNAVAILABLE"
+            },
+            "action": "SHOW_EVIDENCE",
+            "policy_version": "fallback-rule-1.0",
+            "decision_source": "fallback"
+          },
+          "errors": []
+        }
+      },
+      "response": "Retrieved NIDDK educational excerpts (not diagnosis or treatment instructions):\n[a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5] Many people have no symptoms and don\u2019t know they have diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38] Each type of diabetes has different causes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22] Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: Symptoms & Causes)\n[c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a] The main types of diabetes are type 1, type 2, and gestational. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)\n[9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f] Diabetes occurs when your blood glucose, also called blood sugar, is too high. (Source: https://www.niddk.nih.gov/health-information/diabetes/overview; section: What is Diabetes?)",
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "evidence_id": "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Many people have no symptoms and don\u2019t know they have diabetes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Each type of diabetes has different causes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "Symptoms & Causes",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Increased thirst and urination, feeling tired, unexplained weight loss, and blurred vision are symptoms of diabetes."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "What is Diabetes?",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "The main types of diabetes are type 1, type 2, and gestational."
+        },
+        {
+          "schema_version": "1.0",
+          "evidence_id": "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "source_title": "Diabetes Overview",
+          "source_url": "https://www.niddk.nih.gov/health-information/diabetes/overview",
+          "publisher": "NIDDK",
+          "section": "What is Diabetes?",
+          "retrieved_at": "2026-11-01T20:35:55.772223Z",
+          "excerpt": "Diabetes occurs when your blood glucose, also called blood sugar, is too high."
+        }
+      ],
+      "agent_trace": [
+        {
+          "schema_version": "2.3",
+          "sequence": 1,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": null,
+          "message_id": null,
+          "status": "RUNNING",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.121114Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 2,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": "bff76d05-7a0f-428b-8991-66a41084b4e0",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.121114Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 3,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": "bff76d05-7a0f-428b-8991-66a41084b4e0",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.122113Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 4,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_INPUT",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "input",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.122113Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 5,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "prediction",
+          "message_id": null,
+          "status": "SKIPPED",
+          "reason": "NO_ASSESSMENT",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.122113Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 6,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "knowledge",
+          "message_id": "40ad1ace-30a0-42e8-baf2-52d87d26bbf7",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.122113Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 7,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "knowledge",
+          "message_id": "40ad1ace-30a0-42e8-baf2-52d87d26bbf7",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.192947Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 8,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "rl",
+          "message_id": "ce37db98-932c-47f9-b1e4-92d0c20a077f",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.193960Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 9,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "rl",
+          "message_id": "ce37db98-932c-47f9-b1e4-92d0c20a077f",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": "fallback-rule-1.0",
+          "action": "SHOW_EVIDENCE",
+          "decision_source": "fallback",
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.194977Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 10,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "education",
+          "message_id": "110ad3a9-1c49-4ed3-8746-a3f90271ee91",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.196249Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 11,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "education",
+          "message_id": "110ad3a9-1c49-4ed3-8746-a3f90271ee91",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.197274Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 12,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": "f5ef2164-ddfc-42ad-9da4-457b92b1256c",
+          "status": "RUNNING",
+          "reason": "TASK_DISPATCHED",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.285308Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 13,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": "f5ef2164-ddfc-42ad-9da4-457b92b1256c",
+          "status": "COMPLETED",
+          "reason": "TASK_COMPLETED",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.287307Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 14,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": "safety",
+          "message_id": null,
+          "status": "COMPLETED",
+          "reason": "SAFETY_GATE_OUTPUT",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "safety_decision": "ALLOW",
+          "safety_stage": "output",
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.289309Z"
+        },
+        {
+          "schema_version": "2.3",
+          "sequence": 15,
+          "run_id": "3b578127-fded-4b5c-a7ef-0d3275aa1f8e",
+          "agent_id": null,
+          "message_id": null,
+          "status": "DEGRADED",
+          "reason": "WORKFLOW_TRANSITION",
+          "rule_ids": [],
+          "safety_decision": null,
+          "safety_stage": null,
+          "policy_version": null,
+          "action": null,
+          "decision_source": null,
+          "model_version": null,
+          "inference_latency_ms": null,
+          "timestamp": "2026-11-02T08:51:35.289309Z"
+        }
+      ],
+      "warnings": [
+        "RL_POLICY_FALLBACK:POLICY_UNAVAILABLE"
+      ],
+      "limitations": [
+        "Deterministic safety policy, not clinical diagnosis/triage validation.",
+        "Prediction and RL outputs are research/simulator only; no clinical decisions.",
+        "Only configured evidence templates/abstentions may be released."
+      ],
+      "safety_decisions": [
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "reason": "No configured safety condition matched",
+          "decision": "ALLOW",
+          "checked_content": "stage=input; question_chars=37; candidate_chars=0; assessment_present=False; evidence_count=0",
+          "timestamp": "2026-11-02T08:51:35.121114Z",
+          "policy_version": "safety-1.0",
+          "stage": "input"
+        },
+        {
+          "schema_version": "1.1",
+          "allowed": true,
+          "severity": "info",
+          "rule_ids": [
+            "P00_ALLOW"
+          ],
+          "reason": "No configured safety condition matched",
+          "decision": "ALLOW",
+          "checked_content": "stage=output; question_chars=37; candidate_chars=1287; assessment_present=False; evidence_count=5",
+          "timestamp": "2026-11-02T08:51:35.287307Z",
+          "policy_version": "safety-1.0",
+          "stage": "output"
+        }
+      ]
+    }
+  }
+]

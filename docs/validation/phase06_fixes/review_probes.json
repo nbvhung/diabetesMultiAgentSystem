@@ -1,0 +1,95 @@
+{
+  "H1": {
+    "status": "PASS",
+    "probes": [
+      {
+        "synthetic_invalid_action": "START_METFORMIN",
+        "workflow_status": "BLOCKED",
+        "raw_action_returned": false,
+        "safety_rule_ids": [
+          "W04_ACTION_NOT_ALLOWED",
+          "E03_NO_EVIDENCE"
+        ]
+      },
+      {
+        "synthetic_invalid_action": "ADJUST_MEDICATION",
+        "workflow_status": "BLOCKED",
+        "raw_action_returned": false,
+        "safety_rule_ids": [
+          "W04_ACTION_NOT_ALLOWED",
+          "E03_NO_EVIDENCE"
+        ]
+      },
+      {
+        "synthetic_invalid_action": "TAKE_5_MG_METFORMIN",
+        "workflow_status": "BLOCKED",
+        "raw_action_returned": false,
+        "safety_rule_ids": [
+          "W04_ACTION_NOT_ALLOWED",
+          "E03_NO_EVIDENCE"
+        ]
+      },
+      {
+        "synthetic_invalid_action": "UNSUPPORTED_ACTION",
+        "workflow_status": "BLOCKED",
+        "raw_action_returned": false,
+        "safety_rule_ids": [
+          "W04_ACTION_NOT_ALLOWED",
+          "E03_NO_EVIDENCE"
+        ]
+      },
+      {
+        "synthetic_invalid_action": "",
+        "workflow_status": "BLOCKED",
+        "raw_action_returned": false,
+        "safety_rule_ids": [
+          "W04_ACTION_NOT_ALLOWED",
+          "E03_NO_EVIDENCE"
+        ]
+      }
+    ]
+  },
+  "H2": {
+    "status": "PASS",
+    "policy_version": "education-q-1.1",
+    "compared_episodes": 300,
+    "mismatches": 0,
+    "fallback_decisions": 5,
+    "reward": 4.276,
+    "completion_rate": 0.97
+  },
+  "M1": {
+    "status": "PASS",
+    "education_plans": [
+      {
+        "case": "SYNTHETIC_EDUCATION",
+        "proposed_action": "SHOW_EVIDENCE",
+        "effective_action": "SHOW_EVIDENCE",
+        "override_reason": null
+      },
+      {
+        "case": "SYNTHETIC_ASSESSMENT",
+        "proposed_action": "ASK_COMPREHENSION_QUESTION",
+        "effective_action": "REQUEST_CLARIFICATION",
+        "override_reason": "NO_EVIDENCE_FOR_REQUESTED_ACTION"
+      },
+      {
+        "case": "SYNTHETIC_NO_ARTIFACT_FALLBACK",
+        "proposed_action": "SHOW_EVIDENCE",
+        "effective_action": "SHOW_EVIDENCE",
+        "override_reason": null
+      }
+    ]
+  },
+  "L1": {
+    "status": "PASS",
+    "manifest_seed": 11,
+    "printed_seeds": [
+      11
+    ]
+  },
+  "L2": {
+    "status": "PASS",
+    "scope": "source text verified plus independent frontend build; no browser claim"
+  }
+}

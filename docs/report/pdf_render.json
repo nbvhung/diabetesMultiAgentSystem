@@ -1,0 +1,7 @@
+{
+  "renderer": "local Chromium via Playwright",
+  "images": 19,
+  "headings": 64,
+  "toc": "page numbers measured from rendered PDF",
+  "word_export": "not completed; DOCX preserved"
+}

@@ -1,0 +1,5 @@
+{
+  "pytest": true,
+  "demo": true,
+  "live_http_restart_readback": true
+}

@@ -1,0 +1,90 @@
+{
+  "corpus": {
+    "dataset_version": "diabetes-corpus-2.0",
+    "source_count": 14,
+    "chunk_count": 449,
+    "chunks_sha256": "9bc475f0262cb2e45f985a8c1bb671b29828fb944eb6fdf1cee033e38fea5724"
+  },
+  "seed": {
+    "exit_code": 0,
+    "seconds": 7.350816699999996
+  },
+  "pytest": {
+    "exit_code": 0,
+    "seconds": 79.82370620000074
+  },
+  "frontend_unit": {
+    "exit_code": 0,
+    "seconds": 3.3874603000003844
+  },
+  "frontend_build": {
+    "exit_code": 0,
+    "seconds": 3.148371500000394
+  },
+  "diabetes_rag": {
+    "exit_code": 0,
+    "seconds": 167.87009089999992
+  },
+  "diabetes_mas": {
+    "exit_code": 0,
+    "seconds": 75.9150051000006
+  },
+  "diabetes_safety": {
+    "exit_code": 0,
+    "seconds": 24.67169770000055
+  },
+  "llm_status": {
+    "exit_code": 0,
+    "seconds": 3.704373599999599
+  },
+  "demo": {
+    "exit_code": 0,
+    "seconds": 47.32817380000051
+  },
+  "browser": {
+    "exit_code": 0,
+    "seconds": 31.72017119999964
+  },
+  "browser_stats": {
+    "startTime": "2026-11-02T17:31:30.904Z",
+    "duration": 30749.073,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "frozen_artifacts_unchanged": true,
+  "frozen_artifact_sha256": {
+    "artifacts/models/.gitkeep": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "artifacts/models/pima-mlp-0.2.0/checkpoint.pt": "6c576754b95d9e2caf6440a6b1818c56ea6347c31542aa91610c1f4acd1db122",
+    "artifacts/models/pima-mlp-0.2.0/manifest.json": "88e287a0c2ea4dfab813775c5989466a62b1b139778109642e070e53d9c594ec",
+    "artifacts/models/pima-mlp-0.2.0/preprocessing.joblib": "45c09d0954732f8d8e6b095bb14f99b61060adc5006ce9bda2ae8e4795f23e45",
+    "artifacts/models/pima-mlp-0.2.0/preprocessing_config.json": "cd8efa930834df3925315f7ca6521312600d69e5c2f5a55c6934d82ba97cd2af",
+    "artifacts/models/pima-mlp-0.2.0/serving.json": "481945a136701102e335e5494fa2f6aa88cd8e59524174ac4222d99591d1c6f3",
+    "artifacts/models/pima-mlp-0.2.0/training_config.json": "00de62feb21e55604d9a46af45c5a0155025dc205c9755bd2f8508a2666bdfe8",
+    "artifacts/policies/.gitkeep": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "artifacts/policies/education-q-1.0/manifest.json": "45ac7871bb641bee54d4680ae89c08cfe3ab8607b02ed152aa776291b0ff739f",
+    "artifacts/policies/education-q-1.0/q_table.npz": "9aeb768e76b2a30e37d731802ed8e655db0067e4eccd1a1c28683d24aba7112d",
+    "artifacts/policies/education-q-1.1/manifest.json": "74e850426b5547f51715e64127ff6c1bde65d64df8cbce3ca5e7f858ceb8b2a2",
+    "artifacts/policies/education-q-1.1/q_table.npz": "9aeb768e76b2a30e37d731802ed8e655db0067e4eccd1a1c28683d24aba7112d"
+  },
+  "measured_artifacts_verified": true,
+  "live_llm": {
+    "status": "NOT_RUN",
+    "reason": "GROQ_API_KEY_NOT_CONFIGURED",
+    "timestamp": "2026-11-02T17:30:18.537795+00:00",
+    "provider": {
+      "status": "unavailable",
+      "provider": "Groq",
+      "model": "openai/gpt-oss-20b",
+      "last_verified_at": null,
+      "code": "GROQ_API_KEY_NOT_CONFIGURED"
+    },
+    "live_requests": 0,
+    "quality_metrics": null,
+    "code_version": "source-sha256:927ed5c179c660560625a8c1362ae8ceef22706e6669f4a187a5afe8f63d5166"
+  },
+  "status": "IMPLEMENTED_PENDING_LIVE_LLM_VALIDATION",
+  "timestamp": "2026-11-02T17:32:03.071418+00:00",
+  "code_version": "source-sha256:927ed5c179c660560625a8c1362ae8ceef22706e6669f4a187a5afe8f63d5166"
+}

@@ -1,0 +1,1685 @@
+{
+  "vector": {
+    "recall_at_5": 0.5408333333333333,
+    "mrr_at_5": 0.7516666666666667,
+    "citation_provenance_correctness": 1.0,
+    "no_evidence_accuracy": 1,
+    "mean_latency_ms": 30.05286249981509,
+    "rows": [
+      {
+        "id": "Q01",
+        "question": "What types of diabetes are named?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2"
+        ],
+        "recall_at_5": 0.3333333333333333,
+        "reciprocal_rank": 0.5,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 46.62580000149319
+      },
+      {
+        "id": "Q02",
+        "question": "What is blood glucose?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": null,
+        "latency_ms": 0.5862999969394878
+      },
+      {
+        "id": "Q03",
+        "question": "What symptoms might occur?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+        ],
+        "recall_at_5": 0.3333333333333333,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 29.028100001596613
+      },
+      {
+        "id": "Q04",
+        "question": "Can people have no symptoms?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+        ],
+        "recall_at_5": 0.6666666666666666,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 33.718999999109656
+      },
+      {
+        "id": "Q05",
+        "question": "What risk factors are mentioned?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+        ],
+        "recall_at_5": 0.3333333333333333,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 41.328600000269944
+      },
+      {
+        "id": "Q06",
+        "question": "Does family history affect diabetes risk?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+        ],
+        "recall_at_5": 0.6666666666666666,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 46.247099999163765
+      },
+      {
+        "id": "Q07",
+        "question": "How can prevention delay type 2 diabetes?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.2,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 55.390400000760565
+      },
+      {
+        "id": "Q08",
+        "question": "Which prevention lifestyle steps are mentioned?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 0.25,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 2,
+        "no_evidence_correct": null,
+        "latency_ms": 46.764700000494486
+      },
+      {
+        "id": "Q09",
+        "question": "How do doctors choose diabetes tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 0.5,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 43.607499999779975
+      },
+      {
+        "id": "Q10",
+        "question": "Do symptoms and pregnancy affect diagnostic tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 37.41209999861894
+      },
+      {
+        "id": "Q11",
+        "question": "Why work with a health care team?",
+        "relevant_sections": [
+          "Managing Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+        ],
+        "retrieved_ids": [
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "recall_at_5": 0.4,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 24.13660000092932
+      },
+      {
+        "id": "Q12",
+        "question": "What meal and physical activity topics are included?",
+        "relevant_sections": [
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+        ],
+        "retrieved_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "recall_at_5": 0.6666666666666666,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 33.479599998827325
+      },
+      {
+        "id": "Q13",
+        "question": "What should I discuss when planning pregnancy?",
+        "relevant_sections": [
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 41.25430000203778
+      },
+      {
+        "id": "Q14",
+        "question": "What diabetes types include gestational diabetes?",
+        "relevant_sections": [
+          "What is Diabetes?",
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "recall_at_5": 0.5,
+        "reciprocal_rank": 0.5,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 29.609099998197053
+      },
+      {
+        "id": "Q15",
+        "question": "Provide NIDDK sources for symptoms",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f"
+        ],
+        "recall_at_5": 0.3333333333333333,
+        "reciprocal_rank": 0.3333333333333333,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 39.33810000307858
+      },
+      {
+        "id": "Q16",
+        "question": "Cite evidence for family history and risk",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+        ],
+        "recall_at_5": 0.6666666666666666,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 34.37670000130311
+      },
+      {
+        "id": "Q17",
+        "question": "Give sources for screening tests",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 23.828999997931533
+      },
+      {
+        "id": "Q18",
+        "question": "Explain symptoms and prevention with sources",
+        "relevant_sections": [
+          "Symptoms & Causes",
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+        ],
+        "recall_at_5": 0.5,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 37.14559999934863
+      },
+      {
+        "id": "Q19",
+        "question": "What are the trieu chung?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22"
+        ],
+        "recall_at_5": 0.6666666666666666,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 34.68509999947855
+      },
+      {
+        "id": "Q20",
+        "question": "How about phong ngua?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": null,
+        "latency_ms": 41.91910000008647
+      },
+      {
+        "id": "Q21",
+        "question": "Tell me about sugar",
+        "relevant_sections": [],
+        "category": "ambiguous",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.11989999984507449
+      },
+      {
+        "id": "Q22",
+        "question": "Explain python generators",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.094600000011269
+      },
+      {
+        "id": "Q23",
+        "question": "How to repair a bicycle?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.20759999824804254
+      },
+      {
+        "id": "Q24",
+        "question": "What are treatments for lung cancer?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.363799998012837
+      }
+    ]
+  },
+  "graph": {
+    "recall_at_5": 0.92,
+    "mrr_at_5": 0.925,
+    "citation_provenance_correctness": 1.0,
+    "no_evidence_accuracy": 1,
+    "mean_latency_ms": 14.34463333301513,
+    "rows": [
+      {
+        "id": "Q01",
+        "question": "What types of diabetes are named?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 15.81359999909182
+      },
+      {
+        "id": "Q02",
+        "question": "What is blood glucose?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": null,
+        "latency_ms": 0.3580999982659705
+      },
+      {
+        "id": "Q03",
+        "question": "What symptoms might occur?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 18.57920000111335
+      },
+      {
+        "id": "Q04",
+        "question": "Can people have no symptoms?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 18.14360000207671
+      },
+      {
+        "id": "Q05",
+        "question": "What risk factors are mentioned?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 13.193900002079317
+      },
+      {
+        "id": "Q06",
+        "question": "Does family history affect diabetes risk?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 27.909200001886347
+      },
+      {
+        "id": "Q07",
+        "question": "How can prevention delay type 2 diabetes?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 15.77980000001844
+      },
+      {
+        "id": "Q08",
+        "question": "Which prevention lifestyle steps are mentioned?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 14.476899999863235
+      },
+      {
+        "id": "Q09",
+        "question": "How do doctors choose diabetes tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 24.735599999985425
+      },
+      {
+        "id": "Q10",
+        "question": "Do symptoms and pregnancy affect diagnostic tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 33.59460000137915
+      },
+      {
+        "id": "Q11",
+        "question": "Why work with a health care team?",
+        "relevant_sections": [
+          "Managing Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+        ],
+        "retrieved_ids": [
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+        ],
+        "recall_at_5": 0.4,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 2,
+        "no_evidence_correct": null,
+        "latency_ms": 17.731099997035926
+      },
+      {
+        "id": "Q12",
+        "question": "What meal and physical activity topics are included?",
+        "relevant_sections": [
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+        ],
+        "retrieved_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 14.072999998461455
+      },
+      {
+        "id": "Q13",
+        "question": "What should I discuss when planning pregnancy?",
+        "relevant_sections": [
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "retrieved_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 1,
+        "no_evidence_correct": null,
+        "latency_ms": 8.83579999936046
+      },
+      {
+        "id": "Q14",
+        "question": "What diabetes types include gestational diabetes?",
+        "relevant_sections": [
+          "What is Diabetes?",
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 15.575699999317294
+      },
+      {
+        "id": "Q15",
+        "question": "Provide NIDDK sources for symptoms",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 26.20269999897573
+      },
+      {
+        "id": "Q16",
+        "question": "Cite evidence for family history and risk",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 11.22870000108378
+      },
+      {
+        "id": "Q17",
+        "question": "Give sources for screening tests",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 2,
+        "no_evidence_correct": null,
+        "latency_ms": 11.89909999811789
+      },
+      {
+        "id": "Q18",
+        "question": "Explain symptoms and prevention with sources",
+        "relevant_sections": [
+          "Symptoms & Causes",
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 4,
+        "no_evidence_correct": null,
+        "latency_ms": 19.618299997091526
+      },
+      {
+        "id": "Q19",
+        "question": "What are the trieu chung?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 25.118199999269564
+      },
+      {
+        "id": "Q20",
+        "question": "How about phong ngua?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 1,
+        "no_evidence_correct": null,
+        "latency_ms": 10.984000000462402
+      },
+      {
+        "id": "Q21",
+        "question": "Tell me about sugar",
+        "relevant_sections": [],
+        "category": "ambiguous",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.19579999934649095
+      },
+      {
+        "id": "Q22",
+        "question": "Explain python generators",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.07379999806289561
+      },
+      {
+        "id": "Q23",
+        "question": "How to repair a bicycle?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.06959999882383272
+      },
+      {
+        "id": "Q24",
+        "question": "What are treatments for lung cancer?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.08090000119409524
+      }
+    ]
+  },
+  "hybrid": {
+    "recall_at_5": 0.9175,
+    "mrr_at_5": 0.925,
+    "citation_provenance_correctness": 1.0,
+    "no_evidence_accuracy": 1,
+    "mean_latency_ms": 43.99911250053871,
+    "rows": [
+      {
+        "id": "Q01",
+        "question": "What types of diabetes are named?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 60.21400000099675
+      },
+      {
+        "id": "Q02",
+        "question": "What is blood glucose?",
+        "relevant_sections": [
+          "What is Diabetes?"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": null,
+        "latency_ms": 0.4828000019188039
+      },
+      {
+        "id": "Q03",
+        "question": "What symptoms might occur?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 50.51920000187238
+      },
+      {
+        "id": "Q04",
+        "question": "Can people have no symptoms?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 49.058200002036756
+      },
+      {
+        "id": "Q05",
+        "question": "What risk factors are mentioned?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 67.499200002203
+      },
+      {
+        "id": "Q06",
+        "question": "Does family history affect diabetes risk?",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 71.68850000016391
+      },
+      {
+        "id": "Q07",
+        "question": "How can prevention delay type 2 diabetes?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 60.11860000216984
+      },
+      {
+        "id": "Q08",
+        "question": "Which prevention lifestyle steps are mentioned?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 64.75810000119964
+      },
+      {
+        "id": "Q09",
+        "question": "How do doctors choose diabetes tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 72.82910000139964
+      },
+      {
+        "id": "Q10",
+        "question": "Do symptoms and pregnancy affect diagnostic tests?",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 50.46020000008866
+      },
+      {
+        "id": "Q11",
+        "question": "Why work with a health care team?",
+        "relevant_sections": [
+          "Managing Diabetes",
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada"
+        ],
+        "retrieved_ids": [
+          "53a18034fc9811c64fc34f7b0f474022181e7f72ddd40461dfccdf0d50504a47",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "recall_at_5": 0.6,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 54.55289999736124
+      },
+      {
+        "id": "Q12",
+        "question": "What meal and physical activity topics are included?",
+        "relevant_sections": [
+          "Healthy Living with Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608"
+        ],
+        "retrieved_ids": [
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "75be47c9a53ecf514d44e10045aca8978d4a8cf856c0eca0af93079ac537cfc2",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 46.88639999949373
+      },
+      {
+        "id": "Q13",
+        "question": "What should I discuss when planning pregnancy?",
+        "relevant_sections": [
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "retrieved_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 42.24330000215559
+      },
+      {
+        "id": "Q14",
+        "question": "What diabetes types include gestational diabetes?",
+        "relevant_sections": [
+          "What is Diabetes?",
+          "Pregnancy & Diabetes"
+        ],
+        "category": "normal",
+        "relevant_ids": [
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a"
+        ],
+        "retrieved_ids": [
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42",
+          "c5efa1467fe42006a6c90d21854c5e52e729eb34e84b72ec6818c06ff428e74a",
+          "9def25a70d474ead36d604cd18dc9def860467367723cd84b9b4b0f69e4baa3f",
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "5d52679bae5be0831823ea4c6b35a13de7042e78f0a291a28d4a42ec25ddb17c"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 58.886000002530636
+      },
+      {
+        "id": "Q15",
+        "question": "Provide NIDDK sources for symptoms",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "b8cbf21f9e95d0c83ed29e0de9080ba986c37673b4b499629403c3936dc6f608",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 42.6623000021209
+      },
+      {
+        "id": "Q16",
+        "question": "Cite evidence for family history and risk",
+        "relevant_sections": [
+          "Risk Factors for Type 2 Diabetes"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199"
+        ],
+        "retrieved_ids": [
+          "49e8344b2e23a05b7aa89da0bbbf841e7c3be969fb4dbf712042b587b23bc30d",
+          "d895056b845d28acc2187e78de6f2441e8f16ca6feddcd6ab5368bbb6da8f199",
+          "a2bd4c8328354ff48143d90875980a85ec13889659e2a02cd4fdbc80a6c6d756",
+          "ee1090f7a24b201bab32503ffc662b8fa464c5a1bcf7b6c0b95e6e6de5c17ada",
+          "8a6d5bf3634a8e9d7e903231bf257cf2a750137afa95ba9c181136481bad7659"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 53.32839999755379
+      },
+      {
+        "id": "Q17",
+        "question": "Give sources for screening tests",
+        "relevant_sections": [
+          "Diabetes Tests & Diagnosis"
+        ],
+        "category": "source",
+        "relevant_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439"
+        ],
+        "retrieved_ids": [
+          "232e466f1a97f6763fd15c54b89111dc1aea3713a8a31fa445345ea1bf9724f7",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "afb03ee758d1d2b83077c166f2cc094bda5a2256a4d549f36250d2babe6a3f42"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 3,
+        "no_evidence_correct": null,
+        "latency_ms": 37.42739999870537
+      },
+      {
+        "id": "Q18",
+        "question": "Explain symptoms and prevention with sources",
+        "relevant_sections": [
+          "Symptoms & Causes",
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "multistep",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f"
+        ],
+        "recall_at_5": 0.75,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 48.942599998554215
+      },
+      {
+        "id": "Q19",
+        "question": "What are the trieu chung?",
+        "relevant_sections": [
+          "Symptoms & Causes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "retrieved_ids": [
+          "a4a55ea9419cd1506243dfc3d5043cc3a65c80324efefe001524cc4c5edc21f5",
+          "3d1804d5ded5118c53e7ffaa3f46e63ddd385c1a3283264f6012d219d7a4cd22",
+          "68cebc76a7bcc33acf577786520b34cb5abe0cef8a22329c6b7a6b0cd7fb5439",
+          "103c0c6535f2586fc2baded2c04090022039be8f80e67e9135d38543ca09111f",
+          "c7a03191235e6955afed152c511d4305e47191112222cbb73d89b303132e4a38"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 5,
+        "no_evidence_correct": null,
+        "latency_ms": 60.49460000213003
+      },
+      {
+        "id": "Q20",
+        "question": "How about phong ngua?",
+        "relevant_sections": [
+          "Preventing Type 2 Diabetes"
+        ],
+        "category": "bilingual",
+        "relevant_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "retrieved_ids": [
+          "eb4374939ec6669fe619baa5ba121b08ec3a65ee7d3b20a0cd2e19492c4fb2e8"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0,
+        "citation_correct": true,
+        "citation_count": 1,
+        "no_evidence_correct": null,
+        "latency_ms": 61.24830000044312
+      },
+      {
+        "id": "Q21",
+        "question": "Tell me about sugar",
+        "relevant_sections": [],
+        "category": "ambiguous",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.42860000030486844
+      },
+      {
+        "id": "Q22",
+        "question": "Explain python generators",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.456300000223564
+      },
+      {
+        "id": "Q23",
+        "question": "How to repair a bicycle?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.38609999683103524
+      },
+      {
+        "id": "Q24",
+        "question": "What are treatments for lung cancer?",
+        "relevant_sections": [],
+        "category": "out_of_scope",
+        "relevant_ids": [],
+        "retrieved_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": null,
+        "citation_correct": true,
+        "citation_count": 0,
+        "no_evidence_correct": true,
+        "latency_ms": 0.4076000004715752
+      }
+    ]
+  }
+}

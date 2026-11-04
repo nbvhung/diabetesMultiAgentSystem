@@ -1,0 +1,3 @@
+policy,average_episode_reward,completion_rate,reward_variance_across_scenarios,unsafe_action_attempts,mean_episode_length,fallback_decisions
+q_learning,4.276,0.97,8.358457333333334,0,2.47,5
+rule_based,4.311,0.9833333333333333,8.504162333333333,0,2.0366666666666666,0

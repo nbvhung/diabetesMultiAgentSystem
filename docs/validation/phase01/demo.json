@@ -1,0 +1,1330 @@
+{
+  "data_label": "SYNTHETIC_DEMO_NOT_MEDICAL_RESULTS",
+  "agents": {
+    "schema_version": "2.0",
+    "agents": [
+      {
+        "agent_id": "prediction",
+        "description": "Calls versioned DL inference; model not integrated",
+        "input_schema": {
+          "$defs": {
+            "AssessmentInput": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "pregnancies": {
+                  "minimum": 0,
+                  "title": "Pregnancies",
+                  "type": "integer"
+                },
+                "glucose": {
+                  "minimum": 0,
+                  "title": "Glucose",
+                  "type": "number"
+                },
+                "blood_pressure": {
+                  "minimum": 0,
+                  "title": "Blood Pressure",
+                  "type": "number"
+                },
+                "skin_thickness": {
+                  "minimum": 0,
+                  "title": "Skin Thickness",
+                  "type": "number"
+                },
+                "insulin": {
+                  "minimum": 0,
+                  "title": "Insulin",
+                  "type": "number"
+                },
+                "bmi": {
+                  "minimum": 0,
+                  "title": "Bmi",
+                  "type": "number"
+                },
+                "diabetes_pedigree": {
+                  "minimum": 0,
+                  "title": "Diabetes Pedigree",
+                  "type": "number"
+                },
+                "age": {
+                  "minimum": 1,
+                  "title": "Age",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "pregnancies",
+                "glucose",
+                "blood_pressure",
+                "skin_thickness",
+                "insulin",
+                "bmi",
+                "diabetes_pedigree",
+                "age"
+              ],
+              "title": "AssessmentInput",
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "assessment": {
+              "$ref": "#/$defs/AssessmentInput"
+            }
+          },
+          "required": [
+            "assessment"
+          ],
+          "title": "PredictionTask",
+          "type": "object"
+        },
+        "output_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "1.0",
+              "default": "1.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "model_id": {
+              "title": "Model Id",
+              "type": "string"
+            },
+            "model_version": {
+              "title": "Model Version",
+              "type": "string"
+            },
+            "predicted_class": {
+              "enum": [
+                0,
+                1
+              ],
+              "title": "Predicted Class",
+              "type": "integer"
+            },
+            "score": {
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Score",
+              "type": "number"
+            },
+            "limitations": {
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "title": "Limitations",
+              "type": "array"
+            }
+          },
+          "required": [
+            "model_id",
+            "model_version",
+            "predicted_class",
+            "score",
+            "limitations"
+          ],
+          "title": "PredictionResult",
+          "type": "object"
+        },
+        "permitted_tools": [],
+        "implementation": "stub",
+        "available": false,
+        "timeout_seconds": 1.0,
+        "fallback_policy": "Abstain without evidence; no fabricated clinical output",
+        "status_semantics": "NOT_STARTED -> RUNNING -> COMPLETED/FAILED/UNAVAILABLE; conditional SKIPPED"
+      },
+      {
+        "agent_id": "knowledge",
+        "description": "Retrieves attributable Neo4j/RAG evidence; tool not integrated",
+        "input_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "question": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "title": "Question",
+              "type": "string"
+            }
+          },
+          "required": [
+            "question"
+          ],
+          "title": "KnowledgeTask",
+          "type": "object"
+        },
+        "output_schema": {
+          "$defs": {
+            "EvidenceItem": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "evidence_id": {
+                  "title": "Evidence Id",
+                  "type": "string"
+                },
+                "source_title": {
+                  "title": "Source Title",
+                  "type": "string"
+                },
+                "source_url": {
+                  "format": "uri",
+                  "maxLength": 2083,
+                  "minLength": 1,
+                  "title": "Source Url",
+                  "type": "string"
+                },
+                "publisher": {
+                  "title": "Publisher",
+                  "type": "string"
+                },
+                "section": {
+                  "title": "Section",
+                  "type": "string"
+                },
+                "retrieved_at": {
+                  "format": "date-time",
+                  "title": "Retrieved At",
+                  "type": "string"
+                },
+                "excerpt": {
+                  "title": "Excerpt",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "evidence_id",
+                "source_title",
+                "source_url",
+                "publisher",
+                "section",
+                "retrieved_at",
+                "excerpt"
+              ],
+              "title": "EvidenceItem",
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "1.0",
+              "default": "1.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "$ref": "#/$defs/EvidenceItem"
+              },
+              "title": "Evidence",
+              "type": "array"
+            }
+          },
+          "required": [
+            "evidence"
+          ],
+          "title": "KnowledgeOutput",
+          "type": "object"
+        },
+        "permitted_tools": [],
+        "implementation": "stub",
+        "available": false,
+        "timeout_seconds": 1.0,
+        "fallback_policy": "Abstain without evidence; no fabricated clinical output",
+        "status_semantics": "NOT_STARTED -> RUNNING -> COMPLETED/FAILED/UNAVAILABLE; conditional SKIPPED"
+      },
+      {
+        "agent_id": "rl",
+        "description": "Selects educational action using a compatible policy; none integrated",
+        "input_schema": {
+          "$defs": {
+            "EvidenceItem": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "evidence_id": {
+                  "title": "Evidence Id",
+                  "type": "string"
+                },
+                "source_title": {
+                  "title": "Source Title",
+                  "type": "string"
+                },
+                "source_url": {
+                  "format": "uri",
+                  "maxLength": 2083,
+                  "minLength": 1,
+                  "title": "Source Url",
+                  "type": "string"
+                },
+                "publisher": {
+                  "title": "Publisher",
+                  "type": "string"
+                },
+                "section": {
+                  "title": "Section",
+                  "type": "string"
+                },
+                "retrieved_at": {
+                  "format": "date-time",
+                  "title": "Retrieved At",
+                  "type": "string"
+                },
+                "excerpt": {
+                  "title": "Excerpt",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "evidence_id",
+                "source_title",
+                "source_url",
+                "publisher",
+                "section",
+                "retrieved_at",
+                "excerpt"
+              ],
+              "title": "EvidenceItem",
+              "type": "object"
+            },
+            "PredictionResult": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "model_id": {
+                  "title": "Model Id",
+                  "type": "string"
+                },
+                "model_version": {
+                  "title": "Model Version",
+                  "type": "string"
+                },
+                "predicted_class": {
+                  "enum": [
+                    0,
+                    1
+                  ],
+                  "title": "Predicted Class",
+                  "type": "integer"
+                },
+                "score": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "title": "Score",
+                  "type": "number"
+                },
+                "limitations": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "title": "Limitations",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "model_id",
+                "model_version",
+                "predicted_class",
+                "score",
+                "limitations"
+              ],
+              "title": "PredictionResult",
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "prediction": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/PredictionResult"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "evidence": {
+              "items": {
+                "$ref": "#/$defs/EvidenceItem"
+              },
+              "title": "Evidence",
+              "type": "array"
+            }
+          },
+          "title": "RLTask",
+          "type": "object"
+        },
+        "output_schema": {
+          "$defs": {
+            "JsonValue": {}
+          },
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "1.0",
+              "default": "1.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "state": {
+              "additionalProperties": {
+                "$ref": "#/$defs/JsonValue"
+              },
+              "title": "State",
+              "type": "object"
+            },
+            "action": {
+              "title": "Action",
+              "type": "string"
+            },
+            "policy_version": {
+              "title": "Policy Version",
+              "type": "string"
+            },
+            "decision_source": {
+              "enum": [
+                "policy",
+                "fallback"
+              ],
+              "title": "Decision Source",
+              "type": "string"
+            }
+          },
+          "required": [
+            "state",
+            "action",
+            "policy_version",
+            "decision_source"
+          ],
+          "title": "RLDecision",
+          "type": "object"
+        },
+        "permitted_tools": [],
+        "implementation": "stub",
+        "available": false,
+        "timeout_seconds": 1.0,
+        "fallback_policy": "Abstain without evidence; no fabricated clinical output",
+        "status_semantics": "NOT_STARTED -> RUNNING -> COMPLETED/FAILED/UNAVAILABLE; conditional SKIPPED"
+      },
+      {
+        "agent_id": "education",
+        "description": "Produces a transparent abstention; no clinical synthesis without retrieval",
+        "input_schema": {
+          "$defs": {
+            "EvidenceItem": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "evidence_id": {
+                  "title": "Evidence Id",
+                  "type": "string"
+                },
+                "source_title": {
+                  "title": "Source Title",
+                  "type": "string"
+                },
+                "source_url": {
+                  "format": "uri",
+                  "maxLength": 2083,
+                  "minLength": 1,
+                  "title": "Source Url",
+                  "type": "string"
+                },
+                "publisher": {
+                  "title": "Publisher",
+                  "type": "string"
+                },
+                "section": {
+                  "title": "Section",
+                  "type": "string"
+                },
+                "retrieved_at": {
+                  "format": "date-time",
+                  "title": "Retrieved At",
+                  "type": "string"
+                },
+                "excerpt": {
+                  "title": "Excerpt",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "evidence_id",
+                "source_title",
+                "source_url",
+                "publisher",
+                "section",
+                "retrieved_at",
+                "excerpt"
+              ],
+              "title": "EvidenceItem",
+              "type": "object"
+            },
+            "JsonValue": {},
+            "PredictionResult": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "model_id": {
+                  "title": "Model Id",
+                  "type": "string"
+                },
+                "model_version": {
+                  "title": "Model Version",
+                  "type": "string"
+                },
+                "predicted_class": {
+                  "enum": [
+                    0,
+                    1
+                  ],
+                  "title": "Predicted Class",
+                  "type": "integer"
+                },
+                "score": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "title": "Score",
+                  "type": "number"
+                },
+                "limitations": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1,
+                  "title": "Limitations",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "model_id",
+                "model_version",
+                "predicted_class",
+                "score",
+                "limitations"
+              ],
+              "title": "PredictionResult",
+              "type": "object"
+            },
+            "RLDecision": {
+              "additionalProperties": false,
+              "properties": {
+                "schema_version": {
+                  "const": "1.0",
+                  "default": "1.0",
+                  "title": "Schema Version",
+                  "type": "string"
+                },
+                "state": {
+                  "additionalProperties": {
+                    "$ref": "#/$defs/JsonValue"
+                  },
+                  "title": "State",
+                  "type": "object"
+                },
+                "action": {
+                  "title": "Action",
+                  "type": "string"
+                },
+                "policy_version": {
+                  "title": "Policy Version",
+                  "type": "string"
+                },
+                "decision_source": {
+                  "enum": [
+                    "policy",
+                    "fallback"
+                  ],
+                  "title": "Decision Source",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "state",
+                "action",
+                "policy_version",
+                "decision_source"
+              ],
+              "title": "RLDecision",
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "question": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Question"
+            },
+            "prediction": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/PredictionResult"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "evidence": {
+              "items": {
+                "$ref": "#/$defs/EvidenceItem"
+              },
+              "title": "Evidence",
+              "type": "array"
+            },
+            "decision": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/RLDecision"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "warnings": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Warnings",
+              "type": "array"
+            }
+          },
+          "title": "EducationTask",
+          "type": "object"
+        },
+        "output_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "1.0",
+              "default": "1.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "text": {
+              "title": "Text",
+              "type": "string"
+            },
+            "evidence_ids": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Evidence Ids",
+              "type": "array"
+            }
+          },
+          "required": [
+            "text",
+            "evidence_ids"
+          ],
+          "title": "EducationOutput",
+          "type": "object"
+        },
+        "permitted_tools": [],
+        "implementation": "minimal",
+        "available": true,
+        "timeout_seconds": 1.0,
+        "fallback_policy": "Abstain without evidence; no fabricated clinical output",
+        "status_semantics": "NOT_STARTED -> RUNNING -> COMPLETED/FAILED/UNAVAILABLE; conditional SKIPPED"
+      },
+      {
+        "agent_id": "safety",
+        "description": "Minimal deterministic output and medication-intent safety gate",
+        "input_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "question": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Question"
+            },
+            "candidate": {
+              "title": "Candidate",
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidate"
+          ],
+          "title": "SafetyTask",
+          "type": "object"
+        },
+        "output_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "1.0",
+              "default": "1.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "allowed": {
+              "title": "Allowed",
+              "type": "boolean"
+            },
+            "severity": {
+              "enum": [
+                "info",
+                "warning",
+                "critical"
+              ],
+              "title": "Severity",
+              "type": "string"
+            },
+            "rule_ids": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Rule Ids",
+              "type": "array"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            }
+          },
+          "required": [
+            "allowed",
+            "severity",
+            "rule_ids",
+            "reason"
+          ],
+          "title": "SafetyDecision",
+          "type": "object"
+        },
+        "permitted_tools": [],
+        "implementation": "minimal",
+        "available": true,
+        "timeout_seconds": 1.0,
+        "fallback_policy": "Fail closed; withhold content",
+        "status_semantics": "NOT_STARTED -> RUNNING -> COMPLETED/FAILED/UNAVAILABLE; conditional SKIPPED"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case": "A_SYNTHETIC_EDUCATION",
+      "data_label": "SYNTHETIC_DEMO_NOT_A_REAL_PATIENT",
+      "result": {
+        "schema_version": "2.0",
+        "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+        "status": "DEGRADED",
+        "agent_results": {
+          "prediction": {
+            "schema_version": "2.0",
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "implementation": "stub",
+            "output": null,
+            "errors": []
+          },
+          "knowledge": {
+            "schema_version": "2.0",
+            "agent_id": "knowledge",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "TOOL_NOT_INTEGRATED"
+            ]
+          },
+          "education": {
+            "schema_version": "2.0",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "text": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+              "evidence_ids": []
+            },
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "2.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "allowed": true,
+              "severity": "info",
+              "rule_ids": [],
+              "reason": "Passed bounded Phase 01 checks; not clinical validation"
+            },
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "2.0",
+            "agent_id": "rl",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "NO_COMPATIBLE_POLICY"
+            ]
+          }
+        },
+        "response": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+        "evidence": [],
+        "agent_trace": [
+          {
+            "schema_version": "2.0",
+            "sequence": 1,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": null,
+            "message_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 2,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "prediction",
+            "message_id": null,
+            "status": "SKIPPED",
+            "reason": "NO_ASSESSMENT",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 3,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "knowledge",
+            "message_id": "64438c0a-1239-40a9-a568-ee5dbb0208fa",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 4,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "knowledge",
+            "message_id": "64438c0a-1239-40a9-a568-ee5dbb0208fa",
+            "status": "UNAVAILABLE",
+            "reason": "TOOL_NOT_INTEGRATED",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 5,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "rl",
+            "message_id": null,
+            "status": "UNAVAILABLE",
+            "reason": "NO_COMPATIBLE_POLICY",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 6,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "education",
+            "message_id": "8ea5d6a1-df2c-4a17-80f3-4dc21ea434c1",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 7,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "education",
+            "message_id": "8ea5d6a1-df2c-4a17-80f3-4dc21ea434c1",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 8,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "safety",
+            "message_id": "a217a42b-624c-4d52-b69a-5a5c33ff56ac",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.770505Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 9,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": "safety",
+            "message_id": "a217a42b-624c-4d52-b69a-5a5c33ff56ac",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.772109Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 10,
+            "run_id": "cecf32b0-b9c4-45dc-8686-ced741285afb",
+            "agent_id": null,
+            "message_id": null,
+            "status": "DEGRADED",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.772109Z"
+          }
+        ],
+        "warnings": [
+          "knowledge: TOOL_NOT_INTEGRATED",
+          "rl: NO_COMPATIBLE_POLICY",
+          "IN_MEMORY_STORAGE_NON_DURABLE"
+        ],
+        "limitations": [
+          "Prediction, Neo4j/RAG and RL policy are stubs; no clinical computation or retrieval.",
+          "Education only provides a transparent abstention; safety rules are minimal lexical checks, not a clinical engine.",
+          "Runs are stored in bounded process-local RAM; restart/eviction loses data; workers do not share runs."
+        ]
+      }
+    },
+    {
+      "case": "B_SYNTHETIC_ASSESSMENT_NO_MODEL",
+      "data_label": "SYNTHETIC_DEMO_NOT_A_REAL_PATIENT",
+      "result": {
+        "schema_version": "2.0",
+        "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+        "status": "DEGRADED",
+        "agent_results": {
+          "prediction": {
+            "schema_version": "2.0",
+            "agent_id": "prediction",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "TOOL_NOT_INTEGRATED"
+            ]
+          },
+          "knowledge": {
+            "schema_version": "2.0",
+            "agent_id": "knowledge",
+            "status": "SKIPPED",
+            "implementation": "stub",
+            "output": null,
+            "errors": []
+          },
+          "education": {
+            "schema_version": "2.0",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "text": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+              "evidence_ids": []
+            },
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "2.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "allowed": true,
+              "severity": "info",
+              "rule_ids": [],
+              "reason": "Passed bounded Phase 01 checks; not clinical validation"
+            },
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "2.0",
+            "agent_id": "rl",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "NO_COMPATIBLE_POLICY"
+            ]
+          }
+        },
+        "response": "Chưa có nguồn tri thức được truy hồi để trả lời câu hỏi giáo dục có dẫn chứng. Hệ thống không tạo dự đoán nguy cơ hoặc trích dẫn thay thế cho công cụ chưa tích hợp. Bạn có thể chuẩn bị câu hỏi để trao đổi với nhân viên y tế. Đây không phải chẩn đoán hay chỉ dẫn điều trị. Không có kết quả mô hình để diễn giải.",
+        "evidence": [],
+        "agent_trace": [
+          {
+            "schema_version": "2.0",
+            "sequence": 1,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": null,
+            "message_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.778223Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 2,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "prediction",
+            "message_id": "d127c3bb-570e-468d-bb04-7f32e1c57a02",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.778223Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 3,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "prediction",
+            "message_id": "d127c3bb-570e-468d-bb04-7f32e1c57a02",
+            "status": "UNAVAILABLE",
+            "reason": "TOOL_NOT_INTEGRATED",
+            "timestamp": "2026-11-01T20:04:52.778223Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 4,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "knowledge",
+            "message_id": null,
+            "status": "SKIPPED",
+            "reason": "NO_QUESTION",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 5,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "rl",
+            "message_id": null,
+            "status": "UNAVAILABLE",
+            "reason": "NO_COMPATIBLE_POLICY",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 6,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "education",
+            "message_id": "a539f989-eccf-45e5-bde9-5e4472fd537b",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 7,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "education",
+            "message_id": "a539f989-eccf-45e5-bde9-5e4472fd537b",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 8,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "safety",
+            "message_id": "0350760d-71ec-41c2-97cf-221eaa900175",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 9,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": "safety",
+            "message_id": "0350760d-71ec-41c2-97cf-221eaa900175",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 10,
+            "run_id": "c9da213d-1d24-4d24-84c2-e7b88a67caf2",
+            "agent_id": null,
+            "message_id": null,
+            "status": "DEGRADED",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.779123Z"
+          }
+        ],
+        "warnings": [
+          "prediction: TOOL_NOT_INTEGRATED",
+          "rl: NO_COMPATIBLE_POLICY",
+          "IN_MEMORY_STORAGE_NON_DURABLE"
+        ],
+        "limitations": [
+          "Prediction, Neo4j/RAG and RL policy are stubs; no clinical computation or retrieval.",
+          "Education only provides a transparent abstention; safety rules are minimal lexical checks, not a clinical engine.",
+          "Runs are stored in bounded process-local RAM; restart/eviction loses data; workers do not share runs."
+        ]
+      }
+    },
+    {
+      "case": "C_SYNTHETIC_UNSAFE_MEDICATION_REQUEST",
+      "data_label": "SYNTHETIC_DEMO_NOT_A_REAL_PATIENT",
+      "result": {
+        "schema_version": "2.0",
+        "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+        "status": "BLOCKED",
+        "agent_results": {
+          "prediction": {
+            "schema_version": "2.0",
+            "agent_id": "prediction",
+            "status": "SKIPPED",
+            "implementation": "stub",
+            "output": null,
+            "errors": []
+          },
+          "knowledge": {
+            "schema_version": "2.0",
+            "agent_id": "knowledge",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "TOOL_NOT_INTEGRATED"
+            ]
+          },
+          "education": {
+            "schema_version": "2.0",
+            "agent_id": "education",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "text": "[WITHHELD_BY_SAFETY]",
+              "evidence_ids": []
+            },
+            "errors": []
+          },
+          "safety": {
+            "schema_version": "2.0",
+            "agent_id": "safety",
+            "status": "COMPLETED",
+            "implementation": "minimal",
+            "output": {
+              "schema_version": "1.0",
+              "allowed": false,
+              "severity": "warning",
+              "rule_ids": [
+                "S01_MEDICATION_DOSING"
+              ],
+              "reason": "Content withheld by minimal safety rules"
+            },
+            "errors": []
+          },
+          "rl": {
+            "schema_version": "2.0",
+            "agent_id": "rl",
+            "status": "UNAVAILABLE",
+            "implementation": "stub",
+            "output": null,
+            "errors": [
+              "NO_COMPATIBLE_POLICY"
+            ]
+          }
+        },
+        "response": "Hệ thống không cung cấp hướng dẫn về liều thuốc hoặc tự điều chỉnh điều trị. Hãy trao đổi trực tiếp với nhân viên y tế phụ trách. Nội dung chưa được phát hành vì giới hạn an toàn.",
+        "evidence": [],
+        "agent_trace": [
+          {
+            "schema_version": "2.0",
+            "sequence": 1,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": null,
+            "message_id": null,
+            "status": "RUNNING",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 2,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "prediction",
+            "message_id": null,
+            "status": "SKIPPED",
+            "reason": "NO_ASSESSMENT",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 3,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "knowledge",
+            "message_id": "929c5773-0d0c-43e0-ab9d-194c9f7515a3",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 4,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "knowledge",
+            "message_id": "929c5773-0d0c-43e0-ab9d-194c9f7515a3",
+            "status": "UNAVAILABLE",
+            "reason": "TOOL_NOT_INTEGRATED",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 5,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "rl",
+            "message_id": null,
+            "status": "UNAVAILABLE",
+            "reason": "NO_COMPATIBLE_POLICY",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 6,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "education",
+            "message_id": "968ef3de-2566-46f8-8c1c-82031b8ab8f0",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.783665Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 7,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "education",
+            "message_id": "968ef3de-2566-46f8-8c1c-82031b8ab8f0",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.784661Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 8,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "safety",
+            "message_id": "491c2f36-17de-450c-9d87-bcb61292ff15",
+            "status": "RUNNING",
+            "reason": "TASK_DISPATCHED",
+            "timestamp": "2026-11-01T20:04:52.784661Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 9,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": "safety",
+            "message_id": "491c2f36-17de-450c-9d87-bcb61292ff15",
+            "status": "COMPLETED",
+            "reason": "TASK_COMPLETED",
+            "timestamp": "2026-11-01T20:04:52.784661Z"
+          },
+          {
+            "schema_version": "2.0",
+            "sequence": 10,
+            "run_id": "9f73baed-95b2-4026-9cee-ddc5c21b89b4",
+            "agent_id": null,
+            "message_id": null,
+            "status": "BLOCKED",
+            "reason": "WORKFLOW_TRANSITION",
+            "timestamp": "2026-11-01T20:04:52.784661Z"
+          }
+        ],
+        "warnings": [
+          "knowledge: TOOL_NOT_INTEGRATED",
+          "rl: NO_COMPATIBLE_POLICY",
+          "SAFETY_VETO",
+          "IN_MEMORY_STORAGE_NON_DURABLE"
+        ],
+        "limitations": [
+          "Prediction, Neo4j/RAG and RL policy are stubs; no clinical computation or retrieval.",
+          "Education only provides a transparent abstention; safety rules are minimal lexical checks, not a clinical engine.",
+          "Runs are stored in bounded process-local RAM; restart/eviction loses data; workers do not share runs."
+        ]
+      }
+    }
+  ]
+}

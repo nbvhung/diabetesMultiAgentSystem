@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-11-03T10:26:13.011022+00:00",
+  "figures": [
+    {
+      "file": "architecture.png",
+      "caption": "Kiến trúc hệ đa agent Diabetes MAS",
+      "source": "backend/app/research/api.py; agents.py; coordinator.py; db/migrations",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "86e9b713462e2d3fb1e9634102d25834b478e2d0166a70b3d0ce5718f16013c9"
+    },
+    {
+      "file": "communication.png",
+      "caption": "Giao tiếp qua typed messages; agent không tự gọi agent khác",
+      "source": "backend/app/research/schemas.py; agents.py; coordinator.py",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "ca3d8c54eeb5d0bf7e9b4e25d09c5153a50c0f6ff63e585440b4e380e12fce7d"
+    },
+    {
+      "file": "erd.png",
+      "caption": "Lược đồ PostgreSQL sau migration 0002_phase03",
+      "source": "backend/app/db/migrations/versions/0001_phase02.py; 0002_phase03.py",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "b7f3672d8625415c7a52150141ed95045d4e86c15c70f5fd7b0f550939e5b5b8"
+    },
+    {
+      "file": "neo4j_schema.png",
+      "caption": "Neo4j: tài liệu, đoạn nguồn và assertion có provenance",
+      "source": "backend/app/research/graph.py; corpus.py",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "3b92d3cdd30a71f79c8672c2de183160cd6037101459741a94bdad82e2864461"
+    },
+    {
+      "file": "e2e_workflow.png",
+      "caption": "Luồng demo; Coordinator quản lý mọi chuyển bước",
+      "source": "backend/app/research/coordinator.py; repository.py",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "865495fc763194625eed9a493ccd6635ce0869acfa91f3d49727d2ef4465be2c"
+    },
+    {
+      "file": "sequence.png",
+      "caption": "Sequence diagram: phản hồi HTTP sau transaction commit",
+      "source": "backend/app/research/api.py; coordinator.py; repository.py",
+      "kind": "code-derived explanatory diagram",
+      "sha256": "7d228f10fa2fa1c482416870c9b2e79c195a03fb13895f51898328494087eec5"
+    },
+    {
+      "file": "dl_training.png",
+      "caption": "BCE train/validation: lịch sử huấn luyện thật, checkpoint epoch 24",
+      "source": "experiments/figures/phase02/learning_curves.png",
+      "source_sha256": "677ac22196b6a5e2463d2f3be2a3e4a4a1bae2dba54d1aeaf064e5b6915eeb56",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "677ac22196b6a5e2463d2f3be2a3e4a4a1bae2dba54d1aeaf064e5b6915eeb56"
+    },
+    {
+      "file": "prediction_evaluation.png",
+      "caption": "MLP và baseline trên cùng test split",
+      "source": "experiments/figures/prediction.png",
+      "source_sha256": "d386f1564f35f0642f7a8576ded9bd0d7b4cf9c4f183357ec5b404bf01a62cae",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "d386f1564f35f0642f7a8576ded9bd0d7b4cf9c4f183357ec5b404bf01a62cae"
+    },
+    {
+      "file": "prediction_diagnostics.png",
+      "caption": "Confusion matrix, ROC, PR và reliability của MLP",
+      "source": "experiments/figures/phase02/MLP_evaluation.png",
+      "source_sha256": "85de88a6b04f83b572c82fee0b6c8ca3f5b73a3f3bd85f95af818564343daaf1",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "85de88a6b04f83b572c82fee0b6c8ca3f5b73a3f3bd85f95af818564343daaf1"
+    },
+    {
+      "file": "rag_evaluation.png",
+      "caption": "Các chiến lược truy hồi; phân biệt development/diagnostic/confirmatory",
+      "source": "experiments/figures/diabetes_rag.png",
+      "source_sha256": "f756d78719c59b9d9a1095a996bc29a7798e95368549a23fe9f952ab7a5b4b9a",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "f756d78719c59b9d9a1095a996bc29a7798e95368549a23fe9f952ab7a5b4b9a"
+    },
+    {
+      "file": "mas_evaluation.png",
+      "caption": "MAS so với direct workflow; khác retry budget, không kết luận nhân quả",
+      "source": "experiments/figures/diabetes_mas.png",
+      "source_sha256": "60980efd198e6c57ed826824227bdd25d7cd42c83d3e0ef86a6c67b72921388a",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "60980efd198e6c57ed826824227bdd25d7cd42c83d3e0ef86a6c67b72921388a"
+    },
+    {
+      "file": "rl_rewards.png",
+      "caption": "Reward curves theo lịch sử ba seed huấn luyện",
+      "source": "experiments/figures/phase06/reward_curves.png",
+      "source_sha256": "1f811986f3e58a6e4ec694efed75ed52546b04dca91d15612c775b3f6fcc310c",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "1f811986f3e58a6e4ec694efed75ed52546b04dca91d15612c775b3f6fcc310c"
+    },
+    {
+      "file": "rl_evaluation.png",
+      "caption": "Policy phục vụ Q-learning và rule baseline trong simulator",
+      "source": "experiments/figures/rl.png",
+      "source_sha256": "affc1ca156d1700400e0c0ea4f5c19f293630fb1eead95b5cc8ba0ac5e39c9f3",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "affc1ca156d1700400e0c0ea4f5c19f293630fb1eead95b5cc8ba0ac5e39c9f3"
+    },
+    {
+      "file": "safety_summary.png",
+      "caption": "Finite software safety scenarios; không phải clinical certification",
+      "source": "experiments/figures/diabetes_safety.png",
+      "source_sha256": "6ddeb169b807bbafbc0711ae3d9b6bbc17bb053ccfe7c62eeb20832497659c5c",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "6ddeb169b807bbafbc0711ae3d9b6bbc17bb053ccfe7c62eeb20832497659c5c"
+    },
+    {
+      "file": "llm_evaluation.png",
+      "caption": "Groq thực: verifier acceptance có điều kiện trên output LLM",
+      "source": "experiments/figures/diabetes_llm.png",
+      "source_sha256": "32fe2a0b36d979515636ae001570337e55bcd64d6e17b4f605a576e60f64ba80",
+      "kind": "existing measured artifact; not rerun unless manifest says so",
+      "sha256": "32fe2a0b36d979515636ae001570337e55bcd64d6e17b4f605a576e60f64ba80"
+    },
+    {
+      "file": "public-overview.png",
+      "caption": "Ảnh trình duyệt thật qua HTTPS tạm: public-overview",
+      "source": "docs/validation/phase08/public-overview.png",
+      "kind": "actual browser screenshot",
+      "sha256": "43ac71c9981234ad84ef7beeb1ce3a37113d59f2aa32738f3f8e8216c09df49c"
+    },
+    {
+      "file": "public-answer.png",
+      "caption": "Ảnh trình duyệt thật qua HTTPS tạm: public-answer",
+      "source": "docs/validation/phase08/public-answer.png",
+      "kind": "actual browser screenshot",
+      "sha256": "a226df53d4d3fdd09b4f66a06d7799dbefdf2941fb13748cc85b84b0146d3b0a"
+    },
+    {
+      "file": "public-monitor.png",
+      "caption": "Ảnh trình duyệt thật qua HTTPS tạm: public-monitor",
+      "source": "docs/validation/phase08/public-monitor.png",
+      "kind": "actual browser screenshot",
+      "sha256": "beff4229d79df792b25aafdc47c3f95f3b9acd3b5348a74dbad4b456d914cc5e"
+    },
+    {
+      "file": "public-mobile.png",
+      "caption": "Ảnh trình duyệt thật qua HTTPS tạm: public-mobile",
+      "source": "docs/validation/phase08/public-mobile.png",
+      "kind": "actual browser screenshot",
+      "sha256": "6743c6084bbf15d32a97f41093e680ebaf3aeaa4de62568d48f6612948c36972"
+    },
+    {
+      "file": "actual_trace.png",
+      "caption": "Trace các quyết định thật của workflow HTTPS, không phải timeline mô phỏng",
+      "source": "docs/validation/phase08/public_demo.json",
+      "kind": "actual ordered trace rendering",
+      "sha256": "7f71e0af1faff319a8119becd521403532a20e290fa655ea7c727ca330b51d4c"
+    }
+  ]
+}

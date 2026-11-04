@@ -1,0 +1,4 @@
+strategy,recall_at_5,mrr_at_5,citation_correctness,citation_count,no_evidence_accuracy,latency_ms
+vector,0.5408333333333333,0.7516666666666667,1.0,82,1,20.86207916670446
+graph,0.92,0.925,1.0,61,1,8.46841250002702
+hybrid,0.9175,0.925,1.0,89,1,29.07384583329531

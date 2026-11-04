@@ -1,0 +1,132 @@
+{
+  "status": "BLOCKED",
+  "reason": "DOCKER_ENGINE_UNAVAILABLE; actual Compose startup acceptance not completed",
+  "native_demo": "VERIFIED",
+  "temporary_https_demo": "VERIFIED",
+  "cloud_deployment": "NOT_COMPLETED",
+  "timestamp": "2026-11-03T10:26:16.001193+00:00",
+  "code_version": "source-sha256:c7fcf2d3393932af54b5c51b97598c8c8b4126b7229386f5801f5a491e1bd5f0",
+  "backend_passed": 249,
+  "frontend_unit_passed": 22,
+  "frontend_build": "PASS",
+  "browser_passed": 6,
+  "browser_skipped": 0,
+  "public_url": "https://champion-sonic-dept-charged.trycloudflare.com",
+  "public_scenarios": 3,
+  "public_browser_errors": 0,
+  "live_llm_benchmark": {
+    "questions": 6,
+    "genuine_llm_outputs": 3,
+    "approved_by_automated_verifier": 3,
+    "coverage": 0.5,
+    "conditional_acceptance": 1.0,
+    "clinical_accuracy": null
+  },
+  "report": {
+    "pdf_pages": 48,
+    "figures_in_document": 19,
+    "defense_questions": 32,
+    "layout_checked": true,
+    "visual_contact_sheets_inspected": true,
+    "pdf_renderer": "Chromium; DOCX TOC updated by Word"
+  },
+  "artifact_handoff": {
+    "files": 157,
+    "bytes": 984271815,
+    "sha256": "3990426ff24bcff75b10575f1489a170c9e17316696a8023a1bb05d79f1782b1",
+    "env_or_raw_pima_included": false
+  },
+  "frozen_dl_rl_unchanged": true,
+  "experiment_bundles_verified": [
+    "prediction",
+    "rl",
+    "diabetes_rag",
+    "diabetes_mas",
+    "diabetes_safety",
+    "diabetes_llm"
+  ],
+  "secret_scan": "No configured long secrets found in source/docs/infra/report artifacts",
+  "ports_open": {
+    "8000": true,
+    "5173": true,
+    "7687": true,
+    "8082": true,
+    "18000": false,
+    "18001": false,
+    "15173": false,
+    "17689": false
+  },
+  "training_rerun": false,
+  "docker": {
+    "exit_code": 1,
+    "status": "BLOCKED_RUNTIME"
+  },
+  "checks": {
+    "migration": {
+      "exit_code": 0,
+      "seconds": 2.0303751999999804
+    },
+    "initialize": {
+      "exit_code": 0,
+      "seconds": 39.1057796999994
+    },
+    "backend": {
+      "exit_code": 0,
+      "seconds": 63.36446319999959,
+      "passed": 249,
+      "skipped": false
+    },
+    "frontend_unit": {
+      "exit_code": 0,
+      "seconds": 5.776842100000067
+    },
+    "frontend_build": {
+      "exit_code": 0,
+      "seconds": 4.9796482999990985
+    },
+    "browser": {
+      "exit_code": 0,
+      "seconds": 45.18561480000062,
+      "stats": {
+        "startTime": "2026-11-03T09:55:03.177Z",
+        "duration": 44208.443,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "integrity": {
+      "frozen_artifacts_unchanged": true,
+      "verified_measured_bundles": [
+        "prediction",
+        "rl",
+        "diabetes_rag",
+        "diabetes_mas",
+        "diabetes_safety",
+        "diabetes_llm"
+      ]
+    },
+    "compose_config": {
+      "exit_code": 0,
+      "seconds": 0.1322952999980771
+    },
+    "compose": {
+      "exit_code": 1,
+      "status": "BLOCKED_RUNTIME"
+    }
+  },
+  "deployment_files_sha256": {
+    "compose.yaml": "007a9c1f85c81252de35677006bfb4f5cc44466d55c5baf3ac02ca09b9eb6b00",
+    ".dockerignore": "821a803bf84485d452b13e23d84313948e8cf01f9f907b396673a06a10c2fc3c",
+    "pyproject.toml": "c00acec45a14dfa5acd70066532f449ac7974fc81452742b06eebf30f01373ae",
+    "frontend/package-lock.json": "175852e6f010d67c7336907302fb4ef754ab22b2d008318a57c6a68887a732ca",
+    "infra/docker/.gitkeep": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "infra/docker/backend.Dockerfile": "2bb3d1791ac2a251190f98311f091ec7a8a0b4d0161f712ffb3932856cbb6413",
+    "infra/docker/compose.dev.yaml": "803ba9e1cc029198f0a140ca04f3c10c876a323daa32a900c32645256428569c",
+    "infra/docker/compose.yaml": "c6f19f954fe534ac4f72ea333639411c53b99abc6a47469acd6272e249b8f6f6",
+    "infra/docker/frontend.Dockerfile": "78b29bc1ea2e32318028aa429cc7fc6ddcf5582e586688a5ee26489b446af108",
+    "infra/docker/nginx.conf": "8dbb8008e348d8b87a9ba77dd3234e375847b3bd4aca74d865535c1585179e36",
+    "infra/docker/runtime-requirements.txt": "32f54ad83739c48ec444e54f88c726f75aef1ceb4ea8fb9d816adce201ad15ad"
+  }
+}

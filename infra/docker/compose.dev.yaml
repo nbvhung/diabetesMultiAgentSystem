@@ -1,0 +1,10 @@
+# Optional host access for local inspection. Never publish these ports to the internet.
+services:
+  postgres:
+    ports: ['127.0.0.1:${POSTGRES_DEV_PORT:-55433}:5432']
+  neo4j:
+    ports:
+      - '127.0.0.1:${NEO4J_DEV_HTTP_PORT:-17475}:7474'
+      - '127.0.0.1:${NEO4J_DEV_BOLT_PORT:-17688}:7687'
+  backend:
+    ports: ['127.0.0.1:${BACKEND_DEV_PORT:-18080}:8000']

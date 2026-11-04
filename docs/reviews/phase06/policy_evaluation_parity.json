@@ -1,0 +1,93 @@
+{
+  "evaluator": {
+    "average_episode_reward": 4.191833333333333,
+    "completion_rate": 0.9633333333333334,
+    "mean_episode_length": 2.47,
+    "unsafe_action_attempts": 0
+  },
+  "actual_PolicyService_choose": {
+    "average_episode_reward": 4.276,
+    "completion_rate": 0.97,
+    "mean_episode_length": 2.47,
+    "unsafe_action_attempts": 0
+  },
+  "fallback_decisions": 5,
+  "action_mismatch_count": 5,
+  "examples": [
+    {
+      "seed": 100030,
+      "state": [
+        1,
+        2,
+        0,
+        1,
+        0,
+        3,
+        2
+      ],
+      "runtime_action": "ASK_COMPREHENSION_QUESTION",
+      "evaluator_action": "EXPLAIN_PREDICTION_LIMITATIONS",
+      "reason": "UNVISITED_STATE"
+    },
+    {
+      "seed": 100047,
+      "state": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        4
+      ],
+      "runtime_action": "SHOW_EVIDENCE",
+      "evaluator_action": "EXPLAIN_PREDICTION_LIMITATIONS",
+      "reason": "UNVISITED_STATE"
+    },
+    {
+      "seed": 100047,
+      "state": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        2,
+        3
+      ],
+      "runtime_action": "PROVIDE_GENERAL_EDUCATION",
+      "evaluator_action": "EXPLAIN_PREDICTION_LIMITATIONS",
+      "reason": "UNVISITED_STATE"
+    },
+    {
+      "seed": 100168,
+      "state": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "runtime_action": "ASK_COMPREHENSION_QUESTION",
+      "evaluator_action": "EXPLAIN_PREDICTION_LIMITATIONS",
+      "reason": "UNVISITED_STATE"
+    },
+    {
+      "seed": 100168,
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        3,
+        1
+      ],
+      "runtime_action": "PROVIDE_GENERAL_EDUCATION",
+      "evaluator_action": "EXPLAIN_PREDICTION_LIMITATIONS",
+      "reason": "UNVISITED_STATE"
+    }
+  ]
+}

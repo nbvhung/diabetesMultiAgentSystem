@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-11-02T20:10:50.724386+00:00",
+  "scope": "One SYNTHETIC question over actual public Neo4j sources; genuine Groq calls, not a model-quality benchmark",
+  "provider": {
+    "status": "configured_unverified",
+    "provider": "Groq",
+    "model": "openai/gpt-oss-20b",
+    "last_verified_at": null,
+    "code": "LLM_NOT_VERIFIED"
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "host": "api.groq.com",
+      "status_code": 400,
+      "provider_error_type": "invalid_request_error",
+      "provider_error_code": "json_validate_failed",
+      "provider_error_message": "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."
+    }
+  ],
+  "generation_mode": "extractive",
+  "provider_error": "GROQ_REQUEST_FAILED",
+  "verified": true,
+  "verification_mode": "exact_quote",
+  "reason_codes": [
+    "EXACT_SOURCE_QUOTES"
+  ],
+  "evidence_count": 2,
+  "claim_count": 0,
+  "latency_ms": 2086.967299997923,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "approved_response": null,
+  "quality_metrics": null
+}
