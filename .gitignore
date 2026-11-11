@@ -49,6 +49,7 @@ artifacts/embeddings/
 *.dll
 *.log
 docs/report/report_print.html
+docs/defense/tra_loi_51_cau_van_dap.html
 docs/validation/phase08/report_layout/
 demo_artifacts_manifest.json
 .DS_Store

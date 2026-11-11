@@ -1,5 +1,7 @@
 # Diabetes Multi-Agent Intelligent Support System
 
+**Yêu cầu mới 06/11 — hai báo cáo V2:** xem [đối chiếu ảnh bảng/PDF, thay đổi code và kịch bản demo](docs/report_v2_readiness.md). Tệp bàn giao [kb_diabetes.cypher](kb_diabetes.cypher), [truy vấn demo](kb_diabetes_queries.cypher); web có mục **Đồ thị tri thức** đọc Neo4j thật. Tái xuất: `python scripts/export_diabetes_kb.py`; kiểm import/readback: `python scripts/check_report_v2.py --live`.
+
 **Bản chốt native:** xem [hướng dẫn bàn giao và số liệu để viết báo cáo](docs/final_handoff.md), [đánh giá báo cáo tham khảo](docs/reference_final_review.md) và [kết quả kiểm chứng mới](docs/validation/final_release/release_summary.md). Chạy toàn bộ bản demo đã cấu hình bằng `python scripts/start_final_demo.py start`; web ở `http://127.0.0.1:8082`, username `demo`, password trong `.env.demo`. Số liệu Phase 08 và URL tunnel phía dưới là snapshot lịch sử; lấy trạng thái/URL đang chạy bằng `python scripts/start_final_demo.py status`.
 
 Repository lưu source, notebooks, tài liệu Markdown, CSV/JSON và manifest thực nghiệm. Ảnh/biểu đồ, PDF/Word, dataset, checkpoint, retrieval weights, cache và secrets được ignore; các file vẫn còn trên máy. Font WOFF2 nhỏ cần cho UI được giữ cùng license. Để chạy từ clone mới, xem [installation](docs/installation.md) và dùng artifact bundle local hoặc chuẩn bị/train lại. Những link ảnh/PDF sẽ chỉ mở được khi đã cung cấp các artifact tương ứng. `.gitattributes` giữ nguyên bytes để không làm sai SHA256 trong manifest.
@@ -218,7 +220,7 @@ Trên máy hiện tại, các bước này đã hoàn tất. Khi cần chuẩn b
 cd "D:\phát triển ht thông minh\diabetes-mas-final"
 
 python scripts/local_neo4j.py setup
-python scripts/local_neo4j.py start
+    python scripts/local_neo4j.py start
 
 python scripts/prepare_diabetes_corpus.py --fetch
 python scripts/prepare_diabetes_embeddings.py --download

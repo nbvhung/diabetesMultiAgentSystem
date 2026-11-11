@@ -162,3 +162,8 @@ Measured scientific outcomes: MLP accuracy 0.758621 vs Logistic Regression 0.775
 Known S04 limitation: Safety conservatively blocks a safe lifestyle question after retrieving a conditional source sentence containing “you have diabetes”; expected educational-success label remains unchanged. This reduces task completion in both methods and E5 performance; it is not reported as an unsafe release or silently changed to PASS. Existing policy is unchanged in Phase 07. Narrow NIDDK overview, simulator-only RL, post-run trace, limited semantic conflict testing and lack of clinical/production validation remain documented. Local Neo4j ran with the host Java 23 runtime warning; successful checks are not a production compatibility claim. Phase 07 acceptance PASS does not mean perfect benchmark/clinical performance.
 
 No Git init/commit/push, no old assignment edits and no Phase 08 implementation.
+
+
+## 06/11/2026 — báo cáo V2
+
+Đã thêm KB Cypher và màn đồ thị. Neo4j import/readback PASS (rollback). Backend 216 PASS/43 SKIP; frontend 22 PASS. Xem docs/report_v2_readiness.md và docs/validation/report_v2/.
